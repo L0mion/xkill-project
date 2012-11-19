@@ -2,3 +2,8 @@
 *.sdf
 *.suo
 *.user
+*.log
+xkill-sound/Debug/
+xkill-renderer/Debug/
+xkill-physics/Debug/
+xkill/Debug/
