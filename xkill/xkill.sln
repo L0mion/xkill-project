@@ -5,6 +5,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xkill", "xkill.vcxproj", "{
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xkill-renderer", "..\xkill-renderer\xkill-renderer.vcxproj", "{3C3210C6-6C18-46E3-A23E-9D59AD6090E3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xkill-physics", "..\xkill-physics\xkill-physics.vcxproj", "{64C38E56-52DE-4A78-B32E-C2FE02506CF5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -19,6 +21,10 @@ Global
 		{3C3210C6-6C18-46E3-A23E-9D59AD6090E3}.Debug|Win32.Build.0 = Debug|Win32
 		{3C3210C6-6C18-46E3-A23E-9D59AD6090E3}.Release|Win32.ActiveCfg = Release|Win32
 		{3C3210C6-6C18-46E3-A23E-9D59AD6090E3}.Release|Win32.Build.0 = Release|Win32
+		{64C38E56-52DE-4A78-B32E-C2FE02506CF5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{64C38E56-52DE-4A78-B32E-C2FE02506CF5}.Debug|Win32.Build.0 = Debug|Win32
+		{64C38E56-52DE-4A78-B32E-C2FE02506CF5}.Release|Win32.ActiveCfg = Release|Win32
+		{64C38E56-52DE-4A78-B32E-C2FE02506CF5}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
