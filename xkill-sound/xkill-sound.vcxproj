@@ -11,25 +11,32 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\xkill-source\xkill\main.cpp" />
+    <ClInclude Include="..\..\xkill-source\xkill-sound\dllSound.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-sound\FMODEventSystem.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-sound\FMODEventSystemProgrammerReportParser.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\xkill-source\xkill-sound\FMODEventSystem.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-sound\FMODEventSystemProgrammerReportParser.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{7C4E4A70-912B-4AC0-A004-DA6877F3ABC9}</ProjectGuid>
-    <RootNamespace>xkill</RootNamespace>
+    <ProjectGuid>{EF5DDE18-3DE8-4E0E-98F6-865A14B732B8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>xkillsound</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v110</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v110</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -42,38 +49,52 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
     <OutDir>../../xkill-build/bin-$(Configuration)/</OutDir>
-    <LibraryPath>$(OutDir)/../lib-$(Configuration)/;$(LibraryPath)</LibraryPath>
-    <IncludePath>../../xkill-source/;$(IncludePath)</IncludePath>
+    <IncludePath>../../xkill-source/xkill-sound/;../xkill-dependencies;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
     <OutDir>../../xkill-build/bin-$(Configuration)/</OutDir>
-    <LibraryPath>$(OutDir)/../lib-$(Configuration)/;$(LibraryPath)</LibraryPath>
-    <IncludePath>../../xkill-source/;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>DLL_EXPORT;WIN32;_DEBUG;_WINDOWS;_USRDLL;XKILLSOUND_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>xkill-sound.lib</AdditionalDependencies>
+      <ImportLibrary>$(OutDir)/../lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
     </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>DLLDIR_EX;WIN32;NDEBUG;_WINDOWS;_USRDLL;XKILLSOUND_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>../../xkill-build/bin-$(Configuration)/xkill-renderer.lib;</AdditionalDependencies>
+      <ImportLibrary>$(OutDir)/../lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
     </Link>
+    <PostBuildEvent>
+      <Command>$(SolutionDir)\..\xkill-dependencies\dll\fmodex.dll .</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
