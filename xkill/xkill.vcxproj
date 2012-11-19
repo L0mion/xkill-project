@@ -10,6 +10,9 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\xkill-source\xkill\main.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{7C4E4A70-912B-4AC0-A004-DA6877F3ABC9}</ProjectGuid>
     <RootNamespace>xkill</RootNamespace>

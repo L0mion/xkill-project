@@ -1,2 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" />
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\renderingComponent.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\window.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\fxManagement.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\renderingComponent.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\window.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\dllRenderer.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\fxManagement.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{307e56bb-7852-4755-a50d-20d73376b535}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\structs.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\defaultDeferredPS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\defaultPS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\defaultVS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>
