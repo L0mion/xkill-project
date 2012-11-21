@@ -3,8 +3,60 @@
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-architecture\architecture.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\dllArchitecture.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\GameManager.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\EventManager.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\EventType.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\Entity.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\EntityFactory.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\EntityManager.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeManager.h">
+      <Filter>Attributes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeType.h">
+      <Filter>Attributes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\ComponentManager.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\RenderComponent.h">
+      <Filter>Components\Implementations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\SoundComponent.h">
+      <Filter>Components\Implementations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\IComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-architecture\architecture.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-architecture\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Attributes">
+      <UniqueIdentifier>{1d1b2cd3-c4d0-4d1c-a092-71fa13b36a20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components">
+      <UniqueIdentifier>{85b2aab4-770f-4caf-908c-c36ab467ede3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities">
+      <UniqueIdentifier>{af624ba7-0261-4956-b170-91ac6b35e965}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Events">
+      <UniqueIdentifier>{39fffd28-b1fe-4bce-8036-698b3c3a50de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Implementations">
+      <UniqueIdentifier>{d0191e1a-2f9d-4deb-a61c-0dc4cfd454a9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>

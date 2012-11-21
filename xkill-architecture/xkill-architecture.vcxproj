@@ -12,10 +12,23 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-architecture\architecture.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeManager.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeType.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\ComponentManager.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\dllArchitecture.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\Entity.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\EntityFactory.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\EntityManager.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\EventManager.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\EventType.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\GameManager.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\IComponent.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\RenderComponent.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\SoundComponent.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-architecture\architecture.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-architecture\main.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{72FCF81B-3AD8-4EE9-93D7-BD6993A50E58}</ProjectGuid>
