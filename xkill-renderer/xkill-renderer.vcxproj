@@ -123,7 +123,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>DLL_EXPORT;WIN32;_DEBUG;_WINDOWS;_USRDLL;XKILLRENDERER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DLL_EXPORT;WIN32;_DEBUG;_WINDOWS;_USRDLL;;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

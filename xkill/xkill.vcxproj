@@ -62,7 +62,7 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>xkill-renderer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xkill-architecture.lib;xkill-renderer.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <EntryPointSymbol>
       </EntryPointSymbol>
       <SubSystem>
