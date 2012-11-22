@@ -13,9 +13,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\GBufferID.h">
       <Filter>GBuffer</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\FXManagement.h">
-      <Filter>FX</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ShaderCS.h">
       <Filter>FX\Shader\ShaderCS</Filter>
     </ClInclude>
@@ -43,6 +40,12 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\RenderingUtilities.h">
       <Filter>Utilities</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ILManagement.h">
+      <Filter>FX\FXManagement\ILManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\FXManagement.h">
+      <Filter>FX\FXManagement</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DDebug.cpp" />
@@ -52,9 +55,6 @@
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\GBuffer.cpp">
       <Filter>GBuffer</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\FXManagement.cpp">
-      <Filter>FX</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderCS.cpp">
       <Filter>FX\Shader\ShaderCS</Filter>
@@ -70,6 +70,12 @@
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\MathBasic.cpp">
       <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ILManagement.cpp">
+      <Filter>FX\FXManagement\ILManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\FXManagement.cpp">
+      <Filter>FX\FXManagement</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -96,6 +102,12 @@
     </Filter>
     <Filter Include="Shaders">
       <UniqueIdentifier>{09139d65-982a-4622-b469-c745dc6f3043}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FX\FXManagement">
+      <UniqueIdentifier>{d44a9808-0053-4a2b-b143-06aabe552ae7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FX\FXManagement\ILManagement">
+      <UniqueIdentifier>{35dcaa34-18ec-41cf-9e2a-30337701ba36}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

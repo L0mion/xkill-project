@@ -18,6 +18,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\FXManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\GBuffer.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\GBufferID.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ILManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\MathBasic.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ObjLoaderBasic.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\RenderingComponent.h" />
@@ -32,6 +33,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DDebug.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\FXManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\GBuffer.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ILManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\MathBasic.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ObjLoaderBasic.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RenderingComponent.cpp" />
