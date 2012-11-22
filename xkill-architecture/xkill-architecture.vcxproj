@@ -11,27 +11,26 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\xkill-source\xkill\CameraBasic.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill\Main.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill\Window.cpp" />
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\architecture.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\dllArchitecture.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\xkill-source\xkill\CameraBasic.h" />
-    <ClInclude Include="..\..\xkill-source\xkill\Window.h" />
+    <ClCompile Include="..\..\xkill-source\xkill-architecture\architecture.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{7C4E4A70-912B-4AC0-A004-DA6877F3ABC9}</ProjectGuid>
-    <RootNamespace>xkill</RootNamespace>
+    <ProjectGuid>{72FCF81B-3AD8-4EE9-93D7-BD6993A50E58}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>xkillarchitecture</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v110</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v110</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -48,41 +47,47 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
     <OutDir>../../xkill-build/bin-$(Configuration)/</OutDir>
-    <LibraryPath>$(OutDir)/../lib-$(Configuration)/;$(LibraryPath)</LibraryPath>
-    <IncludePath>../../xkill-source/;$(IncludePath)</IncludePath>
+    <IncludePath>../../xkill-source/xkill-architecture/;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
     <OutDir>../../xkill-build/bin-$(Configuration)/</OutDir>
-    <LibraryPath>$(OutDir)/../lib-$(Configuration)/;$(LibraryPath)</LibraryPath>
-    <IncludePath>../../xkill-source/;$(IncludePath)</IncludePath>
+    <IncludePath>../../xkill-source/xkill-architecture/;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>DLL_EXPORT;WIN32;_DEBUG;_WINDOWS;_USRDLL;;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>xkill-sound.lib;xkill-architecture.lib;xkill-renderer.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <EntryPointSymbol>
-      </EntryPointSymbol>
-      <SubSystem>
-      </SubSystem>
+      <ImportLibrary>$(OutDir)/../lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;DXGI.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>DLLDIR_EX;WIN32;NDEBUG;_WINDOWS;_USRDLL;XKILLARCHITECTURE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>xkill-renderer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>$(OutDir)/../lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
+      <AdditionalDependencies>d3d11.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
