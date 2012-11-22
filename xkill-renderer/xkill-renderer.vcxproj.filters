@@ -4,7 +4,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ConstantBuffers.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\D3DDebug.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\RenderingComponent.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\RenderingUtilities.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Shader.h">
       <Filter>FX\Shader</Filter>
     </ClInclude>
@@ -39,6 +38,9 @@
       <Filter>Utilities</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\D3DInterface.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\RenderingUtilities.h">
       <Filter>Utilities</Filter>
     </ClInclude>
   </ItemGroup>
