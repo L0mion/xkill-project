@@ -14,6 +14,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xkill-sound", "..\xkill-sou
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xkill-architecture", "..\xkill-architecture\xkill-architecture.vcxproj", "{72FCF81B-3AD8-4EE9-93D7-BD6993A50E58}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xkill-utilities", "..\xkill-utilities\xkill-utilities.vcxproj", "{179430F3-FCF7-4C1B-A52C-5A6A3EB71CAB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -64,6 +66,14 @@ Global
 		{72FCF81B-3AD8-4EE9-93D7-BD6993A50E58}.Release|Win32.ActiveCfg = Release|Win32
 		{72FCF81B-3AD8-4EE9-93D7-BD6993A50E58}.Release|Win32.Build.0 = Release|Win32
 		{72FCF81B-3AD8-4EE9-93D7-BD6993A50E58}.Release|x64.ActiveCfg = Release|Win32
+		{179430F3-FCF7-4C1B-A52C-5A6A3EB71CAB}.Debug|ARM.ActiveCfg = Debug|Win32
+		{179430F3-FCF7-4C1B-A52C-5A6A3EB71CAB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{179430F3-FCF7-4C1B-A52C-5A6A3EB71CAB}.Debug|Win32.Build.0 = Debug|Win32
+		{179430F3-FCF7-4C1B-A52C-5A6A3EB71CAB}.Debug|x64.ActiveCfg = Debug|Win32
+		{179430F3-FCF7-4C1B-A52C-5A6A3EB71CAB}.Release|ARM.ActiveCfg = Release|Win32
+		{179430F3-FCF7-4C1B-A52C-5A6A3EB71CAB}.Release|Win32.ActiveCfg = Release|Win32
+		{179430F3-FCF7-4C1B-A52C-5A6A3EB71CAB}.Release|Win32.Build.0 = Release|Win32
+		{179430F3-FCF7-4C1B-A52C-5A6A3EB71CAB}.Release|x64.ActiveCfg = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

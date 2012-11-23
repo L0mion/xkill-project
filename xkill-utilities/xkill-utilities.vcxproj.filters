@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\EventManager.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\EventType.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\EventManager.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\EventType.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\IComponent.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\AttributeType.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\IObserver.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\dllUtilities.h" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AttributePointer&lt;T&gt;" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAgAAAAIAAAgAAAABAAA=</HashCode>
+      <FileName>c:\users\nils\desktop\xkill architecture\xkill-source\xkill-utilities\attributepointer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IAttributes" Collapsed="true">
+    <Position X="7.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Nils\Desktop\XKILL Architecture\xkill-source\xkill-utilities\AttributeType .cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AttributeController" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAMAAAAAAAAAAAAAAAAAAgAAAABAAA=</HashCode>
+      <FileName>C:\Users\Nils\Desktop\XKILL Architecture\xkill-source\xkill-utilities\AttributeController.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AttributeStorage&lt;T&gt;" Collapsed="true">
+    <Position X="3.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAgEAAAAAAAAAACBAAEAIIAAAAAAABAEA=</HashCode>
+      <FileName>C:\Users\Nils\Desktop\XKILL Architecture\xkill-source\xkill-utilities\AttributeStorage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IObserver" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Nils\Desktop\XKILL Architecture\xkill-source\xkill-utilities\EventManager.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventManager" Collapsed="true">
+    <Position X="6" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEABAABAAAAAAAQAAAAAAAAAAAAAQAAAAACAAAACA=</HashCode>
+      <FileName>C:\Users\Nils\Desktop\XKILL Architecture\xkill-source\xkill-utilities\EventManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Event" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAwABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Nils\Desktop\XKILL Architecture\xkill-source\xkill-utilities\EventType.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Event_A" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Nils\Desktop\XKILL Architecture\xkill-source\xkill-utilities\EventType.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Event_B" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Nils\Desktop\XKILL Architecture\xkill-source\xkill-utilities\EventType.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AttributeManager" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAAAAQAAAAAQAACAAA=</HashCode>
+      <FileName>C:\Users\Nils\Desktop\XKILL Architecture\xkill-source\xkill-utilities\AttributeManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IAttributeStorage" Collapsed="true">
+    <Position X="3.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Nils\Desktop\XKILL Architecture\xkill-source\xkill-utilities\IAttributeStorage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IComponent" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Nils\Desktop\XKILL Architecture\xkill-source\xkill-utilities\IComponent.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="SpatialAttribute" Collapsed="true">
+    <Position X="9.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAACAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>C:\Users\Nils\Desktop\XKILL Architecture\xkill-source\xkill-utilities\AttributeType.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="RenderAttribute" Collapsed="true">
+    <Position X="7.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAIAAAAAIBAAAAAAAAQAAAA=</HashCode>
+      <FileName>C:\Users\Nils\Desktop\XKILL Architecture\xkill-source\xkill-utilities\AttributeType .cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="EventType" Collapsed="true">
+    <Position X="6" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAADoBQA=</HashCode>
+      <FileName>C:\Users\Nils\Desktop\XKILL Architecture\xkill-source\xkill-utilities\EventType.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

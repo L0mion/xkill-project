@@ -4,12 +4,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-architecture\architecture.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\dllArchitecture.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\GameManager.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\EventManager.h">
-      <Filter>Events</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\EventType.h">
-      <Filter>Events</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-architecture\Entity.h">
       <Filter>Entities</Filter>
     </ClInclude>
@@ -33,9 +27,6 @@
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-architecture\SoundComponent.h">
       <Filter>Components\Implementations</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\IComponent.h">
-      <Filter>Components</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

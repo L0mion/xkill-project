@@ -3,6 +3,7 @@
 *.suo
 *.user
 *.log
+Debug
 xkill-sound/Debug/
 xkill-renderer/Debug/
 xkill-physics/Debug/
