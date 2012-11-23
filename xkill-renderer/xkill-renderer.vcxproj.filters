@@ -40,11 +40,11 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\RenderingUtilities.h">
       <Filter>Utilities</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\ILManagement.h">
-      <Filter>FX\FXManagement\ILManagement</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\FXManagement.h">
       <Filter>FX\FXManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\IEDManagement.h">
+      <Filter>FX\FXManagement\IEDManagement</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -71,11 +71,11 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\MathBasic.cpp">
       <Filter>Utilities</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\ILManagement.cpp">
-      <Filter>FX\FXManagement\ILManagement</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\FXManagement.cpp">
       <Filter>FX\FXManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\IEDManagement.cpp">
+      <Filter>FX\FXManagement\IEDManagement</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -106,7 +106,7 @@
     <Filter Include="FX\FXManagement">
       <UniqueIdentifier>{d44a9808-0053-4a2b-b143-06aabe552ae7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="FX\FXManagement\ILManagement">
+    <Filter Include="FX\FXManagement\IEDManagement">
       <UniqueIdentifier>{35dcaa34-18ec-41cf-9e2a-30337701ba36}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
