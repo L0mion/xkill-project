@@ -138,6 +138,9 @@
     <Filter Include="ConstantBuffer">
       <UniqueIdentifier>{2c84bf73-10e2-4e8f-92c7-623b95c48cbd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Mesh">
+      <UniqueIdentifier>{cb8b174f-1fd2-47dc-88e8-3b93557dbf45}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\defaultCS.hlsl">
