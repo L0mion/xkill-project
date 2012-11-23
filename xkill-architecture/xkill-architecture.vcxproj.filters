@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\architecture.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\dllArchitecture.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\GameManager.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\Entity.h">
@@ -16,9 +15,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeManager.h">
       <Filter>Attributes</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeType.h">
-      <Filter>Attributes</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-architecture\ComponentManager.h">
       <Filter>Components</Filter>
     </ClInclude>
@@ -28,9 +24,20 @@
     <ClInclude Include="..\..\xkill-source\xkill-architecture\SoundComponent.h">
       <Filter>Components\Implementations</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\PhysicsComponent.h">
+      <Filter>Components\Implementations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\IAttributeStorage.h">
+      <Filter>Attributes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeController.h">
+      <Filter>Attributes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeStorage.h">
+      <Filter>Attributes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\xkill-source\xkill-architecture\architecture.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-architecture\main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -42,9 +49,6 @@
     </Filter>
     <Filter Include="Entities">
       <UniqueIdentifier>{af624ba7-0261-4956-b170-91ac6b35e965}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Events">
-      <UniqueIdentifier>{39fffd28-b1fe-4bce-8036-698b3c3a50de}</UniqueIdentifier>
     </Filter>
     <Filter Include="Components\Implementations">
       <UniqueIdentifier>{d0191e1a-2f9d-4deb-a61c-0dc4cfd454a9}</UniqueIdentifier>

@@ -1,2 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" />
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\xkill-source\xkill-physics\physicsObject.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-physics\physicsComponent.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\xkill-source\xkill-physics\physicsObject.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-physics\dllPhysics.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-physics\physicsComponent.h" />
+  </ItemGroup>
+</Project>

@@ -11,20 +11,21 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\architecture.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeController.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeManager.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeType.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeStorage.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\ComponentManager.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\dllArchitecture.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\Entity.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\EntityFactory.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\EntityManager.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\GameManager.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\IAttributeStorage.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\PhysicsComponent.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\RenderComponent.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\SoundComponent.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\xkill-source\xkill-architecture\architecture.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-architecture\main.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -59,13 +60,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>../../xkill-build/bin-$(Configuration)/</OutDir>
-    <IncludePath>../../xkill-source/;$(IncludePath)</IncludePath>
+    <IncludePath>..\..\xkill-source;$(IncludePath)</IncludePath>
     <LibraryPath>..\..\xkill-build\lib-$(Configuration);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>../../xkill-build/bin-$(Configuration)/</OutDir>
-    <IncludePath>../../xkill-source/;$(IncludePath)</IncludePath>
+    <IncludePath>..\..\xkill-source;$(IncludePath)</IncludePath>
     <LibraryPath>..\..\xkill-build\lib-$(Configuration);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -80,7 +81,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)/../lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
-      <AdditionalDependencies>xkill-utilities.lib</AdditionalDependencies>
+      <AdditionalDependencies>xkill-utilities.lib;xkill-physics.lib;xkill-sound.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
