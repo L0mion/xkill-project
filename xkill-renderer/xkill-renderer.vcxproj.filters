@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\ConstantBuffers.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\D3DDebug.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\RenderingComponent.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Shader.h">
@@ -46,6 +45,21 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\IEDManagement.h">
       <Filter>FX\FXManagement\IEDManagement</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\CB.h">
+      <Filter>ConstantBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\CBManagement.h">
+      <Filter>ConstantBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\CBPerFrame.h">
+      <Filter>ConstantBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\CBPerInstance.h">
+      <Filter>ConstantBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ConstantBufferDesc.h">
+      <Filter>ConstantBuffer</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DDebug.cpp" />
@@ -76,6 +90,18 @@
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\IEDManagement.cpp">
       <Filter>FX\FXManagement\IEDManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\CB.cpp">
+      <Filter>ConstantBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\CBManagement.cpp">
+      <Filter>ConstantBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\CBPerFrame.cpp">
+      <Filter>ConstantBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\CBPerInstance.cpp">
+      <Filter>ConstantBuffer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -108,6 +134,9 @@
     </Filter>
     <Filter Include="FX\FXManagement\IEDManagement">
       <UniqueIdentifier>{35dcaa34-18ec-41cf-9e2a-30337701ba36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConstantBuffer">
+      <UniqueIdentifier>{2c84bf73-10e2-4e8f-92c7-623b95c48cbd}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

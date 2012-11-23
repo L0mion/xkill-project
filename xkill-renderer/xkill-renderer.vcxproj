@@ -11,7 +11,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\ConstantBuffers.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\CB.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\CBManagement.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\CBPerFrame.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\CBPerInstance.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ConstantBufferDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\D3DDebug.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\D3DInterface.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\DLLRenderer.h" />
@@ -30,6 +34,10 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Vertices.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\CB.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\CBManagement.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\CBPerFrame.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\CBPerInstance.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DDebug.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\FXManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\GBuffer.cpp" />
