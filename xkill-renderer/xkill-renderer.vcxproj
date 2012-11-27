@@ -26,6 +26,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\shaderCS.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\shaderPS.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\shaderVS.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ViewportManagement.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CB.h" />
@@ -49,6 +50,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\shaderPS.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\shaderVS.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\vertices.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ViewportManagement.h" />
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\constantBuffers.hlsl">
