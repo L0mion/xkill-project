@@ -12,10 +12,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill\main.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill\window.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\xkill-source\xkill\window.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{7C4E4A70-912B-4AC0-A004-DA6877F3ABC9}</ProjectGuid>
@@ -62,7 +58,7 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>xkill-sound.lib;xkill-architecture.lib;xkill-renderer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xkill-architecture.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <EntryPointSymbol>
       </EntryPointSymbol>
       <SubSystem>
@@ -80,7 +76,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>../../xkill-build/bin-$(Configuration)/xkill-renderer.lib;</AdditionalDependencies>
+      <AdditionalDependencies>xkill-architecture.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

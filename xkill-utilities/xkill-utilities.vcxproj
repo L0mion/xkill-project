@@ -11,6 +11,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\AttributePointer.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\AttributeType.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\EventManager.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\EventType.cpp" />
   </ItemGroup>
@@ -21,7 +23,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-utilities\EventManager.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\EventType.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\IComponent.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-utilities\IObserver.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{179430F3-FCF7-4C1B-A52C-5A6A3EB71CAB}</ProjectGuid>
@@ -67,7 +68,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>DLL_EXPORT;WIN32;_DEBUG;_WINDOWS;_USRDLL;XKILLUTILITIES_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DLL_UTILITIES;WIN32;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -83,7 +84,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>DLLDIR_EX;WIN32;NDEBUG;_WINDOWS;_USRDLL;XKILLUTILITIES_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DLL_UTILITIES;WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
