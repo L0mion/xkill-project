@@ -11,13 +11,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\xkill-source\xkill\CameraBasic.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill\Main.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill\Window.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill\main.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill\window.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\xkill-source\xkill\CameraBasic.h" />
-    <ClInclude Include="..\..\xkill-source\xkill\Window.h" />
+    <ClInclude Include="..\..\xkill-source\xkill\window.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{7C4E4A70-912B-4AC0-A004-DA6877F3ABC9}</ProjectGuid>
@@ -49,12 +47,12 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>../../xkill-build/bin-$(Configuration)/</OutDir>
-    <LibraryPath>$(OutDir)/../lib-$(Configuration)/;$(LibraryPath)</LibraryPath>
+    <LibraryPath>../xkill-dependencies/xkill/lib-$(Configuration);$(LibraryPath)</LibraryPath>
     <IncludePath>../../xkill-source/;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>../../xkill-build/bin-$(Configuration)/</OutDir>
-    <LibraryPath>$(OutDir)/../lib-$(Configuration)/;$(LibraryPath)</LibraryPath>
+    <LibraryPath>../xkill-dependencies/xkill/lib-$(Configuration);$(LibraryPath)</LibraryPath>
     <IncludePath>../../xkill-source/;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -64,7 +62,7 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>xkill-sound.lib;xkill-architecture.lib;xkill-renderer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xkill-renderer.lib;xkill-architecture.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <EntryPointSymbol>
       </EntryPointSymbol>
       <SubSystem>
@@ -82,7 +80,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>xkill-sound.lib;xkill-renderer.lib;xkill-architecture.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xkill-renderer.lib;xkill-architecture.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -11,95 +11,105 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\CB.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\CBManagement.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\CBPerFrame.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\CBPerInstance.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\d3dDebug.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\fxManagement.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\gBuffer.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\IEDManagement.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\mathBasic.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\objLoaderBasic.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\renderingComponent.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\shader.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\shaderCS.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\shaderPS.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\shaderVS.cpp" />
+  </ItemGroup>
+  <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CB.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CBManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CBPerFrame.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CBPerInstance.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ConstantBufferDesc.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\D3DDebug.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\D3DInterface.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\DLLRenderer.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\FXManagement.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\GBuffer.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\GBufferID.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\d3dDebug.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\d3dInterface.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\dllRenderer.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\fxManagement.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\gBuffer.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\gBufferID.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\IEDManagement.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\MathBasic.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\ObjLoaderBasic.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\RenderingComponent.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\RenderingUtilities.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\Shader.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\ShaderCS.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\ShaderPS.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\ShaderVS.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\Vertices.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\mathBasic.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\objLoaderBasic.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\renderingComponent.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\renderingUtilities.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\shader.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\shaderCS.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\shaderPS.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\shaderVS.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\vertices.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\CB.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\CBManagement.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\CBPerFrame.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\CBPerInstance.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DDebug.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\FXManagement.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\GBuffer.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\IEDManagement.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\MathBasic.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\ObjLoaderBasic.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\RenderingComponent.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\Shader.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderCS.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderPS.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderVS.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\defaultCS.hlsl">
-      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compute</ShaderType>
-      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
-      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compute</ShaderType>
-      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
-      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">defaultCS</EntryPointName>
-      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">defaultCS</EntryPointName>
-    </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\defaultDeferredPS.hlsl">
-      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">defaultDeferredPS</EntryPointName>
-      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
-      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
-      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">defaultDeferredPS</EntryPointName>
-      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
-      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
-    </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\defaultDeferredVS.hlsl">
-      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">defaultDeferredVS</EntryPointName>
-      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
-      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
-      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">defaultDeferredVS</EntryPointName>
-      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
-      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
-    </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\defaultPS.hlsl">
-      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">defaultPS</EntryPointName>
-      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
-      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
-      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">defaultPS</EntryPointName>
-      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
-      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
-    </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\defaultVS.hlsl">
-      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">defaultVS</EntryPointName>
-      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
-      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
-      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">defaultVS</EntryPointName>
-      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
-      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
-    </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\structs.hlsl">
-      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-      </EntryPointName>
-      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Effect</ShaderType>
-      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\constantBuffers.hlsl">
       <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
       </EntryPointName>
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Effect</ShaderType>
       <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Effect</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </EntryPointName>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\defaultCS.hlsl">
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compute</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compute</ShaderType>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">defaultCS</EntryPointName>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">defaultCS</EntryPointName>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\defaultDeferredPS.hlsl">
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">defaultDeferredPS</EntryPointName>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">defaultDeferredPS</EntryPointName>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\defaultDeferredVS.hlsl">
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">defaultDeferredVS</EntryPointName>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">defaultDeferredVS</EntryPointName>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\defaultPS.hlsl">
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">defaultPS</EntryPointName>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">defaultPS</EntryPointName>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\defaultVS.hlsl">
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">defaultVS</EntryPointName>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">defaultVS</EntryPointName>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\structs.hlsl">
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Effect</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Effect</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </EntryPointName>
     </FxCompile>
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -134,12 +144,14 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>../../xkill-build/bin-$(Configuration)/</OutDir>
-    <IncludePath>../../xkill-source/xkill-renderer/;$(IncludePath)</IncludePath>
+    <IncludePath>../../xkill-source/;$(IncludePath)</IncludePath>
+    <LibraryPath>../xkill-dependencies/xkill/lib-$(Configuration);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>../../xkill-build/bin-$(Configuration)/</OutDir>
-    <IncludePath>../../xkill-source/xkill-renderer/;$(IncludePath)</IncludePath>
+    <IncludePath>../../xkill-source/;$(IncludePath)</IncludePath>
+    <LibraryPath>../xkill-dependencies/xkill/lib-$(Configuration);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -147,12 +159,12 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>DLL_EXPORT;WIN32;_DEBUG;_WINDOWS;_USRDLL;;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DLL_RENDERER;WIN32;_DEBUG;_WINDOWS;_USRDLL;;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ImportLibrary>$(OutDir)/../lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
+      <ImportLibrary>$(OutDir)/../../xkill-project/xkill-dependencies/xkill/lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
       <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;DXGI.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -164,14 +176,14 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>DLL_EXPORT;WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DLL_RENDERER;WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <ImportLibrary>$(OutDir)/../lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
+      <ImportLibrary>$(OutDir)/../../xkill-project/xkill-dependencies/xkill/lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
       <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;DXGI.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
