@@ -52,13 +52,13 @@
     <LinkIncremental>true</LinkIncremental>
     <OutDir>../../xkill-build/bin-$(Configuration)/</OutDir>
     <IncludePath>../../xkill-source;../xkill-dependencies/fmod/include;$(IncludePath)</IncludePath>
-    <LibraryPath>../xkill-dependencies/fmod/lib/;../../xkill-build/lib-$(Configuration);$(LibraryPath)</LibraryPath>
+    <LibraryPath>../xkill-dependencies/fmod/lib/;../xkill-dependencies/xkill/lib-$(Configuration);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>../../xkill-build/bin-$(Configuration)/</OutDir>
     <IncludePath>../../xkill-source;../xkill-dependencies/fmod/include;$(IncludePath)</IncludePath>
-    <LibraryPath>../xkill-dependencies/fmod/lib/;../../xkill-build/lib-$(Configuration);$(LibraryPath)</LibraryPath>
+    <LibraryPath>../xkill-dependencies/fmod/lib/;../xkill-dependencies/xkill/lib-$(Configuration);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -71,7 +71,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ImportLibrary>$(OutDir)/../lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
+      <ImportLibrary>$(OutDir)/../../xkill-project/xkill-dependencies/xkill/lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
       <AdditionalDependencies>fmodex_vc.lib;fmod_event.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
@@ -94,7 +94,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <ImportLibrary>$(OutDir)/../lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
+      <ImportLibrary>$(OutDir)/../../xkill-project/xkill-dependencies/xkill/lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
       <AdditionalDependencies>fmodex_vc.lib;fmod_event.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>

@@ -6,6 +6,8 @@
 Debug
 xkill/Debug/
 xkill/Release/
+xkill-architecture/Debug/
+xkill-architecture/Release/
 xkill-sound/Debug/
 xkill-sound/Release/
 xkill-renderer/Debug/
@@ -18,3 +20,7 @@ xkill-gui/GeneratedFiles/
 xkill-gui/Debug/
 xkill-gui/Release/
 xkill-gui/Win32/
+xkill-gui/Debug/
+xkill-gui/Release/
+xkill-dependencies/xkill/lib-Debug/
+xkill-dependencies/xkill/lib-Release/
