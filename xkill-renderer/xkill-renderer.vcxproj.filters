@@ -1,85 +1,52 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\renderingComponent.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\CB.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\CBManagement.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\CBPerFrame.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\CBPerInstance.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\d3dDebug.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\fxManagement.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\gBuffer.cpp">
-      <Filter>GBuffers</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\d3dDebug.cpp">
-      <Filter>Utilities</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\mathBasic.cpp">
-      <Filter>Math</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\cameraBasic.cpp">
-      <Filter>Camera</Filter>
-    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\gBuffer.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\IEDManagement.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\mathBasic.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\objLoaderBasic.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\renderingComponent.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\shader.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\shaderCS.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\shaderPS.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\shaderVS.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\renderingComponent.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\fxManagement.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\gBuffer.h">
-      <Filter>GBuffers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\gBufferID.h">
-      <Filter>GBuffers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\renderingUtilities.h">
-      <Filter>Utilities</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\dllRenderer.h">
-      <Filter>Utilities</Filter>
-    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\CB.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\CBManagement.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\CBPerFrame.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\CBPerInstance.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ConstantBufferDesc.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\d3dDebug.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\d3dInterface.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\d3dDebug.h">
-      <Filter>Utilities</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\mathBasic.h">
-      <Filter>Math</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\cameraBasic.h">
-      <Filter>Camera</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\constantBuffers.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\vertices.h">
-      <Filter>Utilities</Filter>
-    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\dllRenderer.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\fxManagement.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\gBuffer.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\gBufferID.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\IEDManagement.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\mathBasic.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\objLoaderBasic.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\renderingComponent.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\renderingUtilities.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\shader.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\shaderCS.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\shaderPS.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\shaderVS.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\vertices.h" />
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Shaders">
-      <UniqueIdentifier>{307e56bb-7852-4755-a50d-20d73376b535}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="GBuffers">
-      <UniqueIdentifier>{598b50d5-c863-492b-b317-b7cd01074fd6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Utilities">
-      <UniqueIdentifier>{28b62f1c-42e5-4344-a3a2-33082c2f9cab}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Math">
-      <UniqueIdentifier>{f7da258c-fe85-4089-a60d-56b39b43684d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Camera">
-      <UniqueIdentifier>{75b1b2ad-3c30-4d26-be27-0e41138c3053}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\structs.hlsl">
-      <Filter>Shaders</Filter>
-    </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\defaultDeferredPS.hlsl">
-      <Filter>Shaders</Filter>
-    </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\defaultPS.hlsl">
-      <Filter>Shaders</Filter>
-    </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\defaultVS.hlsl">
-      <Filter>Shaders</Filter>
-    </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\defaultDeferredVS.hlsl">
-      <Filter>Shaders</Filter>
-    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\defaultPS.hlsl" />
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\defaultVS.hlsl" />
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\structs.hlsl" />
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\constantBuffers.hlsl" />
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\defaultCS.hlsl" />
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\defaultDeferredPS.hlsl" />
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\defaultDeferredVS.hlsl" />
   </ItemGroup>
 </Project>
