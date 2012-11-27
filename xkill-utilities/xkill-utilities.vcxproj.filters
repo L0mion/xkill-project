@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\EventManager.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\EventType.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\AttributePointer.cpp">
+      <Filter>Attributes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\AttributeType.cpp">
+      <Filter>Attributes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\dllUtilities.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\EventManager.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\AttributePointer.h">
+      <Filter>Attributes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\AttributeType.h">
+      <Filter>Attributes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\EventType.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\IComponent.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Events">
+      <UniqueIdentifier>{76ffd26e-5b52-4332-9d2b-d713c0fcaacc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Attributes">
+      <UniqueIdentifier>{948e64bf-dcd4-4f8c-86c9-b29ca9c4dc1c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
