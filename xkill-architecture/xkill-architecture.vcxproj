@@ -19,6 +19,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-architecture\Entity.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\EntityFactory.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\EntityManager.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\GameComponent.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\GameManager.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\IAttributeStorage.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\PhysicsComponent.h" />
@@ -26,6 +27,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-architecture\SoundComponent.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\xkill-source\xkill-architecture\GameComponent.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-architecture\main.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

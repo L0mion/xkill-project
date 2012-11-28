@@ -6,9 +6,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-architecture\Entity.h">
       <Filter>Entities</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\EntityFactory.h">
-      <Filter>Entities</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-architecture\EntityManager.h">
       <Filter>Entities</Filter>
     </ClInclude>
@@ -36,9 +33,18 @@
     <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeStorage.h">
       <Filter>Attributes</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\GameComponent.h">
+      <Filter>Components\Implementations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\EntityFactory.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-architecture\main.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-architecture\GameComponent.cpp">
+      <Filter>Components\Implementations</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Attributes">
