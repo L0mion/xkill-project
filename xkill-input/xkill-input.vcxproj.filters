@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="InputManager">
+      <UniqueIdentifier>{58c5764a-f235-4864-aa81-38ee23fca6b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InputDevice">
+      <UniqueIdentifier>{2cbc8b20-fcdc-4874-903f-b0e0bb1581ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InputDevice\DirectInputDevice">
+      <UniqueIdentifier>{ea00f710-25a9-4c82-b720-d02cf8abd810}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InputDevice\XInput">
+      <UniqueIdentifier>{e7317cb4-eb40-4cae-ab10-434bdbe1adb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InputDevice\InputObject">
+      <UniqueIdentifier>{5305c25c-806d-494e-a4aa-2755971b1d2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InputDevice\DirectInputDevice\Mouse">
+      <UniqueIdentifier>{0d0a32a8-d378-43ce-8253-90376390d11f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InputDevice\DirectInputDevice\Keyboard">
+      <UniqueIdentifier>{05e17809-abd4-4f20-aa94-1efdfb2a5a27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InputDevice\InputObject\Axis">
+      <UniqueIdentifier>{c24d87f9-79af-428d-b0b3-b21f3c4c1804}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InputDevice\InputObject\Button">
+      <UniqueIdentifier>{67cdfeef-817c-47e7-a927-3396648dddb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InputDevice\InputObject\Hat Switch">
+      <UniqueIdentifier>{ecfd90d5-44cb-46fe-9f03-5722c392610d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InputDevice\InputObject\Trigger">
+      <UniqueIdentifier>{76e8088c-8058-4a0f-ad87-25014af7db3f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\xkill-source\xkill-input\InputManager.h">
+      <Filter>InputManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-input\DirectInputDevice.h">
+      <Filter>InputDevice\DirectInputDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-input\DirectInputMouse.h">
+      <Filter>InputDevice\DirectInputDevice\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-input\InputObject.h">
+      <Filter>InputDevice\InputObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-input\InputAxisObject.h">
+      <Filter>InputDevice\InputObject\Axis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-input\InputButtonObject.h">
+      <Filter>InputDevice\InputObject\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-input\InputHatSwitchObject.h">
+      <Filter>InputDevice\InputObject\Hat Switch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-input\InputTriggerObject.h">
+      <Filter>InputDevice\InputObject\Trigger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-input\InputDevice.h">
+      <Filter>InputDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-input\XInputDevice.h">
+      <Filter>InputDevice\XInput</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-input\DirectInputKeyboard.h">
+      <Filter>InputDevice\DirectInputDevice\Keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-input\Converter.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-input\dllInput.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-input\InputComponent.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\xkill-source\xkill-input\InputManager.cpp">
+      <Filter>InputManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-input\InputDevice.cpp">
+      <Filter>InputDevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-input\DirectInputDevice.cpp">
+      <Filter>InputDevice\DirectInputDevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-input\DirectInputMouse.cpp">
+      <Filter>InputDevice\DirectInputDevice\Mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-input\DirectInputKeyboard.cpp">
+      <Filter>InputDevice\DirectInputDevice\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-input\InputObject.cpp">
+      <Filter>InputDevice\InputObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-input\XInputDevice.cpp">
+      <Filter>InputDevice\XInput</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-input\InputAxisObject.cpp">
+      <Filter>InputDevice\InputObject\Axis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-input\InputButtonObject.cpp">
+      <Filter>InputDevice\InputObject\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-input\InputHatSwitchObject.cpp">
+      <Filter>InputDevice\InputObject\Hat Switch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-input\InputTriggerObject.cpp">
+      <Filter>InputDevice\InputObject\Trigger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-input\InputComponent.cpp" />
+  </ItemGroup>
+</Project>

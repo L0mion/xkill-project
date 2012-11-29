@@ -14,6 +14,8 @@
     <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeController.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeManager.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeStorage.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\Camera.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\CameraComponent.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\ComponentManager.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\dllArchitecture.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\Entity.h" />
@@ -24,9 +26,10 @@
     <ClInclude Include="..\..\xkill-source\xkill-architecture\IAttributeStorage.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\PhysicsComponent.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\RenderComponent.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\SoundComponent.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\xkill-source\xkill-architecture\Camera.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-architecture\CameraComponent.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-architecture\GameComponent.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-architecture\main.cpp" />
   </ItemGroup>
@@ -83,7 +86,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)/../../xkill-project/xkill-dependencies/xkill/lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
-      <AdditionalDependencies>xkill-utilities.lib;xkill-physics.lib;xkill-sound.lib</AdditionalDependencies>
+      <AdditionalDependencies>xkill-utilities.lib;xkill-physics.lib;xkill-sound.lib;xkill-renderer.lib;xkill-input.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -102,7 +105,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <ImportLibrary>$(OutDir)/../../xkill-project/xkill-dependencies/xkill/lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
-      <AdditionalDependencies>xkill-utilities.lib;xkill-physics.lib;xkill-sound.lib</AdditionalDependencies>
+      <AdditionalDependencies>xkill-utilities.lib;xkill-physics.lib;xkill-sound.lib;xkill-renderer.lib;xkill-input.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
