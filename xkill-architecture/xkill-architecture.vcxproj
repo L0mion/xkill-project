@@ -12,6 +12,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeController.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeFactory.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeManager.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeStorage.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\Camera.h" />
