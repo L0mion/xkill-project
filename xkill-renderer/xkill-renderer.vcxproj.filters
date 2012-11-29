@@ -160,5 +160,6 @@
     <FxCompile Include="..\..\xkill-source\xkill-shaders\structs.hlsl">
       <Filter>Shaders</Filter>
     </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\constantBuffers.hlsl" />
   </ItemGroup>
 </Project>
