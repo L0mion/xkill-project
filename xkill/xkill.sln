@@ -29,6 +29,9 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xkill-input", "..\xkill-input\xkill-input.vcxproj", "{F0D3D9DE-7681-4C3E-A0CD-A851B2C1FA19}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xkill-gui", "..\xkill-gui\xkill-gui.vcxproj", "{040EE364-0E4F-4285-B4C9-78E42CC09583}"
+	ProjectSection(ProjectDependencies) = postProject
+		{72FCF81B-3AD8-4EE9-93D7-BD6993A50E58} = {72FCF81B-3AD8-4EE9-93D7-BD6993A50E58}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
