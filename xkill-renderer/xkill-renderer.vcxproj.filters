@@ -61,6 +61,12 @@
       <Filter>ConstantBuffer</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ViewportManagement.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\LightManagement.h">
+      <Filter>Lighting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\LightDesc.h">
+      <Filter>Lighting</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DDebug.cpp" />
@@ -105,6 +111,9 @@
       <Filter>ConstantBuffer</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ViewportManagement.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\LightManagement.cpp">
+      <Filter>Lighting</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="GBuffer">
@@ -140,6 +149,9 @@
     <Filter Include="ConstantBuffer">
       <UniqueIdentifier>{2c84bf73-10e2-4e8f-92c7-623b95c48cbd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Lighting">
+      <UniqueIdentifier>{569c7433-97cf-4cb7-a5ff-76aff168e204}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\defaultCS.hlsl">
@@ -158,6 +170,12 @@
       <Filter>Shaders</Filter>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\structs.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\constantBuffers.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\lightFunctions.hlsl">
       <Filter>Shaders</Filter>
     </FxCompile>
   </ItemGroup>
