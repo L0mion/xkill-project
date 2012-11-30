@@ -28,7 +28,12 @@
     <ClInclude Include="..\..\xkill-source\xkill-utilities\EventType.h">
       <Filter>Events</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-utilities\IComponent.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\IComponent.h">
+      <Filter>External Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\IObserver.h">
+      <Filter>External Headers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Events">
@@ -36,6 +41,9 @@
     </Filter>
     <Filter Include="Attributes">
       <UniqueIdentifier>{948e64bf-dcd4-4f8c-86c9-b29ca9c4dc1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Headers">
+      <UniqueIdentifier>{70cac18f-df4e-4dd8-89e8-fa2f37f13f2e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -12,9 +12,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-physics\BulletPhysicsComponent.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-physics\CollisionShapeManager.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-physics\physicsObject.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\xkill-source\xkill-physics\CollisionShapeManager.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\dllPhysics.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\BulletPhysicsComponent.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\physicsObject.h" />
