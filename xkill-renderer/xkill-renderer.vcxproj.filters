@@ -57,53 +57,59 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ConstantBufferDesc.h">
       <Filter>ConstantBuffer</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshManagement.h">
-      <Filter>Mesh\MeshManagement</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshDependencies.h">
-      <Filter>Mesh\MeshDesc\MeshDependencies</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshGeometry.h">
-      <Filter>Mesh\MeshDesc\MeshGeometry</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshMaterial.h">
-      <Filter>Mesh\MeshDesc\MeshMaterial</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshSubset.h">
-      <Filter>Mesh\MeshDesc\MeshSubset</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshLoader.h">
-      <Filter>Mesh\MeshLoaders</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\SimpleStringSplitter.h">
       <Filter>Utilities</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshGroup.h">
-      <Filter>Mesh\MeshDesc\MeshGeometry\MeshGroup</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshLoaderMTL.h">
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\Loader.h">
       <Filter>Mesh\MeshLoaders</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshLoaderObj.h">
-      <Filter>Mesh\MeshLoaders</Filter>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\LoaderMTL.h">
+      <Filter>Mesh\MeshLoaders\.mtl</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshMTLIllum.h">
-      <Filter>Mesh\MeshLoaders</Filter>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\MTLIllum.h">
+      <Filter>Mesh\MeshLoaders\.mtl</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\MTL.h">
-      <Filter>Mesh\MeshLoaders</Filter>
+      <Filter>Mesh\MeshLoaders\.mtl</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\MTLMaterial.h">
-      <Filter>Mesh\MeshLoaders</Filter>
+      <Filter>Mesh\MeshLoaders\.mtl</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\ObjDependencies.h">
-      <Filter>Mesh\MeshLoaders</Filter>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ObjGroup.h">
+      <Filter>Mesh\MeshLoaders\.obj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\LoaderObj.h">
+      <Filter>Mesh\MeshLoaders\.obj</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Obj.h">
-      <Filter>Mesh\MeshLoaders</Filter>
+      <Filter>Mesh\MeshLoaders\.obj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ObjDependencies.h">
+      <Filter>Mesh\MeshLoaders\.obj</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ObjFace.h">
-      <Filter>Mesh\MeshLoaders</Filter>
+      <Filter>Mesh\MeshLoaders\.obj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshSubset.h">
+      <Filter>Mesh\MeshDesc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshMaterial.h">
+      <Filter>Mesh\MeshDesc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshModel.h">
+      <Filter>Mesh\MeshDesc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ObjGeometry.h">
+      <Filter>Mesh\MeshLoaders\.obj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshGeometry.h">
+      <Filter>Mesh\MeshDesc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshManagement.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshMakerObj.h">
+      <Filter>Mesh</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -145,44 +151,47 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\CBPerInstance.cpp">
       <Filter>ConstantBuffer</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshManagement.cpp">
-      <Filter>Mesh\MeshManagement</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshDependencies.cpp">
-      <Filter>Mesh\MeshDesc\MeshDependencies</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshMaterial.cpp">
-      <Filter>Mesh\MeshDesc\MeshMaterial</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshSubset.cpp">
-      <Filter>Mesh\MeshDesc\MeshSubset</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshLoader.cpp">
-      <Filter>Mesh\MeshLoaders</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\SimpleStringSplitter.cpp">
       <Filter>Utilities</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshGroup.cpp">
-      <Filter>Mesh\MeshDesc\MeshGeometry\MeshGroup</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshLoaderMTL.cpp">
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\Loader.cpp">
       <Filter>Mesh\MeshLoaders</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshLoaderObj.cpp">
-      <Filter>Mesh\MeshLoaders</Filter>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\LoaderMTL.cpp">
+      <Filter>Mesh\MeshLoaders\.mtl</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\MTL.cpp">
-      <Filter>Mesh\MeshLoaders</Filter>
+      <Filter>Mesh\MeshLoaders\.mtl</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\MTLMaterial.cpp">
-      <Filter>Mesh\MeshLoaders</Filter>
+      <Filter>Mesh\MeshLoaders\.mtl</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\ObjDependencies.cpp">
-      <Filter>Mesh\MeshLoaders</Filter>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\LoaderObj.cpp">
+      <Filter>Mesh\MeshLoaders\.obj</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Obj.cpp">
-      <Filter>Mesh\MeshLoaders</Filter>
+      <Filter>Mesh\MeshLoaders\.obj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ObjDependencies.cpp">
+      <Filter>Mesh\MeshLoaders\.obj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ObjGroup.cpp">
+      <Filter>Mesh\MeshLoaders\.obj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshSubset.cpp">
+      <Filter>Mesh\MeshDesc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshMaterial.cpp">
+      <Filter>Mesh\MeshDesc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshModel.cpp">
+      <Filter>Mesh\MeshDesc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshManagement.cpp">
+      <Filter>Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshMakerObj.cpp">
+      <Filter>Mesh</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -222,32 +231,17 @@
     <Filter Include="Mesh">
       <UniqueIdentifier>{cb8b174f-1fd2-47dc-88e8-3b93557dbf45}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Mesh\MeshManagement">
-      <UniqueIdentifier>{4233b6f8-b8b1-4283-b57d-475848814f1c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Mesh\MeshDesc">
       <UniqueIdentifier>{0d43e0f9-6d72-427e-868f-25465cbf202e}</UniqueIdentifier>
     </Filter>
     <Filter Include="Mesh\MeshLoaders">
       <UniqueIdentifier>{6714df9b-dfa1-4405-b28c-a7781272a679}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Mesh\MeshDesc\MeshDependencies">
-      <UniqueIdentifier>{96668830-784a-40fe-b35c-904091b17e25}</UniqueIdentifier>
+    <Filter Include="Mesh\MeshLoaders\.obj">
+      <UniqueIdentifier>{d98c3841-8589-42ae-bb82-85dfdb023225}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Mesh\MeshDesc\MeshGeometry">
-      <UniqueIdentifier>{98911a9d-fecf-4212-9f0b-f8720d6e3a3d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Mesh\MeshDesc\MeshMaterial">
-      <UniqueIdentifier>{b2cc20d8-547d-45bf-8981-b9ec57b2fb07}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Mesh\MeshDesc\MeshSubset">
-      <UniqueIdentifier>{d5e500be-a74e-4d1b-9fff-462af8a32906}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Mesh\MeshDesc\MeshGeometry\MeshGroup">
-      <UniqueIdentifier>{1a25caac-893b-488f-a2c7-b6a00af121f8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Mesh\MeshLoaders\Obj">
-      <UniqueIdentifier>{e8fc6175-65d6-4307-9751-355524b51ba0}</UniqueIdentifier>
+    <Filter Include="Mesh\MeshLoaders\.mtl">
+      <UniqueIdentifier>{af1cdce4-812d-4a79-b7b8-aeaa9790760e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
