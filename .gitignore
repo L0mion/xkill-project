@@ -24,3 +24,5 @@ xkill-gui/Debug/
 xkill-gui/Release/
 xkill-dependencies/xkill/lib-Debug/
 xkill-dependencies/xkill/lib-Release/
+xkill-input/Debug/
+xkill-input/Release/

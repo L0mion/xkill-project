@@ -14,10 +14,12 @@
     <ClInclude Include="..\..\xkill-source\xkill-sound\dllSound.h" />
     <ClInclude Include="..\..\xkill-source\xkill-sound\FMODEventSystem.h" />
     <ClInclude Include="..\..\xkill-source\xkill-sound\FMODEventSystemProgrammerReportParser.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-sound\SoundComponent.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-sound\FMODEventSystem.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-sound\FMODEventSystemProgrammerReportParser.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-sound\SoundComponent.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{EF5DDE18-3DE8-4E0E-98F6-865A14B732B8}</ProjectGuid>

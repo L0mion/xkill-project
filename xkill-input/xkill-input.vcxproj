@@ -11,47 +11,53 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeController.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeFactory.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeManager.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeStorage.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\Camera.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\CameraComponent.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\ComponentManager.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\dllArchitecture.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\Entity.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\EntityFactory.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\EntityManager.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\GameComponent.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\GameManager.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\IAttributeStorage.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\PhysicsComponent.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\RenderComponent.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-input\Converter.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-input\DirectInputDevice.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-input\DirectInputKeyboard.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-input\DirectInputMouse.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-input\dllInput.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-input\InputAxisObject.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-input\InputButtonObject.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-input\InputComponent.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-input\InputDevice.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-input\InputHatSwitchObject.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-input\InputManager.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-input\InputObject.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-input\InputTriggerObject.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-input\XInputDevice.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\xkill-source\xkill-architecture\Camera.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-architecture\CameraComponent.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-architecture\GameComponent.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-architecture\main.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-input\DirectInputDevice.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-input\DirectInputKeyboard.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-input\DirectInputMouse.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-input\InputAxisObject.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-input\InputButtonObject.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-input\InputComponent.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-input\InputDevice.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-input\InputHatSwitchObject.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-input\InputManager.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-input\InputObject.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-input\InputTriggerObject.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-input\XInputDevice.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{72FCF81B-3AD8-4EE9-93D7-BD6993A50E58}</ProjectGuid>
+    <ProjectGuid>{F0D3D9DE-7681-4C3E-A0CD-A851B2C1FA19}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>xkillarchitecture</RootNamespace>
+    <RootNamespace>xkillinput</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v110</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v110</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -67,13 +73,13 @@
     <LinkIncremental>true</LinkIncremental>
     <OutDir>../../xkill-build/bin-$(Configuration)/</OutDir>
     <IncludePath>../../xkill-source;$(IncludePath)</IncludePath>
-    <LibraryPath>../xkill-dependencies/xkill/lib-$(Configuration);$(LibraryPath)</LibraryPath>
+    <LibraryPath>../xkill-dependencies/input/lib;../xkill-dependencies/xkill/lib-$(Configuration);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>../../xkill-build/bin-$(Configuration)/</OutDir>
     <IncludePath>../../xkill-source;$(IncludePath)</IncludePath>
-    <LibraryPath>../xkill-dependencies/xkill/lib-$(Configuration);$(LibraryPath)</LibraryPath>
+    <LibraryPath>../xkill-dependencies/input/lib;../xkill-dependencies/xkill/lib-$(Configuration);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -81,13 +87,13 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>DLL_ARCHITECTURE;WIN32;_DEBUG;_WINDOWS;_USRDLL;;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DLL_INPUT;WIN32;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)/../../xkill-project/xkill-dependencies/xkill/lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
-      <AdditionalDependencies>xkill-utilities.lib;xkill-physics.lib;xkill-sound.lib;xkill-renderer.lib;xkill-input.lib</AdditionalDependencies>
+      <AdditionalDependencies>dinput8.lib;xinput.lib;xkill-utilities.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -98,7 +104,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>DLL_ARCHITECTURE;WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DLL_INPUT;WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -106,7 +112,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <ImportLibrary>$(OutDir)/../../xkill-project/xkill-dependencies/xkill/lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
-      <AdditionalDependencies>xkill-utilities.lib;xkill-physics.lib;xkill-sound.lib;xkill-renderer.lib;xkill-input.lib</AdditionalDependencies>
+      <AdditionalDependencies>dinput8.lib;xinput.lib;xkill-utilities.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -11,24 +11,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\CB.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\CBManagement.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\CBPerFrame.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\CBPerInstance.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\d3dDebug.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\fxManagement.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\gBuffer.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\IEDManagement.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\mathBasic.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\objLoaderBasic.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\renderingComponent.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\shader.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\shaderCS.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\shaderPS.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\shaderVS.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\ViewportManagement.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CB.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CBManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CBPerFrame.h" />
@@ -41,16 +23,34 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\gBuffer.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\gBufferID.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\IEDManagement.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\mathBasic.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\objLoaderBasic.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\renderingComponent.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\renderingUtilities.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\shader.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\shaderCS.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\shaderPS.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\shaderVS.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\vertices.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\MathBasic.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ObjLoaderBasic.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\RenderingComponent.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\RenderingUtilities.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\Shader.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ShaderCS.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ShaderPS.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ShaderVS.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\Vertices.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ViewportManagement.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\CB.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\CBManagement.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\CBPerFrame.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\CBPerInstance.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DDebug.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\FXManagement.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\GBuffer.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\IEDManagement.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\MathBasic.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ObjLoaderBasic.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\RenderingComponent.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\Shader.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderCS.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderPS.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderVS.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ViewportManagement.cpp" />
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\constantBuffers.hlsl">
@@ -146,8 +146,8 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>../../xkill-build/bin-$(Configuration)/</OutDir>
-    <IncludePath>../../xkill-source/;$(IncludePath)</IncludePath>
-    <LibraryPath>../xkill-dependencies/xkill/lib-$(Configuration);$(LibraryPath)</LibraryPath>
+    <IncludePath>../../xkill-source/;$(ProgramFiles)\Windows Kits\8.0\Include\um;$(ProgramFiles)\Windows Kits\8.0\Include\shared;$(IncludePath)</IncludePath>
+    <LibraryPath>../xkill-dependencies/xkill/lib-$(Configuration);$(ProgramFiles)\Windows Kits\8.0\lib\win8\um\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>

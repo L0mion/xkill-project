@@ -18,14 +18,8 @@
     <ClInclude Include="..\..\xkill-source\xkill-architecture\RenderComponent.h">
       <Filter>Components\Implementations</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\SoundComponent.h">
-      <Filter>Components\Implementations</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-architecture\PhysicsComponent.h">
       <Filter>Components\Implementations</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\IAttributeStorage.h">
-      <Filter>Attributes</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeController.h">
       <Filter>Attributes</Filter>
@@ -33,6 +27,26 @@
     <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeStorage.h">
       <Filter>Attributes</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\CameraComponent.h">
+      <Filter>Components\Implementations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\Camera.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\IAttributeStorage.h">
+      <Filter>Attributes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\GameComponent.h">
+      <Filter>Components\Implementations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeFactory.h">
+      <Filter>Attributes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\xkill-source\xkill-architecture\main.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-architecture\Camera.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-architecture\CameraComponent.cpp">
+      <Filter>Components\Implementations</Filter>
+    </ClCompile>
     <ClInclude Include="..\..\xkill-source\xkill-architecture\GameComponent.h">
       <Filter>Components\Implementations</Filter>
     </ClInclude>
