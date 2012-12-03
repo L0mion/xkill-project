@@ -102,13 +102,10 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Loader.h">
       <Filter>Mesh\I/0</Filter>
     </ClInclude>
-	<ClInclude Include="..\..\xkill-source\xkill-renderer\Writer.h">
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\Writer.h">
       <Filter>Mesh\I/0</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\PGYFormat.h">
-      <Filter>Mesh\I/0\.pgy</Filter>
-    </ClInclude>
-	<ClInclude Include="..\..\xkill-source\xkill-renderer\WriterPGY.h">
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\WriterPGY.h">
       <Filter>Mesh\I/0\.pgy</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\MTLMaterial.h">
@@ -121,6 +118,9 @@
       <Filter>Mesh\I/0\.mtl</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\LoaderPGY.h">
+      <Filter>Mesh\I/0\.pgy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\SpecsPGY.h">
       <Filter>Mesh\I/0\.pgy</Filter>
     </ClInclude>
   </ItemGroup>
@@ -202,7 +202,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Loader.cpp">
       <Filter>Mesh\I/0</Filter>
     </ClCompile>
-	<ClCompile Include="..\..\xkill-source\xkill-renderer\Writer.cpp">
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\Writer.cpp">
       <Filter>Mesh\I/0</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\MTL.cpp">
@@ -211,8 +211,14 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\LoaderPGY.cpp">
       <Filter>Mesh\I/0\.pgy</Filter>
     </ClCompile>
-	<ClCompile Include="..\..\xkill-source\xkill-renderer\WriterPGY.cpp">
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\WriterPGY.cpp">
       <Filter>Mesh\I/0\.pgy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ObjGeometry.cpp">
+      <Filter>Mesh\I/0\.obj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshGeometry.cpp">
+      <Filter>Mesh</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

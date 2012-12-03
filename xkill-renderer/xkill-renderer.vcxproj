@@ -42,7 +42,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ObjFace.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ObjGeometry.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ObjGroup.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\PGYFormat.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\SpecsPGY.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\RenderingComponent.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\RenderingUtilities.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Shader.h" />
@@ -68,6 +68,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\LoaderObj.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\LoaderPGY.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\MathBasic.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshGeometry.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshMakerObj.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshMaterial.cpp" />
@@ -77,6 +78,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\MTLMaterial.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Obj.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ObjDependencies.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ObjGeometry.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ObjGroup.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RenderingComponent.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Shader.cpp" />
