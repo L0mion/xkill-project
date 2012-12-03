@@ -28,6 +28,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-utilities\IObserver.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\Math.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{179430F3-FCF7-4C1B-A52C-5A6A3EB71CAB}</ProjectGuid>
