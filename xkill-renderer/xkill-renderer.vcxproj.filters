@@ -45,27 +45,18 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\IEDManagement.h">
       <Filter>FX\FXManagement\IEDManagement</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\CB.h">
-      <Filter>ConstantBuffer</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\CBManagement.h">
-      <Filter>ConstantBuffer</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\CBPerFrame.h">
-      <Filter>ConstantBuffer</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\CBPerInstance.h">
-      <Filter>ConstantBuffer</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\ConstantBufferDesc.h">
-      <Filter>ConstantBuffer</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ViewportManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\LightManagement.h">
       <Filter>Lighting</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\LightDesc.h">
       <Filter>Lighting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\CBDesc.h">
+      <Filter>ConstantBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\CBManagement.h">
+      <Filter>ConstantBuffer</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -98,21 +89,12 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\IEDManagement.cpp">
       <Filter>FX\FXManagement\IEDManagement</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\CB.cpp">
-      <Filter>ConstantBuffer</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\CBManagement.cpp">
-      <Filter>ConstantBuffer</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\CBPerFrame.cpp">
-      <Filter>ConstantBuffer</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\CBPerInstance.cpp">
-      <Filter>ConstantBuffer</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ViewportManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\LightManagement.cpp">
       <Filter>Lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\CBManagement.cpp">
+      <Filter>ConstantBuffer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -173,6 +155,9 @@
       <Filter>Shaders</Filter>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\constantBuffers.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\lightFunctions.hlsl">
       <Filter>Shaders</Filter>
     </FxCompile>
   </ItemGroup>
