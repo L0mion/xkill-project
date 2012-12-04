@@ -220,6 +220,9 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshGeometry.cpp">
       <Filter>Mesh</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ObjFace.cpp">
+      <Filter>Mesh\I/0\.obj</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="GBuffer">

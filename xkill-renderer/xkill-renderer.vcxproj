@@ -78,6 +78,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\MTLMaterial.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Obj.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ObjDependencies.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ObjFace.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ObjGeometry.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ObjGroup.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RenderingComponent.cpp" />
