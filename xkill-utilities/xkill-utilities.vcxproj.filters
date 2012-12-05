@@ -34,6 +34,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-utilities\IObserver.h">
       <Filter>External Headers</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\Math.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Events">
