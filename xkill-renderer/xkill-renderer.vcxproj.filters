@@ -58,6 +58,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CBManagement.h">
       <Filter>ConstantBuffer</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\D3DManagement.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DDebug.cpp" />
@@ -96,6 +97,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\CBManagement.cpp">
       <Filter>ConstantBuffer</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DManagement.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="GBuffer">

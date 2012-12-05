@@ -15,6 +15,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CBManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\d3dDebug.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\d3dInterface.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\D3DManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\dllRenderer.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\fxManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\gBuffer.h" />
@@ -36,6 +37,7 @@
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\CBManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DDebug.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\FXManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\GBuffer.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\IEDManagement.cpp" />
