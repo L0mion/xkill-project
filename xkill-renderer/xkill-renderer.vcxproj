@@ -15,10 +15,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\CBDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CBManagement.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\ConstantBufferDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\d3dDebug.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\d3dInterface.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\D3DManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\dllRenderer.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\fxManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\gBuffer.h" />
@@ -40,6 +41,7 @@
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\CBManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DDebug.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\FXManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\GBuffer.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\IEDManagement.cpp" />
@@ -123,6 +125,16 @@
       <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">defaultVS</EntryPointName>
       <EntryPointName Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">defaultVS</EntryPointName>
     </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\lightFunctions.hlsl">
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Effect</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Effect</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+    </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\structs.hlsl">
       <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
       </EntryPointName>
@@ -186,8 +198,8 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>../../xkill-build/bin-$(Configuration)/</OutDir>
-    <IncludePath>../../xkill-source/;$(IncludePath)</IncludePath>
-    <LibraryPath>../xkill-dependencies/xkill/lib-$(Configuration);$(LibraryPath)</LibraryPath>
+    <IncludePath>../../xkill-source/;$(ProgramFiles)\Windows Kits\8.0\Include\um;$(ProgramFiles)\Windows Kits\8.0\Include\shared;$(IncludePath)</IncludePath>
+    <LibraryPath>../xkill-dependencies/xkill/lib-$(Configuration);$(ProgramFiles)\Windows Kits\8.0\lib\win8\um\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">
     <LinkIncremental>false</LinkIncremental>
