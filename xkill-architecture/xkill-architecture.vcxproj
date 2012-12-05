@@ -27,14 +27,12 @@
     <ClInclude Include="..\..\xkill-source\xkill-architecture\IAttributeStorage.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\PhysicsComponent.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\RenderComponent.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\ScoreComponent.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-architecture\Camera.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-architecture\CameraComponent.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-architecture\GameComponent.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-architecture\main.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-architecture\ScoreCounting.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{72FCF81B-3AD8-4EE9-93D7-BD6993A50E58}</ProjectGuid>
