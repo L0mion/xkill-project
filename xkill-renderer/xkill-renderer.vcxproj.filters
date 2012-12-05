@@ -21,12 +21,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ShaderVS.h">
       <Filter>FX\Shader\ShaderVS</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\Vertices.h">
-      <Filter>Utilities</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\ObjLoaderBasic.h">
-      <Filter>Utilities</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\MathBasic.h">
       <Filter>Utilities</Filter>
     </ClInclude>
@@ -85,9 +79,6 @@
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderVS.cpp">
       <Filter>FX\Shader\ShaderVS</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\ObjLoaderBasic.cpp">
-      <Filter>Utilities</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\MathBasic.cpp">
       <Filter>Utilities</Filter>
