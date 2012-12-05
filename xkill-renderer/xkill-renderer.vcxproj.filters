@@ -48,9 +48,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CBManagement.h">
       <Filter>ConstantBuffer</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\ConstantBufferDesc.h">
-      <Filter>ConstantBuffer</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ViewportManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\LightManagement.h">
       <Filter>Lighting</Filter>
