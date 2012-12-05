@@ -52,6 +52,12 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\LightDesc.h">
       <Filter>Lighting</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshModelD3D.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshManagement.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DDebug.cpp" />
@@ -86,6 +92,12 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ViewportManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\LightManagement.cpp">
       <Filter>Lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshModelD3D.cpp">
+      <Filter>Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshManagement.cpp">
+      <Filter>Mesh</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -124,6 +136,9 @@
     </Filter>
     <Filter Include="Lighting">
       <UniqueIdentifier>{2530f1c8-5479-4018-9a93-f070b0300a33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mesh">
+      <UniqueIdentifier>{1a5c97c9-ee40-4826-89f7-cb2c40d229a5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

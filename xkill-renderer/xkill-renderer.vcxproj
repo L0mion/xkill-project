@@ -23,6 +23,8 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\LightDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\LightManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\MathBasic.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshManagement.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshModelD3D.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\RenderingComponent.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\RenderingUtilities.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Shader.h" />
@@ -39,6 +41,8 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\IEDManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\LightManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\MathBasic.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshManagement.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshModelD3D.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RenderingComponent.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Shader.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderCS.cpp" />
