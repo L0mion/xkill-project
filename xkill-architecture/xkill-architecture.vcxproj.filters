@@ -40,6 +40,9 @@
     <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeFactory.h">
       <Filter>Attributes</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\ScoreComponent.h">
+      <Filter>Components\Implementations</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-architecture\Camera.cpp" />
@@ -53,6 +56,9 @@
       <Filter>Entities</Filter>
     </ClInclude>
     <ClCompile Include="..\..\xkill-source\xkill-architecture\main.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-architecture\ScoreCounting.cpp">
+      <Filter>Components\Implementations</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-architecture\main.cpp" />
