@@ -48,9 +48,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CBManagement.h">
       <Filter>ConstantBuffer</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\ConstantBufferDesc.h">
-      <Filter>ConstantBuffer</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ViewportManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\LightManagement.h">
       <Filter>Lighting</Filter>
@@ -65,6 +62,8 @@
       <Filter>ConstantBuffer</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\D3DManagement.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\RSManagement.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\SSManagement.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DDebug.cpp" />
@@ -107,6 +106,8 @@
       <Filter>ConstantBuffer</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DManagement.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\RSManagement.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\SSManagement.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="GBuffer">

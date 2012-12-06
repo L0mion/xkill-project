@@ -27,10 +27,12 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ObjLoaderBasic.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\RenderingComponent.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\RenderingUtilities.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\RSManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Shader.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ShaderCS.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ShaderPS.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ShaderVS.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\SSManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Vertices.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ViewportManagement.h" />
   </ItemGroup>
@@ -45,10 +47,12 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\MathBasic.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ObjLoaderBasic.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RenderingComponent.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\RSManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Shader.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderCS.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderPS.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderVS.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\SSManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ViewportManagement.cpp" />
   </ItemGroup>
   <ItemGroup>
