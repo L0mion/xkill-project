@@ -42,9 +42,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CBManagement.h">
       <Filter>ConstantBuffer</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\ConstantBufferDesc.h">
-      <Filter>ConstantBuffer</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ViewportManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\LightManagement.h">
       <Filter>Lighting</Filter>
@@ -58,6 +55,15 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshManagement.h">
       <Filter>Mesh</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\CBDesc.h">
+      <Filter>ConstantBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\CBManagement.h">
+      <Filter>ConstantBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\D3DManagement.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\RSManagement.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\SSManagement.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DDebug.cpp" />
@@ -99,6 +105,12 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshManagement.cpp">
       <Filter>Mesh</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\CBManagement.cpp">
+      <Filter>ConstantBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DManagement.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\RSManagement.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\SSManagement.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="GBuffer">
@@ -161,6 +173,9 @@
       <Filter>Shaders</Filter>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\constantBuffers.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\lightFunctions.hlsl">
       <Filter>Shaders</Filter>
     </FxCompile>
   </ItemGroup>
