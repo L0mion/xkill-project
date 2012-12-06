@@ -24,11 +24,12 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\fxManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\gBuffer.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\gBufferID.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\IB.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\IEDManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\LightDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\LightManagement.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\MathBasic.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\ObjLoaderBasic.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshManagement.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshModelD3D.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\RenderingComponent.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\RenderingUtilities.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\RSManagement.h" />
@@ -36,6 +37,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ShaderCS.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ShaderPS.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ShaderVS.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\VB.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\SSManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Vertices.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ViewportManagement.h" />
@@ -46,16 +48,18 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\FXManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\GBuffer.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\IB.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\IEDManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\LightManagement.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\MathBasic.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\ObjLoaderBasic.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshManagement.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshModelD3D.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RenderingComponent.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RSManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Shader.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderCS.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderPS.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderVS.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\VB.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\SSManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ViewportManagement.cpp" />
   </ItemGroup>
@@ -257,7 +261,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>DEBUG;DEBUG_;DLL_RENDERER;WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>XKILL_DEBUG;DLL_RENDERER;WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
