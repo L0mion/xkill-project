@@ -28,6 +28,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-input\InputManager.h" />
     <ClInclude Include="..\..\xkill-source\xkill-input\InputObject.h" />
     <ClInclude Include="..\..\xkill-source\xkill-input\InputTriggerObject.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-input\QTInputDevices.h" />
     <ClInclude Include="..\..\xkill-source\xkill-input\XInputDevice.h" />
   </ItemGroup>
   <ItemGroup>
@@ -42,6 +43,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-input\InputManager.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-input\InputObject.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-input\InputTriggerObject.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-input\QTInputDevices.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-input\XInputDevice.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

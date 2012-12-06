@@ -16,13 +16,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-sound\dllSound.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-sound\FileParser.h" />
     <ClInclude Include="..\..\xkill-source\xkill-sound\FMODEventSystem.h" />
     <ClInclude Include="..\..\xkill-source\xkill-sound\FMODEventSystemProgrammerReportParser.h" />
     <ClInclude Include="..\..\xkill-source\xkill-sound\SoundComponent.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\xkill-source\xkill-sound\FileParser.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-sound\FMODEventSystem.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-sound\FMODEventSystemProgrammerReportParser.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-sound\SoundComponent.cpp" />
