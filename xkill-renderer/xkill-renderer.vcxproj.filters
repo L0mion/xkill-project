@@ -58,6 +58,12 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshManagement.h">
       <Filter>Mesh</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\IB.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\VB.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DDebug.cpp" />
@@ -97,6 +103,12 @@
       <Filter>Mesh</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshManagement.cpp">
+      <Filter>Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\IB.cpp">
+      <Filter>Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\VB.cpp">
       <Filter>Mesh</Filter>
     </ClCompile>
   </ItemGroup>
