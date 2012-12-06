@@ -34,6 +34,9 @@
     <Filter Include="InputDevice\InputObject\Trigger">
       <UniqueIdentifier>{76e8088c-8058-4a0f-ad87-25014af7db3f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="InputDevice\QTInputDevices">
+      <UniqueIdentifier>{1370fd14-5d38-4735-9eac-2f4a3c393166}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-input\InputManager.h">
@@ -72,6 +75,9 @@
     <ClInclude Include="..\..\xkill-source\xkill-input\Converter.h" />
     <ClInclude Include="..\..\xkill-source\xkill-input\dllInput.h" />
     <ClInclude Include="..\..\xkill-source\xkill-input\InputComponent.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-input\QTInputDevices.h">
+      <Filter>InputDevice\QTInputDevices</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-input\InputManager.cpp">
@@ -108,5 +114,8 @@
       <Filter>InputDevice\InputObject\Trigger</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-input\InputComponent.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-input\QTInputDevices.cpp">
+      <Filter>InputDevice\QTInputDevices</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

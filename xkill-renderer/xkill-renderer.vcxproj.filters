@@ -21,15 +21,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ShaderVS.h">
       <Filter>FX\Shader\ShaderVS</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\Vertices.h">
-      <Filter>Utilities</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\ObjLoaderBasic.h">
-      <Filter>Utilities</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\MathBasic.h">
-      <Filter>Utilities</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\DLLRenderer.h">
       <Filter>Utilities</Filter>
     </ClInclude>
@@ -55,6 +46,18 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\LightDesc.h">
       <Filter>Lighting</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshModelD3D.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshManagement.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\IB.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\VB.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CBDesc.h">
       <Filter>ConstantBuffer</Filter>
     </ClInclude>
@@ -64,6 +67,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\D3DManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\RSManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\SSManagement.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\Vertices.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DDebug.cpp" />
@@ -83,12 +87,6 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderVS.cpp">
       <Filter>FX\Shader\ShaderVS</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\ObjLoaderBasic.cpp">
-      <Filter>Utilities</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\MathBasic.cpp">
-      <Filter>Utilities</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\FXManagement.cpp">
       <Filter>FX\FXManagement</Filter>
     </ClCompile>
@@ -101,6 +99,18 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ViewportManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\LightManagement.cpp">
       <Filter>Lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshModelD3D.cpp">
+      <Filter>Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshManagement.cpp">
+      <Filter>Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\IB.cpp">
+      <Filter>Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\VB.cpp">
+      <Filter>Mesh</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\CBManagement.cpp">
       <Filter>ConstantBuffer</Filter>
@@ -145,6 +155,9 @@
     </Filter>
     <Filter Include="Lighting">
       <UniqueIdentifier>{2530f1c8-5479-4018-9a93-f070b0300a33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mesh">
+      <UniqueIdentifier>{1a5c97c9-ee40-4826-89f7-cb2c40d229a5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

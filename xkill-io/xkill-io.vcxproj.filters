@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\xkill-source\xkill-io\Loader.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-io\Writer.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-io\LoaderMTL.cpp">
+      <Filter>.mtl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-io\LoaderObj.cpp">
+      <Filter>.obj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-io\LoaderPGY.cpp">
+      <Filter>.pgy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-io\MeshMakerObj.cpp">
+      <Filter>.obj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-io\MTL.cpp">
+      <Filter>.mtl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-io\MTLMaterial.cpp">
+      <Filter>.mtl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-io\Obj.cpp">
+      <Filter>.obj\desc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-io\ObjDependencies.cpp">
+      <Filter>.obj\desc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-io\ObjFace.cpp">
+      <Filter>.obj\desc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-io\ObjGeometry.cpp">
+      <Filter>.obj\desc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-io\ObjGroup.cpp">
+      <Filter>.obj\desc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-io\SimpleStringSplitter.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-io\WriterPGY.cpp">
+      <Filter>.pgy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-io\IOComponent.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\xkill-source\xkill-io\Loader.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\Writer.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderMTL.h">
+      <Filter>.mtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderObj.h">
+      <Filter>.obj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderPGY.h">
+      <Filter>.pgy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\MeshMakerObj.h">
+      <Filter>.obj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\MTL.h">
+      <Filter>.mtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\MTLIllum.h">
+      <Filter>.mtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\MTLMaterial.h">
+      <Filter>.mtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\ObjGroup.h">
+      <Filter>.obj\desc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\Obj.h">
+      <Filter>.obj\desc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\ObjDependencies.h">
+      <Filter>.obj\desc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\ObjFace.h">
+      <Filter>.obj\desc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\ObjGeometry.h">
+      <Filter>.obj\desc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\SimpleStringSplitter.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\WriterPGY.h">
+      <Filter>.pgy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\SpecsPGY.h">
+      <Filter>.pgy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\dllIO.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\IOComponent.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include=".mtl">
+      <UniqueIdentifier>{aed59c38-78d6-45c4-801d-95a9fe9b5ba0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include=".pgy">
+      <UniqueIdentifier>{905b5636-beec-4977-9471-8518e4809efa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include=".obj">
+      <UniqueIdentifier>{e22bbae0-c1fe-4004-8019-c3cdcd682917}</UniqueIdentifier>
+    </Filter>
+    <Filter Include=".obj\desc">
+      <UniqueIdentifier>{a4db3e73-2fbd-489c-b5ce-d76a44c9846d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{1cb25506-5ae2-4d44-8c9f-bc8230e6b4ea}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

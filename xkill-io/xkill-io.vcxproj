@@ -15,62 +15,69 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\xkill-source\xkill-input\Converter.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-input\DirectInputDevice.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-input\DirectInputKeyboard.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-input\DirectInputMouse.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-input\dllInput.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-input\InputAxisObject.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-input\InputButtonObject.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-input\InputComponent.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-input\InputDevice.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-input\InputHatSwitchObject.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-input\InputManager.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-input\InputObject.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-input\InputTriggerObject.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-input\QTInputDevices.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-input\XInputDevice.h" />
+    <ClCompile Include="..\..\xkill-source\xkill-io\Loader.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-io\LoaderMTL.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-io\LoaderObj.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-io\LoaderPGY.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-io\IOComponent.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-io\MeshMakerObj.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-io\MTL.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-io\MTLMaterial.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-io\Obj.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-io\ObjDependencies.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-io\ObjFace.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-io\ObjGeometry.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-io\ObjGroup.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-io\SimpleStringSplitter.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-io\Writer.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-io\WriterPGY.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\xkill-source\xkill-input\DirectInputDevice.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-input\DirectInputKeyboard.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-input\DirectInputMouse.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-input\InputAxisObject.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-input\InputButtonObject.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-input\InputComponent.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-input\InputDevice.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-input\InputHatSwitchObject.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-input\InputManager.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-input\InputObject.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-input\InputTriggerObject.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-input\QTInputDevices.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-input\XInputDevice.cpp" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\dllIO.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\Loader.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderMTL.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderObj.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderPGY.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\IOComponent.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\MeshMakerObj.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\MTL.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\MTLIllum.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\MTLMaterial.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\Obj.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\ObjDependencies.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\ObjFace.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\ObjGeometry.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\ObjGroup.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\SimpleStringSplitter.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\SpecsPGY.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\Writer.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\WriterPGY.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{F0D3D9DE-7681-4C3E-A0CD-A851B2C1FA19}</ProjectGuid>
+    <ProjectGuid>{90632FA5-BF8B-4798-96B4-DA358FE33D8F}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>xkillinput</RootNamespace>
+    <RootNamespace>xkillio</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v110</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v110</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v110</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -88,20 +95,20 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>../../xkill-build/bin-$(Configuration)/</OutDir>
-    <IncludePath>../../xkill-source;$(IncludePath)</IncludePath>
-    <LibraryPath>../xkill-dependencies/input/lib;../xkill-dependencies/xkill/lib-$(Configuration);$(LibraryPath)</LibraryPath>
+    <IncludePath>../../xkill-source/;$(ProgramFiles)\Windows Kits\8.0\Include\um;$(ProgramFiles)\Windows Kits\8.0\Include\shared;$(IncludePath)</IncludePath>
+    <LibraryPath>../xkill-dependencies/xkill/lib-$(Configuration);$(ProgramFiles)\Windows Kits\8.0\lib\win8\um\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>../../xkill-build/bin-$(Configuration)/</OutDir>
-    <IncludePath>../../xkill-source;$(IncludePath)</IncludePath>
-    <LibraryPath>../xkill-dependencies/input/lib;../xkill-dependencies/xkill/lib-$(Configuration);$(LibraryPath)</LibraryPath>
+    <IncludePath>../../xkill-source/;$(IncludePath)</IncludePath>
+    <LibraryPath>../xkill-dependencies/xkill/lib-$(Configuration);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>../../xkill-build/bin-$(Configuration)/</OutDir>
-    <IncludePath>../../xkill-source;$(IncludePath)</IncludePath>
-    <LibraryPath>../xkill-dependencies/input/lib;../xkill-dependencies/xkill/lib-$(Configuration);$(LibraryPath)</LibraryPath>
+    <IncludePath>../../xkill-source/;$(IncludePath)</IncludePath>
+    <LibraryPath>../xkill-dependencies/xkill/lib-$(Configuration);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -109,13 +116,13 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>DLL_INPUT;WIN32;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DLL_IO_FLAG;WIN32;_DEBUG;_WINDOWS;_USRDLL;;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)/../../xkill-project/xkill-dependencies/xkill/lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
-      <AdditionalDependencies>dinput8.lib;xinput.lib;xkill-utilities.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xkill-utilities.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -126,7 +133,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>DLL_INPUT;WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DLL_IO_FLAG;WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -134,7 +141,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <ImportLibrary>$(OutDir)/../../xkill-project/xkill-dependencies/xkill/lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
-      <AdditionalDependencies>dinput8.lib;xinput.lib;xkill-utilities.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xkill-utilities.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">
@@ -145,7 +152,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>XKILL_DEBUG;DLL_INPUT;WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>XKILL_DEBUG;DLL_IO_FLAG;WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -153,7 +160,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <ImportLibrary>$(OutDir)/../../xkill-project/xkill-dependencies/xkill/lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
-      <AdditionalDependencies>dinput8.lib;xinput.lib;xkill-utilities.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xkill-utilities.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

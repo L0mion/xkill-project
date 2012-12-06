@@ -13,6 +13,18 @@
     <ClCompile Include="..\..\xkill-source\xkill-utilities\AttributeType.cpp">
       <Filter>Attributes</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshGeometry.cpp">
+      <Filter>Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshMaterial.cpp">
+      <Filter>Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshModel.cpp">
+      <Filter>Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshSubset.cpp">
+      <Filter>Mesh</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\dllUtilities.h" />
@@ -35,6 +47,21 @@
       <Filter>External Headers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\Math.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshGeometry.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshMaterial.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshModel.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshSubset.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshVertices.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Events">
@@ -45,6 +72,9 @@
     </Filter>
     <Filter Include="External Headers">
       <UniqueIdentifier>{70cac18f-df4e-4dd8-89e8-fa2f37f13f2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mesh">
+      <UniqueIdentifier>{596510c9-9d36-492d-bef5-7dd9cd2a40aa}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
