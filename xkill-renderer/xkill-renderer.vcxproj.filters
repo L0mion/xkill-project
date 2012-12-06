@@ -21,9 +21,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ShaderVS.h">
       <Filter>FX\Shader\ShaderVS</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\MathBasic.h">
-      <Filter>Utilities</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\DLLRenderer.h">
       <Filter>Utilities</Filter>
     </ClInclude>
@@ -70,6 +67,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\D3DManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\RSManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\SSManagement.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\Vertices.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DDebug.cpp" />
@@ -88,9 +86,6 @@
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderVS.cpp">
       <Filter>FX\Shader\ShaderVS</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\MathBasic.cpp">
-      <Filter>Utilities</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\FXManagement.cpp">
       <Filter>FX\FXManagement</Filter>
