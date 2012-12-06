@@ -37,9 +37,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-architecture\GameComponent.h">
       <Filter>Components\Implementations</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeFactory.h">
-      <Filter>Attributes</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-architecture\Camera.cpp" />
