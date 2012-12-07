@@ -16,11 +16,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-sound\dllSound.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-sound\EventToFModConverter.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-sound\FileParser.h" />
     <ClInclude Include="..\..\xkill-source\xkill-sound\FMODEventSystem.h" />
     <ClInclude Include="..\..\xkill-source\xkill-sound\FMODEventSystemProgrammerReportParser.h" />
     <ClInclude Include="..\..\xkill-source\xkill-sound\SoundComponent.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\xkill-source\xkill-sound\EventToFModConverter.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-sound\FileParser.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-sound\FMODEventSystem.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-sound\FMODEventSystemProgrammerReportParser.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-sound\SoundComponent.cpp" />
@@ -94,7 +98,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)/../../xkill-project/xkill-dependencies/xkill/lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
-      <AdditionalDependencies>fmodex_vc.lib;fmod_event.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>fmodex_vc.lib;fmod_event.lib;xkill-utilities.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>
@@ -117,7 +121,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <ImportLibrary>$(OutDir)/../../xkill-project/xkill-dependencies/xkill/lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
-      <AdditionalDependencies>fmodex_vc.lib;fmod_event.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>fmodex_vc.lib;fmod_event.lib;xkill-utilities.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>
@@ -140,7 +144,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <ImportLibrary>$(OutDir)/../../xkill-project/xkill-dependencies/xkill/lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
-      <AdditionalDependencies>fmodex_vc.lib;fmod_event.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>fmodex_vc.lib;fmod_event.lib;xkill-utilities.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>
