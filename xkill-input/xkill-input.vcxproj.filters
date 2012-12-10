@@ -37,6 +37,9 @@
     <Filter Include="InputDevice\QTInputDevices">
       <UniqueIdentifier>{1370fd14-5d38-4735-9eac-2f4a3c393166}</UniqueIdentifier>
     </Filter>
+    <Filter Include="KeyMapper">
+      <UniqueIdentifier>{4d90cde1-d82f-415e-a0cb-5a107b699031}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-input\InputManager.h">
