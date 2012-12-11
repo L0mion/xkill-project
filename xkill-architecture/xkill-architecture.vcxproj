@@ -28,7 +28,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-architecture\GameComponent.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\GameManager.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\IAttributeStorage.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\RenderComponent.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\ScoreComponent.h" />
   </ItemGroup>
   <ItemGroup>
