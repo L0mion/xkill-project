@@ -28,8 +28,8 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\IEDManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\LightDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\LightManagement.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshManagement.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshModelD3D.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ModelManagement.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ModelD3D.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\RenderingComponent.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\RenderingUtilities.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\RSManagement.h" />
@@ -37,9 +37,11 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ShaderCS.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ShaderPS.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ShaderVS.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\Tex.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\TexLoader.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\TexManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\VB.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\SSManagement.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\Vertices.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ViewportManagement.h" />
   </ItemGroup>
   <ItemGroup>
@@ -51,14 +53,17 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\IB.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\IEDManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\LightManagement.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshManagement.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshModelD3D.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ModelManagement.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ModelD3D.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RenderingComponent.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RSManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Shader.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderCS.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderPS.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderVS.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\Tex.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\TexLoader.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\TexManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\VB.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\SSManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ViewportManagement.cpp" />

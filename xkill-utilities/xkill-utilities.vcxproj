@@ -23,6 +23,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshMaterial.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshModel.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshSubset.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\TexDesc.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\AttributePointer.h" />
@@ -42,6 +43,9 @@
     <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshModel.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshSubset.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshVertices.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\TexDesc.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\TexDescHeader.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\TexDescTex.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{179430F3-FCF7-4C1B-A52C-5A6A3EB71CAB}</ProjectGuid>
