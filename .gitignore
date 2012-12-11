@@ -3,6 +3,8 @@
 *.suo
 *.user
 *.log
+*.vspx
+*.psess
 Debug
 ipch/
 xkill/Debug/
