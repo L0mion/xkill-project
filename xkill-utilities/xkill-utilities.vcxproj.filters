@@ -25,6 +25,10 @@
     <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshSubset.cpp">
       <Filter>Mesh</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\Math.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshVertices.cpp">
+      <Filter>Mesh</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\dllUtilities.h" />

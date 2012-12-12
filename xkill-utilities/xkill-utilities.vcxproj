@@ -19,10 +19,12 @@
     <ClCompile Include="..\..\xkill-source\xkill-utilities\AttributeType.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\EventManager.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\EventType.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\Math.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshGeometry.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshMaterial.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshModel.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshSubset.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshVertices.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\AttributePointer.h" />
