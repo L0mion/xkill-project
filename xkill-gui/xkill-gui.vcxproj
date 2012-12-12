@@ -22,7 +22,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <PlatformToolset>v100</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -114,6 +114,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-gui\main.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-gui\Menu.cpp" />
     <ClCompile Include="GeneratedFiles\Debug\moc_GameWidget.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">true</ExcludedFromBuild>
@@ -206,6 +207,7 @@
       <Command Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">
       </Command>
     </CustomBuild>
+    <ClInclude Include="..\..\xkill-source\xkill-gui\Menu.h" />
     <ClInclude Include="GeneratedFiles\ui_MainWindow.h" />
   </ItemGroup>
   <ItemGroup>
