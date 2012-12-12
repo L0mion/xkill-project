@@ -16,11 +16,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-io\Loader.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-io\LoaderMdlDesc.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\LoaderMTL.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\LoaderObj.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\LoaderPGY.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\IOComponent.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\LoaderTexDesc.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-io\MdlDesc.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\MeshMakerObj.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\MTL.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\MTLMaterial.cpp" />
@@ -36,11 +38,15 @@
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-io\dllIO.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\Loader.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderMdlDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\LoaderMTL.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\LoaderObj.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\LoaderPGY.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\IOComponent.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\LoaderTexDesc.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\MdlDesc.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\MdlDescHeader.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\MdlDescModel.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\MeshMakerObj.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\MTL.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\MTLIllum.h" />

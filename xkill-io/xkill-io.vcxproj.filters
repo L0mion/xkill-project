@@ -46,6 +46,12 @@
     <ClCompile Include="..\..\xkill-source\xkill-io\LoaderTexDesc.cpp">
       <Filter>.texdesc</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-io\LoaderMdlDesc.cpp">
+      <Filter>.mdldesc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-io\MdlDesc.cpp">
+      <Filter>.mdldesc</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-io\Loader.h" />
@@ -105,6 +111,18 @@
     <ClInclude Include="..\..\xkill-source\xkill-io\VarStatus.h">
       <Filter>util</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderMdlDesc.h">
+      <Filter>.mdldesc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\MdlDesc.h">
+      <Filter>.mdldesc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\MdlDescHeader.h">
+      <Filter>.mdldesc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\MdlDescModel.h">
+      <Filter>.mdldesc</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include=".mtl">
@@ -124,6 +142,9 @@
     </Filter>
     <Filter Include=".texdesc">
       <UniqueIdentifier>{eefb329f-7d5b-4bc3-a2b0-0994b09f4881}</UniqueIdentifier>
+    </Filter>
+    <Filter Include=".mdldesc">
+      <UniqueIdentifier>{3c5087b0-ef09-414b-a598-dc2242baeee3}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
