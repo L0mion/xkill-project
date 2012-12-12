@@ -84,6 +84,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\TexLoader.h">
       <Filter>ManagementTex</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\StringConv.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DDebug.cpp" />
@@ -151,6 +152,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\TexLoader.cpp">
       <Filter>ManagementTex</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\StringConv.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="GBuffer">

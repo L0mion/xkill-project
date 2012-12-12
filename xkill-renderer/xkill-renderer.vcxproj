@@ -37,6 +37,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ShaderCS.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ShaderPS.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ShaderVS.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\StringConv.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Tex.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\TexLoader.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\TexManagement.h" />
@@ -61,6 +62,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderCS.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderPS.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderVS.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\StringConv.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Tex.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\TexLoader.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\TexManagement.cpp" />
