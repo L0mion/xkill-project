@@ -15,12 +15,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-architecture\ComponentManager.h">
       <Filter>Components</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\RenderComponent.h">
-      <Filter>Components\Implementations</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\PhysicsComponent.h">
-      <Filter>Components\Implementations</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeController.h">
       <Filter>Attributes</Filter>
     </ClInclude>
