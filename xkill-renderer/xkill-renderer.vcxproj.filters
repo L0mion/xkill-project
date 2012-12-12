@@ -67,7 +67,27 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\D3DManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\RSManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\SSManagement.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\Vertices.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\AnimationClip.h">
+      <Filter>m3dAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\BoneAnimation.h">
+      <Filter>m3dAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\Keyframe.h">
+      <Filter>m3dAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\SkinnedData.h">
+      <Filter>m3dAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\M3DLoader.h">
+      <Filter>m3dAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\M3DMeshData.h">
+      <Filter>m3dAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\AnimatedMesh.h">
+      <Filter>m3dAnimation</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DDebug.cpp" />
@@ -118,6 +138,21 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RSManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\SSManagement.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\AnimationClip.cpp">
+      <Filter>m3dAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\BoneAnimation.cpp">
+      <Filter>m3dAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\SkinnedData.cpp">
+      <Filter>m3dAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\M3DLoader.cpp">
+      <Filter>m3dAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\AnimatedMesh.cpp">
+      <Filter>m3dAnimation</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="GBuffer">
@@ -158,6 +193,9 @@
     </Filter>
     <Filter Include="Mesh">
       <UniqueIdentifier>{1a5c97c9-ee40-4826-89f7-cb2c40d229a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="m3dAnimation">
+      <UniqueIdentifier>{7820ac0d-6cf8-4df2-ad17-59828e51f2f3}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
