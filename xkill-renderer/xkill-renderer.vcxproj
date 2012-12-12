@@ -15,6 +15,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\AnimatedMesh.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\AnimationClip.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\BoneAnimation.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CBDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CBManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\d3dDebug.h" />
@@ -26,8 +29,11 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\gBufferID.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\IB.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\IEDManagement.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\Keyframe.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\LightDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\LightManagement.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\M3DLoader.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\M3DMeshData.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshModelD3D.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\RenderingComponent.h" />
@@ -37,12 +43,15 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ShaderCS.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ShaderPS.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ShaderVS.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\SkinnedData.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\VB.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\SSManagement.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\Vertices.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ViewportManagement.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\AnimatedMesh.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\AnimationClip.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\BoneAnimation.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\CBManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DDebug.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DManagement.cpp" />
@@ -51,6 +60,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\IB.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\IEDManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\LightManagement.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\M3DLoader.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshModelD3D.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RenderingComponent.cpp" />
@@ -59,6 +69,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderCS.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderPS.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderVS.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\SkinnedData.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\VB.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\SSManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ViewportManagement.cpp" />
