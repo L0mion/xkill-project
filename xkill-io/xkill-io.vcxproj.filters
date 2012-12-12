@@ -43,6 +43,9 @@
       <Filter>.pgy</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-io\IOComponent.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-io\LoaderTexDesc.cpp">
+      <Filter>.texdesc</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-io\Loader.h" />
@@ -96,6 +99,12 @@
       <Filter>util</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-io\IOComponent.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderTexDesc.h">
+      <Filter>.texdesc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\VarStatus.h">
+      <Filter>util</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include=".mtl">
@@ -112,6 +121,9 @@
     </Filter>
     <Filter Include="util">
       <UniqueIdentifier>{1cb25506-5ae2-4d44-8c9f-bc8230e6b4ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include=".texdesc">
+      <UniqueIdentifier>{eefb329f-7d5b-4bc3-a2b0-0994b09f4881}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

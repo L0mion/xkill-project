@@ -20,6 +20,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-io\LoaderObj.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\LoaderPGY.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\IOComponent.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-io\LoaderTexDesc.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\MeshMakerObj.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\MTL.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\MTLMaterial.cpp" />
@@ -39,6 +40,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-io\LoaderObj.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\LoaderPGY.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\IOComponent.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderTexDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\MeshMakerObj.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\MTL.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\MTLIllum.h" />
@@ -50,6 +52,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-io\ObjGroup.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\SimpleStringSplitter.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\SpecsPGY.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\VarStatus.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\Writer.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\WriterPGY.h" />
   </ItemGroup>
