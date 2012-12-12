@@ -3,6 +3,8 @@
 *.suo
 *.user
 *.log
+*.vspx
+*.psess
 Debug
 ipch/
 xkill/Debug/
@@ -13,4 +15,3 @@ Release/
 xkill-dependencies/xkill/
 xkill-gui/GeneratedFiles/
 xkill-gui/Win32/
-
