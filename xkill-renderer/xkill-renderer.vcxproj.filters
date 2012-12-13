@@ -4,7 +4,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\D3DDebug.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\RenderingComponent.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Shader.h">
-      <Filter>FX\Shader</Filter>
+      <Filter>ManagementFX\Shader</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\GBuffer.h">
       <Filter>GBuffer</Filter>
@@ -13,13 +13,13 @@
       <Filter>GBuffer</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ShaderCS.h">
-      <Filter>FX\Shader\ShaderCS</Filter>
+      <Filter>ManagementFX\Shader\ShaderCS</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ShaderPS.h">
-      <Filter>FX\Shader\ShaderPS</Filter>
+      <Filter>ManagementFX\Shader\ShaderPS</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ShaderVS.h">
-      <Filter>FX\Shader\ShaderVS</Filter>
+      <Filter>ManagementFX\Shader\ShaderVS</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\DLLRenderer.h">
       <Filter>Utilities</Filter>
@@ -31,32 +31,19 @@
       <Filter>Utilities</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\FXManagement.h">
-      <Filter>FX\FXManagement</Filter>
+      <Filter>ManagementFX\FXManagement</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\IEDManagement.h">
-      <Filter>FX\FXManagement\IEDManagement</Filter>
+      <Filter>ManagementFX\FXManagement\IEDManagement</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CBManagement.h">
       <Filter>ConstantBuffer</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\ViewportManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\LightManagement.h">
       <Filter>Lighting</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\LightDesc.h">
       <Filter>Lighting</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshModelD3D.h">
-      <Filter>Mesh</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshManagement.h">
-      <Filter>Mesh</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\IB.h">
-      <Filter>Mesh</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\VB.h">
-      <Filter>Mesh</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CBDesc.h">
       <Filter>ConstantBuffer</Filter>
@@ -64,6 +51,40 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CBManagement.h">
       <Filter>ConstantBuffer</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\SSManagement.h">
+      <Filter>ManagementSS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\RSManagement.h">
+      <Filter>ManagementRS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\IB.h">
+      <Filter>ManagementModel\IB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\VB.h">
+      <Filter>ManagementModel\VB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ModelManagement.h">
+      <Filter>ManagementModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ModelD3D.h">
+      <Filter>ManagementModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ViewportManagement.h">
+      <Filter>ManagementViewport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\D3DManagement.h">
+      <Filter>ManagementD3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\TexManagement.h">
+      <Filter>ManagementTex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\Tex.h">
+      <Filter>ManagementTex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\TexLoader.h">
+      <Filter>ManagementTex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\StringConv.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\D3DManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\RSManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\SSManagement.h" />
@@ -93,48 +114,69 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DDebug.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RenderingComponent.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Shader.cpp">
-      <Filter>FX\Shader</Filter>
+      <Filter>ManagementFX\Shader</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\GBuffer.cpp">
       <Filter>GBuffer</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderCS.cpp">
-      <Filter>FX\Shader\ShaderCS</Filter>
+      <Filter>ManagementFX\Shader\ShaderCS</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderPS.cpp">
-      <Filter>FX\Shader\ShaderPS</Filter>
+      <Filter>ManagementFX\Shader\ShaderPS</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderVS.cpp">
-      <Filter>FX\Shader\ShaderVS</Filter>
+      <Filter>ManagementFX\Shader\ShaderVS</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\FXManagement.cpp">
-      <Filter>FX\FXManagement</Filter>
+      <Filter>ManagementFX\FXManagement</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\IEDManagement.cpp">
-      <Filter>FX\FXManagement\IEDManagement</Filter>
+      <Filter>ManagementFX\FXManagement\IEDManagement</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\CBManagement.cpp">
       <Filter>ConstantBuffer</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\ViewportManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\LightManagement.cpp">
       <Filter>Lighting</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshModelD3D.cpp">
-      <Filter>Mesh</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshManagement.cpp">
-      <Filter>Mesh</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\IB.cpp">
-      <Filter>Mesh</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\VB.cpp">
-      <Filter>Mesh</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\CBManagement.cpp">
       <Filter>ConstantBuffer</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\SSManagement.cpp">
+      <Filter>ManagementSS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\RSManagement.cpp">
+      <Filter>ManagementRS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\IB.cpp">
+      <Filter>ManagementModel\IB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\VB.cpp">
+      <Filter>ManagementModel\VB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ModelManagement.cpp">
+      <Filter>ManagementModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ModelD3D.cpp">
+      <Filter>ManagementModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ViewportManagement.cpp">
+      <Filter>ManagementViewport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DManagement.cpp">
+      <Filter>ManagementD3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\TexManagement.cpp">
+      <Filter>ManagementTex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\Tex.cpp">
+      <Filter>ManagementTex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\TexLoader.cpp">
+      <Filter>ManagementTex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\StringConv.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RSManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\SSManagement.cpp" />
@@ -158,32 +200,11 @@
     <Filter Include="GBuffer">
       <UniqueIdentifier>{2fbfce18-7d1c-40b6-8061-4ae9d7f12647}</UniqueIdentifier>
     </Filter>
-    <Filter Include="FX">
-      <UniqueIdentifier>{1c71b07b-c451-413a-bed9-346615660f66}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="FX\Shader">
-      <UniqueIdentifier>{bb7d5c55-2991-4a22-b58a-8247ceb2dbf3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="FX\Shader\ShaderCS">
-      <UniqueIdentifier>{06e3f302-5f1d-4a14-8c92-596dabdbfd33}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="FX\Shader\ShaderPS">
-      <UniqueIdentifier>{06c9c29e-3285-47ac-a2ee-df6438bc34d1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="FX\Shader\ShaderVS">
-      <UniqueIdentifier>{7e4bb444-bef2-4152-85e7-c9d67c20571d}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Utilities">
       <UniqueIdentifier>{e7261483-c38c-4428-b1f0-ab8af322cc54}</UniqueIdentifier>
     </Filter>
     <Filter Include="Shaders">
       <UniqueIdentifier>{09139d65-982a-4622-b469-c745dc6f3043}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="FX\FXManagement">
-      <UniqueIdentifier>{d44a9808-0053-4a2b-b143-06aabe552ae7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="FX\FXManagement\IEDManagement">
-      <UniqueIdentifier>{35dcaa34-18ec-41cf-9e2a-30337701ba36}</UniqueIdentifier>
     </Filter>
     <Filter Include="ConstantBuffer">
       <UniqueIdentifier>{2c84bf73-10e2-4e8f-92c7-623b95c48cbd}</UniqueIdentifier>
@@ -191,8 +212,50 @@
     <Filter Include="Lighting">
       <UniqueIdentifier>{2530f1c8-5479-4018-9a93-f070b0300a33}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Mesh">
+    <Filter Include="ManagementFX">
+      <UniqueIdentifier>{1c71b07b-c451-413a-bed9-346615660f66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ManagementFX\Shader">
+      <UniqueIdentifier>{bb7d5c55-2991-4a22-b58a-8247ceb2dbf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ManagementFX\Shader\ShaderCS">
+      <UniqueIdentifier>{06e3f302-5f1d-4a14-8c92-596dabdbfd33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ManagementFX\Shader\ShaderPS">
+      <UniqueIdentifier>{06c9c29e-3285-47ac-a2ee-df6438bc34d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ManagementFX\Shader\ShaderVS">
+      <UniqueIdentifier>{7e4bb444-bef2-4152-85e7-c9d67c20571d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ManagementFX\FXManagement">
+      <UniqueIdentifier>{d44a9808-0053-4a2b-b143-06aabe552ae7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ManagementFX\FXManagement\IEDManagement">
+      <UniqueIdentifier>{35dcaa34-18ec-41cf-9e2a-30337701ba36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ManagementModel">
       <UniqueIdentifier>{1a5c97c9-ee40-4826-89f7-cb2c40d229a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ManagementModel\VB">
+      <UniqueIdentifier>{1527d112-b105-45ab-8147-3f23aa069edb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ManagementModel\IB">
+      <UniqueIdentifier>{bb979278-4df3-4079-bc7c-2f2f4e5de43d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ManagementViewport">
+      <UniqueIdentifier>{ebb41859-8f89-4793-aed8-e02f5cee3e1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ManagementTex">
+      <UniqueIdentifier>{e22e8ccf-d023-45c1-a069-e8eb1f3bdf73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ManagementRS">
+      <UniqueIdentifier>{32468560-35ac-4598-887e-84c12b93b9b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ManagementSS">
+      <UniqueIdentifier>{28be39fe-a37a-4113-a458-46ab951fc982}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ManagementD3D">
+      <UniqueIdentifier>{581dce99-1ae8-49eb-9fd2-26b50c127343}</UniqueIdentifier>
     </Filter>
     <Filter Include="m3dAnimation">
       <UniqueIdentifier>{7820ac0d-6cf8-4df2-ad17-59828e51f2f3}</UniqueIdentifier>
