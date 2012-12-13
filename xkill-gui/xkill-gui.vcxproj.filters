@@ -31,9 +31,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="GeneratedFiles\qrc_MainWindow.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-gui\main.cpp">
       <Filter>Files</Filter>
     </ClCompile>
@@ -52,14 +49,11 @@
     <ClCompile Include="..\..\xkill-source\xkill-gui\Menu.cpp">
       <Filter>Files</Filter>
     </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_MainWindow.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="MainWindow.ui">
-      <Filter>Form Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="MainWindow.qrc">
-      <Filter>Resource Files</Filter>
-    </CustomBuild>
     <CustomBuild Include="..\..\xkill-source\xkill-gui\MainWindow.h">
       <Filter>Files</Filter>
     </CustomBuild>
@@ -69,18 +63,24 @@
     <CustomBuild Include="..\..\xkill-source\xkill-gui\GameTimer.h">
       <Filter>Files</Filter>
     </CustomBuild>
-    <CustomBuild Include="MainMenu.ui">
+    <CustomBuild Include="..\..\xkill-source\xkill-gui\MainMenu.ui">
       <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\xkill-source\xkill-gui\MainWindow.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\xkill-source\xkill-gui\MainWindow.qrc">
+      <Filter>Resource Files</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GeneratedFiles\ui_MainWindow.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-gui\Menu.h">
       <Filter>Files</Filter>
     </ClInclude>
     <ClInclude Include="GeneratedFiles\ui_MainMenu.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_MainWindow.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
   </ItemGroup>
