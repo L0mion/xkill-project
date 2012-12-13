@@ -1,0 +1,1523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainMenu</class>
+ <widget class="QMainWindow" name="MainMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>322</width>
+    <height>671</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainMenu</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_35">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QTabWidget" name="tabWidget">
+            <property name="tabPosition">
+             <enum>QTabWidget::North</enum>
+            </property>
+            <property name="tabShape">
+             <enum>QTabWidget::Rounded</enum>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <property name="elideMode">
+             <enum>Qt::ElideNone</enum>
+            </property>
+            <widget class="QWidget" name="Game">
+             <attribute name="title">
+              <string>Game</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_34">
+              <item>
+               <widget class="QTabWidget" name="tabWidget_2">
+                <property name="currentIndex">
+                 <number>2</number>
+                </property>
+                <widget class="QWidget" name="Start">
+                 <attribute name="title">
+                  <string>Start</string>
+                 </attribute>
+                 <layout class="QVBoxLayout" name="verticalLayout_21">
+                  <item>
+                   <layout class="QVBoxLayout" name="verticalLayout_15">
+                    <item>
+                     <widget class="QPushButton" name="pushButton">
+                      <property name="text">
+                       <string>Start Game</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <layout class="QHBoxLayout" name="horizontalLayout_11">
+                      <item>
+                       <widget class="QLabel" name="label_16">
+                        <property name="text">
+                         <string>Players</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QLabel" name="label_17">
+                        <property name="text">
+                         <string>1</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                    <item>
+                     <layout class="QHBoxLayout" name="horizontalLayout_10"/>
+                    </item>
+                    <item>
+                     <widget class="QSlider" name="horizontalSlider_2">
+                      <property name="toolTip">
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Max number of shadow casting lights.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                      </property>
+                      <property name="minimum">
+                       <number>1</number>
+                      </property>
+                      <property name="maximum">
+                       <number>8</number>
+                      </property>
+                      <property name="sliderPosition">
+                       <number>1</number>
+                      </property>
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="invertedAppearance">
+                       <bool>false</bool>
+                      </property>
+                      <property name="invertedControls">
+                       <bool>false</bool>
+                      </property>
+                      <property name="tickPosition">
+                       <enum>QSlider::TicksBelow</enum>
+                      </property>
+                      <property name="tickInterval">
+                       <number>2</number>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <layout class="QHBoxLayout" name="horizontalLayout_7">
+                      <item>
+                       <widget class="QLabel" name="label_9">
+                        <property name="text">
+                         <string>Time limit</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QLabel" name="label_10">
+                        <property name="text">
+                         <string>0</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                    <item>
+                     <widget class="QSlider" name="horizontalSlider_4">
+                      <property name="toolTip">
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Max number of shadow casting lights.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                      </property>
+                      <property name="minimum">
+                       <number>0</number>
+                      </property>
+                      <property name="maximum">
+                       <number>128</number>
+                      </property>
+                      <property name="sliderPosition">
+                       <number>0</number>
+                      </property>
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="invertedAppearance">
+                       <bool>false</bool>
+                      </property>
+                      <property name="invertedControls">
+                       <bool>false</bool>
+                      </property>
+                      <property name="tickPosition">
+                       <enum>QSlider::TicksBelow</enum>
+                      </property>
+                      <property name="tickInterval">
+                       <number>16</number>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <layout class="QHBoxLayout" name="horizontalLayout_9">
+                      <item>
+                       <widget class="QLabel" name="label_13">
+                        <property name="text">
+                         <string>Cycle limit</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QLabel" name="label_14">
+                        <property name="text">
+                         <string>32</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                    <item>
+                     <widget class="QSlider" name="horizontalSlider_6">
+                      <property name="toolTip">
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Max number of shadow casting lights.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                      </property>
+                      <property name="minimum">
+                       <number>0</number>
+                      </property>
+                      <property name="maximum">
+                       <number>128</number>
+                      </property>
+                      <property name="sliderPosition">
+                       <number>32</number>
+                      </property>
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="invertedAppearance">
+                       <bool>false</bool>
+                      </property>
+                      <property name="invertedControls">
+                       <bool>false</bool>
+                      </property>
+                      <property name="tickPosition">
+                       <enum>QSlider::TicksBelow</enum>
+                      </property>
+                      <property name="tickInterval">
+                       <number>16</number>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <layout class="QHBoxLayout" name="horizontalLayout_12">
+                      <item>
+                       <widget class="QLabel" name="label_18">
+                        <property name="text">
+                         <string>Respawn time</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QLabel" name="label_19">
+                        <property name="text">
+                         <string>0</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                    <item>
+                     <widget class="QSlider" name="horizontalSlider_7">
+                      <property name="toolTip">
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Max number of shadow casting lights.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                      </property>
+                      <property name="minimum">
+                       <number>0</number>
+                      </property>
+                      <property name="maximum">
+                       <number>64</number>
+                      </property>
+                      <property name="sliderPosition">
+                       <number>0</number>
+                      </property>
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="invertedAppearance">
+                       <bool>false</bool>
+                      </property>
+                      <property name="invertedControls">
+                       <bool>false</bool>
+                      </property>
+                      <property name="tickPosition">
+                       <enum>QSlider::TicksBelow</enum>
+                      </property>
+                      <property name="tickInterval">
+                       <number>16</number>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <spacer name="verticalSpacer_3">
+                      <property name="orientation">
+                       <enum>Qt::Vertical</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>20</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="Level">
+                 <attribute name="title">
+                  <string>Level</string>
+                 </attribute>
+                 <layout class="QVBoxLayout" name="verticalLayout_20">
+                  <item>
+                   <widget class="QGroupBox" name="groupBox_6">
+                    <property name="title">
+                     <string>Level select</string>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_19">
+                     <item>
+                      <widget class="QComboBox" name="comboBox_5">
+                       <item>
+                        <property name="text">
+                         <string>Cykranosh</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Remilliod</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Wintermute</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Plateau of Leng</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Garden of Yin</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Uknown Kadath</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Celephaïs</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Hyperboria</string>
+                        </property>
+                       </item>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QGroupBox" name="groupBox_19">
+                    <property name="title">
+                     <string>Game Mode</string>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_30">
+                     <item>
+                      <widget class="QRadioButton" name="radioButton_6">
+                       <property name="text">
+                        <string>Scheduling</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QRadioButton" name="radioButton_7">
+                       <property name="text">
+                        <string>Deathmatch</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QRadioButton" name="radioButton_59">
+                       <property name="text">
+                        <string>Team Deathmatch</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QRadioButton" name="radioButton_8">
+                       <property name="text">
+                        <string>Capture the Credit Card</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QRadioButton" name="radioButton_11">
+                       <property name="text">
+                        <string>Trojan Horse</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QRadioButton" name="radioButton_10">
+                       <property name="text">
+                        <string>Spyware vs Virus vs Antivirus</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QRadioButton" name="radioButton_12">
+                       <property name="text">
+                        <string>Hunger Games</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QRadioButton" name="radioButton_9">
+                       <property name="text">
+                        <string>Rootkit Mode</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="verticalSpacer_14">
+                       <property name="orientation">
+                        <enum>Qt::Vertical</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>20</width>
+                         <height>40</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="verticalSpacer_5">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="Settings">
+                 <attribute name="title">
+                  <string>Settings</string>
+                 </attribute>
+                 <layout class="QVBoxLayout" name="verticalLayout_22">
+                  <item>
+                   <widget class="QTabWidget" name="tabWidget_4">
+                    <property name="layoutDirection">
+                     <enum>Qt::LeftToRight</enum>
+                    </property>
+                    <property name="currentIndex">
+                     <number>2</number>
+                    </property>
+                    <widget class="QWidget" name="Weapons">
+                     <attribute name="title">
+                      <string>Weapons</string>
+                     </attribute>
+                     <layout class="QVBoxLayout" name="verticalLayout_24">
+                      <item>
+                       <widget class="QTabWidget" name="tabWidget_5">
+                        <property name="currentIndex">
+                         <number>1</number>
+                        </property>
+                        <widget class="QWidget" name="Weapons">
+                         <attribute name="title">
+                          <string>Weapons</string>
+                         </attribute>
+                         <layout class="QVBoxLayout" name="verticalLayout_28">
+                          <item>
+                           <widget class="QCheckBox" name="checkBox_6">
+                            <property name="text">
+                             <string>Single</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QCheckBox" name="checkBox_7">
+                            <property name="text">
+                             <string>Semi</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QCheckBox" name="checkBox_8">
+                            <property name="text">
+                             <string>Auto</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QGroupBox" name="groupBox_18">
+                            <property name="title">
+                             <string>Special</string>
+                            </property>
+                            <property name="flat">
+                             <bool>true</bool>
+                            </property>
+                            <layout class="QVBoxLayout" name="verticalLayout_29">
+                             <item>
+                              <widget class="QCheckBox" name="checkBox_19">
+                               <property name="text">
+                                <string>Cycle gun</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QCheckBox" name="checkBox_20">
+                               <property name="text">
+                                <string>Execution axe</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QCheckBox" name="checkBox_55">
+                               <property name="text">
+                                <string>Grappling hook</string>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </widget>
+                          </item>
+                          <item>
+                           <spacer name="verticalSpacer_13">
+                            <property name="orientation">
+                             <enum>Qt::Vertical</enum>
+                            </property>
+                            <property name="sizeHint" stdset="0">
+                             <size>
+                              <width>20</width>
+                              <height>40</height>
+                             </size>
+                            </property>
+                           </spacer>
+                          </item>
+                         </layout>
+                        </widget>
+                        <widget class="QWidget" name="Ammo">
+                         <attribute name="title">
+                          <string>Ammo</string>
+                         </attribute>
+                         <layout class="QVBoxLayout" name="verticalLayout_25">
+                          <item>
+                           <widget class="QCheckBox" name="checkBox_10">
+                            <property name="text">
+                             <string>Scatter</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QCheckBox" name="checkBox_11">
+                            <property name="text">
+                             <string>Explosive</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QCheckBox" name="checkBox_9">
+                            <property name="text">
+                             <string>Bullet</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QCheckBox" name="checkBox_13">
+                            <property name="text">
+                             <string>Energy</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QCheckBox" name="checkBox_12">
+                            <property name="text">
+                             <string>Bouncy</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <spacer name="verticalSpacer_6">
+                            <property name="orientation">
+                             <enum>Qt::Vertical</enum>
+                            </property>
+                            <property name="sizeHint" stdset="0">
+                             <size>
+                              <width>20</width>
+                              <height>40</height>
+                             </size>
+                            </property>
+                           </spacer>
+                          </item>
+                         </layout>
+                        </widget>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                    <widget class="QWidget" name="Hacks">
+                     <attribute name="title">
+                      <string>Hacks</string>
+                     </attribute>
+                     <layout class="QVBoxLayout" name="verticalLayout_31">
+                      <item>
+                       <widget class="QCheckBox" name="checkBox_39">
+                        <property name="text">
+                         <string>Health patch</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QCheckBox" name="checkBox_40">
+                        <property name="text">
+                         <string>malloc </string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QCheckBox" name="checkBox_41">
+                        <property name="text">
+                         <string>Wallhack </string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QCheckBox" name="checkBox_42">
+                        <property name="text">
+                         <string>Noclip </string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QCheckBox" name="checkBox_44">
+                        <property name="text">
+                         <string>short jump</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QCheckBox" name="checkBox_54">
+                        <property name="text">
+                         <string>long jump</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QCheckBox" name="checkBox_46">
+                        <property name="text">
+                         <string>delete </string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QCheckBox" name="checkBox_45">
+                        <property name="text">
+                         <string>memcopy </string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QCheckBox" name="checkBox_47">
+                        <property name="text">
+                         <string>Cache boots</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QCheckBox" name="checkBox_48">
+                        <property name="text">
+                         <string>Flatlander </string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QCheckBox" name="checkBox_49">
+                        <property name="text">
+                         <string>Compression </string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QCheckBox" name="checkBox_50">
+                        <property name="text">
+                         <string>No preemption</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QCheckBox" name="checkBox_51">
+                        <property name="text">
+                         <string>&lt;extra armour&gt;</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QCheckBox" name="checkBox_52">
+                        <property name="text">
+                         <string>Operator Overloading</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QCheckBox" name="checkBox_53">
+                        <property name="text">
+                         <string>Wololo </string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <spacer name="verticalSpacer_9">
+                        <property name="orientation">
+                         <enum>Qt::Vertical</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>20</width>
+                          <height>40</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                     </layout>
+                    </widget>
+                    <widget class="QWidget" name="Mutators">
+                     <attribute name="title">
+                      <string>Mutators</string>
+                     </attribute>
+                     <layout class="QVBoxLayout" name="verticalLayout_23">
+                      <item>
+                       <widget class="QGroupBox" name="groupBox_15">
+                        <property name="title">
+                         <string>Physics</string>
+                        </property>
+                        <property name="flat">
+                         <bool>true</bool>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_26">
+                         <item>
+                          <widget class="QRadioButton" name="radioButton_3">
+                           <property name="text">
+                            <string>None</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QRadioButton" name="radioButton_2">
+                           <property name="text">
+                            <string>Gravity shift</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QRadioButton" name="radioButton_58">
+                           <property name="text">
+                            <string>Low gravity</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QRadioButton" name="radioButton_4">
+                           <property name="text">
+                            <string>Zero gravity</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QGroupBox" name="groupBox_10">
+                        <property name="title">
+                         <string>Time</string>
+                        </property>
+                        <property name="flat">
+                         <bool>true</bool>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_7">
+                         <item>
+                          <widget class="QRadioButton" name="radioButton_5">
+                           <property name="text">
+                            <string>None</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QRadioButton" name="radioButton_56">
+                           <property name="text">
+                            <string>Matix</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QRadioButton" name="radioButton_54">
+                           <property name="text">
+                            <string>Bullet hell</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QGroupBox" name="groupBox_16">
+                        <property name="title">
+                         <string>The Scheduler </string>
+                        </property>
+                        <property name="flat">
+                         <bool>true</bool>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_27">
+                         <item>
+                          <widget class="QCheckBox" name="checkBox_14">
+                           <property name="text">
+                            <string>Null-Process</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QCheckBox" name="checkBox_17">
+                           <property name="text">
+                            <string>Door race</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QCheckBox" name="checkBox_18">
+                           <property name="text">
+                            <string>Sudden death</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QCheckBox" name="checkBox_15">
+                           <property name="text">
+                            <string>Data corruption</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QCheckBox" name="checkBox_16">
+                           <property name="text">
+                            <string>Flood</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item>
+                       <spacer name="verticalSpacer_10">
+                        <property name="orientation">
+                         <enum>Qt::Vertical</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>20</width>
+                          <height>40</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                     </layout>
+                    </widget>
+                    <widget class="QWidget" name="Misc">
+                     <attribute name="title">
+                      <string>Misc</string>
+                     </attribute>
+                     <layout class="QVBoxLayout" name="verticalLayout_14">
+                      <item>
+                       <widget class="QGroupBox" name="groupBox_20">
+                        <property name="title">
+                         <string>@!#?@!</string>
+                        </property>
+                        <property name="flat">
+                         <bool>true</bool>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_32">
+                         <item>
+                          <widget class="QCheckBox" name="checkBox_13">
+                           <property name="text">
+                            <string>???</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QCheckBox" name="checkBox_14">
+                           <property name="text">
+                            <string>!?!</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QCheckBox" name="checkBox_60">
+                           <property name="text">
+                            <string>!??</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item>
+                       <spacer name="verticalSpacer_11">
+                        <property name="orientation">
+                         <enum>Qt::Vertical</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>20</width>
+                          <height>40</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                     </layout>
+                    </widget>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="verticalSpacer_8">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <spacer name="verticalSpacer_12">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="Options">
+             <attribute name="title">
+              <string>Options</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_33">
+              <item>
+               <widget class="QTabWidget" name="tabWidget_3">
+                <property name="currentIndex">
+                 <number>1</number>
+                </property>
+                <widget class="QWidget" name="Video">
+                 <attribute name="title">
+                  <string>Video</string>
+                 </attribute>
+                 <layout class="QGridLayout" name="gridLayout">
+                  <item row="4" column="0">
+                   <spacer name="verticalSpacer_2">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QGroupBox" name="groupBox_3">
+                    <property name="title">
+                     <string>Shadows</string>
+                    </property>
+                    <property name="flat">
+                     <bool>true</bool>
+                    </property>
+                    <property name="checkable">
+                     <bool>false</bool>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_6">
+                     <item>
+                      <widget class="QCheckBox" name="checkBox_2">
+                       <property name="text">
+                        <string>On/Off</string>
+                       </property>
+                       <property name="checked">
+                        <bool>true</bool>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QComboBox" name="comboBox_3">
+                       <property name="currentIndex">
+                        <number>1</number>
+                       </property>
+                       <item>
+                        <property name="text">
+                         <string>Low</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Medium</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>High</string>
+                        </property>
+                       </item>
+                      </widget>
+                     </item>
+                     <item>
+                      <layout class="QVBoxLayout" name="verticalLayout_5">
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_2">
+                         <item>
+                          <widget class="QLabel" name="label">
+                           <property name="text">
+                            <string>Max pointlights</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_2">
+                           <property name="text">
+                            <string>8</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                       <item>
+                        <widget class="QSlider" name="horizontalSlider">
+                         <property name="toolTip">
+                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Max number of shadow casting lights.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         </property>
+                         <property name="maximum">
+                          <number>8</number>
+                         </property>
+                         <property name="value">
+                          <number>4</number>
+                         </property>
+                         <property name="orientation">
+                          <enum>Qt::Horizontal</enum>
+                         </property>
+                         <property name="invertedAppearance">
+                          <bool>false</bool>
+                         </property>
+                         <property name="invertedControls">
+                          <bool>false</bool>
+                         </property>
+                         <property name="tickPosition">
+                          <enum>QSlider::TicksBelow</enum>
+                         </property>
+                         <property name="tickInterval">
+                          <number>1</number>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QGroupBox" name="groupBox">
+                    <property name="title">
+                     <string>Resolution</string>
+                    </property>
+                    <property name="flat">
+                     <bool>true</bool>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_8">
+                     <item>
+                      <widget class="QComboBox" name="comboBox">
+                       <item>
+                        <property name="text">
+                         <string>1680x1050</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>1920x1080</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Auto</string>
+                        </property>
+                       </item>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QGroupBox" name="groupBox_2">
+                    <property name="title">
+                     <string>Shaders</string>
+                    </property>
+                    <property name="flat">
+                     <bool>true</bool>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_9">
+                     <item>
+                      <widget class="QCheckBox" name="checkBox">
+                       <property name="text">
+                        <string>SSAO</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QGroupBox" name="groupBox_4">
+                       <property name="title">
+                        <string>Tessellation</string>
+                       </property>
+                       <property name="flat">
+                        <bool>false</bool>
+                       </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_11">
+                        <item>
+                         <widget class="QCheckBox" name="checkBox_4">
+                          <property name="text">
+                           <string>On/Off</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QComboBox" name="comboBox_4">
+                          <property name="currentIndex">
+                           <number>1</number>
+                          </property>
+                          <item>
+                           <property name="text">
+                            <string>Low</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>Medium</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>High</string>
+                           </property>
+                          </item>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QCheckBox" name="checkBox_3">
+                       <property name="text">
+                        <string>Volumetric light</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QCheckBox" name="checkBox_5">
+                       <property name="text">
+                        <string>Motion blur</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QGroupBox" name="groupBox_5">
+                    <property name="title">
+                     <string>General</string>
+                    </property>
+                    <property name="flat">
+                     <bool>true</bool>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_12">
+                     <item>
+                      <layout class="QVBoxLayout" name="verticalLayout_2">
+                       <item>
+                        <widget class="QLabel" name="label_3">
+                         <property name="text">
+                          <string>Antialiasing</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QComboBox" name="comboBox_6">
+                         <item>
+                          <property name="text">
+                           <string>Off</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>MSAA 2x</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>MSAA 4x</string>
+                          </property>
+                         </item>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                     <item>
+                      <layout class="QVBoxLayout" name="verticalLayout_13">
+                       <item>
+                        <widget class="QLabel" name="label_4">
+                         <property name="text">
+                          <string>Anisotropic filtering</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QComboBox" name="comboBox_7">
+                         <item>
+                          <property name="text">
+                           <string>Off</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>2x</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>4x</string>
+                          </property>
+                         </item>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="Input">
+                 <attribute name="title">
+                  <string>Input</string>
+                 </attribute>
+                 <layout class="QVBoxLayout" name="verticalLayout_10">
+                  <item>
+                   <widget class="QTreeWidget" name="treeWidget">
+                    <property name="columnCount">
+                     <number>2</number>
+                    </property>
+                    <column>
+                     <property name="text">
+                      <string>Action</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Key</string>
+                     </property>
+                    </column>
+                    <item>
+                     <property name="text">
+                      <string>Forward</string>
+                     </property>
+                     <property name="text">
+                      <string>W</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Backward</string>
+                     </property>
+                     <property name="text">
+                      <string>S</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Left</string>
+                     </property>
+                     <property name="text">
+                      <string>A</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Right</string>
+                     </property>
+                     <property name="text">
+                      <string>D</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Jump</string>
+                     </property>
+                     <property name="text">
+                      <string>Space</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Fire</string>
+                     </property>
+                     <property name="text">
+                      <string>Mouse1</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Weapon 1</string>
+                     </property>
+                     <property name="text">
+                      <string>1</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Weapon 2</string>
+                     </property>
+                     <property name="text">
+                      <string>2</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Weapon 3</string>
+                     </property>
+                     <property name="text">
+                      <string>3</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Ammo 1</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Ammo 2</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Ammo 3</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Ammo Next</string>
+                     </property>
+                     <property name="text">
+                      <string>Scroll Down</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Ammo Previous</string>
+                     </property>
+                     <property name="text">
+                      <string>Scroll Up</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <spacer name="verticalSpacer_7">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_3">
+          <property name="text">
+           <string>Exit</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+   <zorder></zorder>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="MainWindow.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>horizontalSlider</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>label_2</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>240</x>
+     <y>549</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>209</x>
+     <y>522</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_7</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>label_19</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>85</x>
+     <y>313</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>177</x>
+     <y>280</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_6</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>label_14</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>88</x>
+     <y>250</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>181</x>
+     <y>224</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_4</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>label_10</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>76</x>
+     <y>197</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>172</x>
+     <y>172</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_2</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>label_17</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>64</x>
+     <y>151</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>172</x>
+     <y>116</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
