@@ -27,6 +27,10 @@
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-utilities\TexDesc.cpp">
       <Filter>Tex Desc</Filter>
+	</ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\Math.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshVertices.cpp">
+      <Filter>Mesh</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

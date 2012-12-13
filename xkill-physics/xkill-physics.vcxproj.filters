@@ -6,6 +6,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-physics\CollisionShapeManager.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-physics\objLoaderBasic.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-physics\mathBasic.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-physics\physicsUtilities.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-physics\physicsObject.h" />
@@ -14,5 +15,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-physics\CollisionShapeManager.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\objLoaderBasic.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\mathBasic.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-physics\physicsUtilities.h" />
   </ItemGroup>
 </Project>
