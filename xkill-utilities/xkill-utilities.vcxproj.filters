@@ -90,6 +90,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-utilities\FiniteStateMachine.h">
       <Filter>State Machine</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\LeanWindows.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Events">

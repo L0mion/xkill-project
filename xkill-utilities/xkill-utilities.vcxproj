@@ -43,6 +43,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-utilities\IObserver.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\LeanWindows.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\Math.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshGeometry.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshMaterial.h" />
