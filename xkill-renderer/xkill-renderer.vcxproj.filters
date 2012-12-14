@@ -40,10 +40,10 @@
       <Filter>ConstantBuffer</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\LightManagement.h">
-      <Filter>Lighting</Filter>
+      <Filter>ManagementLight</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\LightDesc.h">
-      <Filter>Lighting</Filter>
+      <Filter>ManagementLight</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CBDesc.h">
       <Filter>ConstantBuffer</Filter>
@@ -109,6 +109,9 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\AnimatedMesh.h">
       <Filter>m3dAnimation</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\SubsetD3D.h">
+      <Filter>ManagementModel\SubsetD3D</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DDebug.cpp" />
@@ -138,7 +141,7 @@
       <Filter>ConstantBuffer</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\LightManagement.cpp">
-      <Filter>Lighting</Filter>
+      <Filter>ManagementLight</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\CBManagement.cpp">
       <Filter>ConstantBuffer</Filter>
@@ -195,6 +198,9 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\AnimatedMesh.cpp">
       <Filter>m3dAnimation</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\SubsetD3D.cpp">
+      <Filter>ManagementModel\SubsetD3D</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="GBuffer">
@@ -208,9 +214,6 @@
     </Filter>
     <Filter Include="ConstantBuffer">
       <UniqueIdentifier>{2c84bf73-10e2-4e8f-92c7-623b95c48cbd}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Lighting">
-      <UniqueIdentifier>{2530f1c8-5479-4018-9a93-f070b0300a33}</UniqueIdentifier>
     </Filter>
     <Filter Include="ManagementFX">
       <UniqueIdentifier>{1c71b07b-c451-413a-bed9-346615660f66}</UniqueIdentifier>
@@ -259,6 +262,12 @@
     </Filter>
     <Filter Include="m3dAnimation">
       <UniqueIdentifier>{7820ac0d-6cf8-4df2-ad17-59828e51f2f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ManagementModel\SubsetD3D">
+      <UniqueIdentifier>{6de8c1ce-4672-488a-a8f1-e0519cf6f34a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ManagementLight">
+      <UniqueIdentifier>{2530f1c8-5479-4018-9a93-f070b0300a33}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
