@@ -20,6 +20,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-physics\mathBasic.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-physics\objLoaderBasic.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-physics\physicsObject.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-physics\physicsUtilities.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-physics\CollisionShapeManager.h" />
@@ -28,6 +29,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-physics\mathBasic.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\objLoaderBasic.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\physicsObject.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-physics\physicsUtilities.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{64C38E56-52DE-4A78-B32E-C2FE02506CF5}</ProjectGuid>
