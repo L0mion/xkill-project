@@ -267,6 +267,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>DLL_RENDERER;WIN32;_DEBUG;_WINDOWS;_USRDLL;;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BrowseInformation>true</BrowseInformation>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -274,6 +275,9 @@
       <ImportLibrary>$(OutDir)/../../xkill-project/xkill-dependencies/xkill/lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
       <AdditionalDependencies>DDSTextureLoader.lib;xkill-utilities.lib;d3d11.lib;d3dcompiler.lib;DXGI.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>

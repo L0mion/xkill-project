@@ -20,12 +20,14 @@
     <ClCompile Include="..\..\xkill-source\xkill-utilities\EventManager.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\EventType.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\Math.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\FiniteStateMachine.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshGeometry.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshMaterial.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshModel.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshSubset.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\TexDesc.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshVertices.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\FiniteState.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\AttributePointer.h" />
@@ -33,6 +35,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-utilities\dllUtilities.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\EventManager.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\EventType.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\FiniteStateMachine.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\IComponent.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClInclude>
@@ -48,6 +51,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-utilities\TexDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\TexDescHeader.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\TexDescTex.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\FiniteState.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{179430F3-FCF7-4C1B-A52C-5A6A3EB71CAB}</ProjectGuid>
@@ -108,12 +112,16 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>DLL_UTILITIES;WIN32;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BrowseInformation>true</BrowseInformation>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)/../../xkill-project/xkill-dependencies/xkill/lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
     </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>

@@ -25,6 +25,12 @@
     <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshSubset.cpp">
       <Filter>Mesh</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\FiniteStateMachine.cpp">
+      <Filter>State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\FiniteState.cpp">
+      <Filter>State</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-utilities\TexDesc.cpp">
       <Filter>Tex Desc</Filter>
 	</ClCompile>
@@ -69,6 +75,12 @@
     <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshVertices.h">
       <Filter>Mesh</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\FiniteStateMachine.h">
+      <Filter>State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\FiniteState.h">
+      <Filter>State</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\TexDesc.h">
       <Filter>Tex Desc</Filter>
     </ClInclude>
@@ -91,6 +103,9 @@
     </Filter>
     <Filter Include="Mesh">
       <UniqueIdentifier>{596510c9-9d36-492d-bef5-7dd9cd2a40aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="State">
+      <UniqueIdentifier>{7811ab60-5089-4702-8855-578ba18c2ce2}</UniqueIdentifier>
     </Filter>
     <Filter Include="Tex Desc">
       <UniqueIdentifier>{fa066205-2513-4b87-9649-d4d39df76085}</UniqueIdentifier>
