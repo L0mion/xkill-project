@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\D3DDebug.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\RenderingComponent.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Shader.h">
       <Filter>ManagementFX\Shader</Filter>
@@ -30,18 +29,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\RenderingUtilities.h">
       <Filter>Utilities</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\FXManagement.h">
-      <Filter>ManagementFX\FXManagement</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\IEDManagement.h">
-      <Filter>ManagementFX\FXManagement\IEDManagement</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\CBManagement.h">
-      <Filter>ConstantBuffer</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\LightManagement.h">
-      <Filter>ManagementLight</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\LightDesc.h">
       <Filter>ManagementLight</Filter>
     </ClInclude>
@@ -51,32 +38,14 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CBManagement.h">
       <Filter>ConstantBuffer</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\SSManagement.h">
-      <Filter>ManagementSS</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\RSManagement.h">
-      <Filter>ManagementRS</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\IB.h">
       <Filter>ManagementModel\IB</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\VB.h">
       <Filter>ManagementModel\VB</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\ModelManagement.h">
-      <Filter>ManagementModel</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ModelD3D.h">
       <Filter>ManagementModel</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\ViewportManagement.h">
-      <Filter>ManagementViewport</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\D3DManagement.h">
-      <Filter>ManagementD3D</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\TexManagement.h">
-      <Filter>ManagementTex</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Tex.h">
       <Filter>ManagementTex</Filter>
@@ -84,7 +53,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\TexLoader.h">
       <Filter>ManagementTex</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\StringConv.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\D3DManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\RSManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\SSManagement.h" />
@@ -112,9 +80,49 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\SubsetD3D.h">
       <Filter>ManagementModel\SubsetD3D</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\StringConv.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\Renderer.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\Winfo.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementViewport.h">
+      <Filter>ManagementViewport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementTex.h">
+      <Filter>ManagementTex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementSS.h">
+      <Filter>ManagementSS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementRS.h">
+      <Filter>ManagementRS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementModel.h">
+      <Filter>ManagementModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementLight.h">
+      <Filter>ManagementLight</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementFX.h">
+      <Filter>ManagementFX\FXManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementIED.h">
+      <Filter>ManagementFX\FXManagement\IEDManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementD3D.h">
+      <Filter>ManagementD3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementCB.h">
+      <Filter>ConstantBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementDebug.h">
+      <Filter>Utilities\D3DDebug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementGBuffer.h">
+      <Filter>ManagementGBuffer</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DDebug.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RenderingComponent.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Shader.cpp">
       <Filter>ManagementFX\Shader</Filter>
@@ -131,26 +139,8 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderVS.cpp">
       <Filter>ManagementFX\Shader\ShaderVS</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\FXManagement.cpp">
-      <Filter>ManagementFX\FXManagement</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\IEDManagement.cpp">
-      <Filter>ManagementFX\FXManagement\IEDManagement</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\CBManagement.cpp">
       <Filter>ConstantBuffer</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\LightManagement.cpp">
-      <Filter>ManagementLight</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\CBManagement.cpp">
-      <Filter>ConstantBuffer</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\SSManagement.cpp">
-      <Filter>ManagementSS</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\RSManagement.cpp">
-      <Filter>ManagementRS</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\IB.cpp">
       <Filter>ManagementModel\IB</Filter>
@@ -158,20 +148,8 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\VB.cpp">
       <Filter>ManagementModel\VB</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\ModelManagement.cpp">
-      <Filter>ManagementModel</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ModelD3D.cpp">
       <Filter>ManagementModel</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\ViewportManagement.cpp">
-      <Filter>ManagementViewport</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DManagement.cpp">
-      <Filter>ManagementD3D</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\TexManagement.cpp">
-      <Filter>ManagementTex</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Tex.cpp">
       <Filter>ManagementTex</Filter>
@@ -179,7 +157,6 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\TexLoader.cpp">
       <Filter>ManagementTex</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\StringConv.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RSManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\SSManagement.cpp" />
@@ -200,6 +177,47 @@
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\SubsetD3D.cpp">
       <Filter>ManagementModel\SubsetD3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\StringConv.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\Renderer.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\Winfo.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementViewport.cpp">
+      <Filter>ManagementViewport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementTex.cpp">
+      <Filter>ManagementTex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementSS.cpp">
+      <Filter>ManagementSS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementRS.cpp">
+      <Filter>ManagementRS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementModel.cpp">
+      <Filter>ManagementModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementLight.cpp">
+      <Filter>ManagementLight</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementFX.cpp">
+      <Filter>ManagementFX\FXManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementIED.cpp">
+      <Filter>ManagementFX\FXManagement\IEDManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementD3D.cpp">
+      <Filter>ManagementD3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementCB.cpp">
+      <Filter>ConstantBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementDebug.cpp">
+      <Filter>Utilities\D3DDebug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementGBuffer.cpp">
+      <Filter>ManagementGBuffer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -268,6 +286,12 @@
     </Filter>
     <Filter Include="ManagementLight">
       <UniqueIdentifier>{2530f1c8-5479-4018-9a93-f070b0300a33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\D3DDebug">
+      <UniqueIdentifier>{f733682f-83f8-4695-ae2d-d81fdbb0e3ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ManagementGBuffer">
+      <UniqueIdentifier>{0ceb31a1-bb2c-44fc-9c3d-3e309d653ef2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
