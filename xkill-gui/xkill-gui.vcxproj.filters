@@ -52,6 +52,9 @@
     <ClCompile Include="..\..\xkill-source\xkill-gui\Menu.cpp">
       <Filter>Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-gui\GameTimer.cpp">
+      <Filter>Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="MainWindow.ui">

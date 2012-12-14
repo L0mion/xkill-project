@@ -19,6 +19,8 @@
     <ClCompile Include="..\..\xkill-source\xkill-utilities\AttributeType.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\EventManager.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\EventType.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\FiniteState.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\FiniteStateMachine.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\Math.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshGeometry.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshMaterial.cpp" />
@@ -33,6 +35,8 @@
     <ClInclude Include="..\..\xkill-source\xkill-utilities\dllUtilities.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\EventManager.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\EventType.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\FiniteState.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\FiniteStateMachine.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\IComponent.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClInclude>

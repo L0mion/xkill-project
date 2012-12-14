@@ -113,6 +113,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\xkill-source\xkill-gui\GameTimer.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-gui\main.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-gui\Menu.cpp" />
     <ClCompile Include="GeneratedFiles\Debug\moc_GameWidget.cpp">
