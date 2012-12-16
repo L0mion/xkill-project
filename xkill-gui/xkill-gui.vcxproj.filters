@@ -57,11 +57,20 @@
     <ClCompile Include="GeneratedFiles\Release\moc_GameWidget.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\qrc_MainWindow.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-gui\MenuManager.cpp">
       <Filter>Files\Menus</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\DebugRelease\moc_Menu_Main.cpp">
+      <Filter>Generated Files\DebugRelease</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_Menu_Main.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Menu_Main.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_xkill.cpp">
+      <Filter>Generated Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -71,32 +80,29 @@
     <CustomBuild Include="..\..\xkill-source\xkill-gui\GameWidget.h">
       <Filter>Files</Filter>
     </CustomBuild>
-    <CustomBuild Include="..\..\xkill-source\xkill-gui\MainMenu.ui">
-      <Filter>Form Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\..\xkill-source\xkill-gui\MainWindow.ui">
-      <Filter>Form Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\..\xkill-source\xkill-gui\MainWindow.qrc">
-      <Filter>Resource Files</Filter>
-    </CustomBuild>
     <CustomBuild Include="..\..\xkill-source\xkill-gui\GameTimer.h">
       <Filter>Files\Utilities</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\..\xkill-source\xkill-gui\ScoreMenu.ui">
-      <Filter>Form Files</Filter>
     </CustomBuild>
     <CustomBuild Include="..\..\xkill-source\xkill-gui\Menu_Main.h">
       <Filter>Files\Menus</Filter>
     </CustomBuild>
+    <CustomBuild Include="..\..\xkill-resources\xkill-gui\MainMenu.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\xkill-resources\xkill-gui\MainMenu2.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\xkill-resources\xkill-gui\MainWindow.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\xkill-resources\xkill-gui\ScoreMenu.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\xkill-resources\xkill-gui\xkill.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GeneratedFiles\ui_MainMenu.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_MainWindow.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-gui\MenuManager.h">
       <Filter>Files\Menus</Filter>
     </ClInclude>
@@ -105,6 +111,15 @@
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-gui\Menu_ScoreBoard.h">
       <Filter>Files\Menus</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_MainMenu.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_MainMenu2.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_MainWindow.h">
+      <Filter>Generated Files</Filter>
     </ClInclude>
     <ClInclude Include="GeneratedFiles\ui_ScoreMenu.h">
       <Filter>Generated Files</Filter>
