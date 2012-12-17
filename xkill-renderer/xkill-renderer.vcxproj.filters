@@ -5,12 +5,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Shader.h">
       <Filter>ManagementFX\Shader</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\GBuffer.h">
-      <Filter>GBuffer</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\GBufferID.h">
-      <Filter>GBuffer</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ShaderCS.h">
       <Filter>ManagementFX\Shader\ShaderCS</Filter>
     </ClInclude>
@@ -33,10 +27,7 @@
       <Filter>ManagementLight</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CBDesc.h">
-      <Filter>ConstantBuffer</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\CBManagement.h">
-      <Filter>ConstantBuffer</Filter>
+      <Filter>ManagementCB</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\IB.h">
       <Filter>ManagementModel\IB</Filter>
@@ -53,9 +44,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\TexLoader.h">
       <Filter>ManagementTex</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\D3DManagement.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\RSManagement.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\SSManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\AnimationClip.h">
       <Filter>m3dAnimation</Filter>
     </ClInclude>
@@ -113,7 +101,7 @@
       <Filter>ManagementD3D</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementCB.h">
-      <Filter>ConstantBuffer</Filter>
+      <Filter>ManagementCB</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementDebug.h">
       <Filter>Utilities\D3DDebug</Filter>
@@ -121,14 +109,17 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementGBuffer.h">
       <Filter>ManagementGBuffer</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\gBuffer.h">
+      <Filter>ManagementGBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\gBufferID.h">
+      <Filter>ManagementGBuffer</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RenderingComponent.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Shader.cpp">
       <Filter>ManagementFX\Shader</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\GBuffer.cpp">
-      <Filter>GBuffer</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderCS.cpp">
       <Filter>ManagementFX\Shader\ShaderCS</Filter>
@@ -138,9 +129,6 @@
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderVS.cpp">
       <Filter>ManagementFX\Shader\ShaderVS</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\CBManagement.cpp">
-      <Filter>ConstantBuffer</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\IB.cpp">
       <Filter>ManagementModel\IB</Filter>
@@ -157,9 +145,6 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\TexLoader.cpp">
       <Filter>ManagementTex</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DManagement.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\RSManagement.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\SSManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\AnimationClip.cpp">
       <Filter>m3dAnimation</Filter>
     </ClCompile>
@@ -211,7 +196,7 @@
       <Filter>ManagementD3D</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementCB.cpp">
-      <Filter>ConstantBuffer</Filter>
+      <Filter>ManagementCB</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementDebug.cpp">
       <Filter>Utilities\D3DDebug</Filter>
@@ -219,19 +204,16 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementGBuffer.cpp">
       <Filter>ManagementGBuffer</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\GBuffer.cpp">
+      <Filter>ManagementGBuffer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="GBuffer">
-      <UniqueIdentifier>{2fbfce18-7d1c-40b6-8061-4ae9d7f12647}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Utilities">
       <UniqueIdentifier>{e7261483-c38c-4428-b1f0-ab8af322cc54}</UniqueIdentifier>
     </Filter>
     <Filter Include="Shaders">
       <UniqueIdentifier>{09139d65-982a-4622-b469-c745dc6f3043}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ConstantBuffer">
-      <UniqueIdentifier>{2c84bf73-10e2-4e8f-92c7-623b95c48cbd}</UniqueIdentifier>
     </Filter>
     <Filter Include="ManagementFX">
       <UniqueIdentifier>{1c71b07b-c451-413a-bed9-346615660f66}</UniqueIdentifier>
@@ -292,6 +274,9 @@
     </Filter>
     <Filter Include="ManagementGBuffer">
       <UniqueIdentifier>{0ceb31a1-bb2c-44fc-9c3d-3e309d653ef2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ManagementCB">
+      <UniqueIdentifier>{2c84bf73-10e2-4e8f-92c7-623b95c48cbd}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
