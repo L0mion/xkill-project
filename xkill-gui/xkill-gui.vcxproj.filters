@@ -60,6 +60,12 @@
     <ClCompile Include="..\..\xkill-source\xkill-gui\MenuManager.cpp">
       <Filter>Files\Menus</Filter>
     </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_xkill.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-gui\GameTimer.cpp">
+      <Filter>Files</Filter>
+    </ClCompile>
     <ClCompile Include="GeneratedFiles\DebugRelease\moc_Menu_Main.cpp">
       <Filter>Generated Files\DebugRelease</Filter>
     </ClCompile>
@@ -68,12 +74,6 @@
     </ClCompile>
     <ClCompile Include="GeneratedFiles\Release\moc_Menu_Main.cpp">
       <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\qrc_xkill.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-gui\GameTimer.cpp">
-      <Filter>Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -103,6 +103,9 @@
     </CustomBuild>
     <CustomBuild Include="..\..\xkill-resources\xkill-gui\xkill.qrc">
       <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\xkill-source\xkill-gui\Menu_Main.cpp">
+      <Filter>Files\Menus</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
