@@ -16,6 +16,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-io\Loader.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-io\LoaderFbx.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\LoaderMdlDesc.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\LoaderMTL.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\LoaderObj.cpp" />
@@ -38,6 +39,7 @@
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-io\dllIO.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\Loader.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderFbx.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\LoaderMdlDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\LoaderMTL.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\LoaderObj.h" />
@@ -104,20 +106,20 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>../../xkill-build/bin-$(Configuration)/</OutDir>
-    <IncludePath>../../xkill-source/;$(ProgramFiles)\Windows Kits\8.0\Include\um;$(ProgramFiles)\Windows Kits\8.0\Include\shared;$(IncludePath)</IncludePath>
-    <LibraryPath>../xkill-dependencies/xkill/lib-$(Configuration);$(ProgramFiles)\Windows Kits\8.0\lib\win8\um\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>../xkill-dependencies/fbxsdk/include;../../xkill-source/;$(ProgramFiles)\Windows Kits\8.0\Include\um;$(ProgramFiles)\Windows Kits\8.0\Include\shared;$(IncludePath)</IncludePath>
+    <LibraryPath>../xkill-dependencies/fbxsdk/lib;../xkill-dependencies/xkill/lib-$(Configuration);$(ProgramFiles)\Windows Kits\8.0\lib\win8\um\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>../../xkill-build/bin-$(Configuration)/</OutDir>
-    <IncludePath>../../xkill-source/;$(IncludePath)</IncludePath>
-    <LibraryPath>../xkill-dependencies/xkill/lib-$(Configuration);$(LibraryPath)</LibraryPath>
+    <IncludePath>../xkill-dependencies/fbxsdk/include;../../xkill-source/;$(IncludePath)</IncludePath>
+    <LibraryPath>../xkill-dependencies/fbxsdk/lib;../xkill-dependencies/xkill/lib-$(Configuration);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>../../xkill-build/bin-$(Configuration)/</OutDir>
-    <IncludePath>../../xkill-source/;$(IncludePath)</IncludePath>
-    <LibraryPath>../xkill-dependencies/xkill/lib-$(Configuration);$(LibraryPath)</LibraryPath>
+    <IncludePath>../xkill-dependencies/fbxsdk/include;../../xkill-source/;$(IncludePath)</IncludePath>
+    <LibraryPath>../xkill-dependencies/fbxsdk/lib;../xkill-dependencies/xkill/lib-$(Configuration);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -131,7 +133,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)/../../xkill-project/xkill-dependencies/xkill/lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
-      <AdditionalDependencies>xkill-utilities.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xkill-utilities.lib;fbxsdk-2013.3d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -150,7 +152,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <ImportLibrary>$(OutDir)/../../xkill-project/xkill-dependencies/xkill/lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
-      <AdditionalDependencies>xkill-utilities.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xkill-utilities.lib;fbxsdk-2013.3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">
@@ -169,7 +171,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <ImportLibrary>$(OutDir)/../../xkill-project/xkill-dependencies/xkill/lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
-      <AdditionalDependencies>xkill-utilities.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xkill-utilities.lib;fbxsdk-2013.3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

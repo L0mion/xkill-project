@@ -52,6 +52,9 @@
     <ClCompile Include="..\..\xkill-source\xkill-io\MdlDesc.cpp">
       <Filter>.mdldesc</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-io\LoaderFbx.cpp">
+      <Filter>.fbx</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-io\Loader.h" />
@@ -123,6 +126,9 @@
     <ClInclude Include="..\..\xkill-source\xkill-io\MdlDescModel.h">
       <Filter>.mdldesc</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderFbx.h">
+      <Filter>.fbx</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include=".mtl">
@@ -145,6 +151,9 @@
     </Filter>
     <Filter Include=".mdldesc">
       <UniqueIdentifier>{3c5087b0-ef09-414b-a598-dc2242baeee3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include=".fbx">
+      <UniqueIdentifier>{064285af-4c79-42cd-bb2f-7b53f7a789f7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
