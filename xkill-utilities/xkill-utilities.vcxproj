@@ -32,6 +32,7 @@
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\AttributePointer.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\AttributeType.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\DebugShape.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\dllUtilities.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\EventManager.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\EventType.h" />
