@@ -34,6 +34,9 @@
     <ClInclude Include="..\..\xkill-source\xkill-architecture\ScoreComponent.h">
       <Filter>Components\Implementations</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\States.h">
+      <Filter>States</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-architecture\Camera.cpp" />
@@ -49,6 +52,13 @@
     <ClCompile Include="..\..\xkill-source\xkill-architecture\main.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-architecture\ScoreComponent.cpp">
       <Filter>Components\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-architecture\GameManager.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-architecture\States.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-architecture\ComponentManager.cpp">
+      <Filter>Components</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -69,6 +79,9 @@
     </Filter>
     <Filter Include="Components\Implementations">
       <UniqueIdentifier>{d0191e1a-2f9d-4deb-a61c-0dc4cfd454a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="States">
+      <UniqueIdentifier>{dfb33708-bdf6-4d9a-8e7c-f4fb6c69a639}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -19,27 +19,29 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\AnimationClip.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\BoneAnimation.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CBDesc.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\CBManagement.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\d3dDebug.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\d3dInterface.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\D3DManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\DDSTextureLoader.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementCB.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementDebug.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\d3dInterface.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementD3D.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\dllRenderer.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\fxManagement.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementFX.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\gBuffer.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\gBufferID.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\IB.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\IEDManagement.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementGBuffer.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementIED.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Keyframe.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\LightDesc.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\LightManagement.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\ModelManagement.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementLight.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementModel.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ModelD3D.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\M3DLoader.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\M3DMeshData.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\Renderer.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\RenderingComponent.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\RenderingUtilities.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\RSManagement.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementRS.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Shader.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ShaderCS.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ShaderPS.h" />
@@ -48,30 +50,33 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\SubsetD3D.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Tex.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\TexLoader.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\TexManagement.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementTex.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\SkinnedData.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\VB.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\SSManagement.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\ViewportManagement.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementSS.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementViewport.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\Winfo.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\AnimatedMesh.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\AnimationClip.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\BoneAnimation.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\CBManagement.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DDebug.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\DDSTextureLoader.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\FXManagement.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementCB.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementDebug.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementD3D.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementFX.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\GBuffer.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\IB.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\IEDManagement.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\LightManagement.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\ModelManagement.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementGBuffer.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementIED.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementLight.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementModel.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ModelD3D.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\M3DLoader.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\Renderer.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RenderingComponent.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\RSManagement.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementRS.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Shader.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderCS.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderPS.cpp" />
@@ -80,11 +85,12 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\SubsetD3D.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Tex.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\TexLoader.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\TexManagement.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementTex.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\SkinnedData.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\VB.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\SSManagement.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\ViewportManagement.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementSS.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementViewport.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\Winfo.cpp" />
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\animationPS.hlsl">
@@ -270,8 +276,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>DLL_RENDERER;WIN32;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <UndefinePreprocessorDefinitions>%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+      <PreprocessorDefinitions>DLL_RENDERER;WIN32;_DEBUG;_WINDOWS;_USRDLL;;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -296,7 +301,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <ImportLibrary>$(OutDir)/../../xkill-project/xkill-dependencies/xkill/lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
-      <AdditionalDependencies>xkill-utilities.lib;d3d11.lib;d3dcompiler.lib;DXGI.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>DDSTextureLoader.lib;xkill-utilities.lib;d3d11.lib;d3dcompiler.lib;DXGI.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">

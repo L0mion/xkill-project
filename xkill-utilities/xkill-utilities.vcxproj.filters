@@ -27,10 +27,16 @@
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-utilities\TexDesc.cpp">
       <Filter>Tex Desc</Filter>
-	</ClCompile>
+    </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-utilities\Math.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshVertices.cpp">
       <Filter>Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\FiniteState.cpp">
+      <Filter>State Machine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\FiniteStateMachine.cpp">
+      <Filter>State Machine</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -78,6 +84,13 @@
     <ClInclude Include="..\..\xkill-source\xkill-utilities\TexDescTex.h">
       <Filter>Tex Desc</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\FiniteState.h">
+      <Filter>State Machine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\FiniteStateMachine.h">
+      <Filter>State Machine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\LeanWindows.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Events">
@@ -94,6 +107,9 @@
     </Filter>
     <Filter Include="Tex Desc">
       <UniqueIdentifier>{fa066205-2513-4b87-9649-d4d39df76085}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="State Machine">
+      <UniqueIdentifier>{2c31e36b-e6b4-45b2-af74-78e3b620c796}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
