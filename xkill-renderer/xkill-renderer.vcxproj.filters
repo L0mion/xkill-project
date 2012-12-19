@@ -118,6 +118,9 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\DebugShapeD3D.h">
       <Filter>ManagementModel\DebugShapeD3D</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\DebugShapes.h">
+      <Filter>ManagementModel</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RenderingComponent.cpp" />
@@ -135,9 +138,6 @@
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\IB.cpp">
       <Filter>ManagementModel\IB</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\VB.cpp">
-      <Filter>ManagementModel\VB</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Tex.cpp">
       <Filter>ManagementTex</Filter>
@@ -212,6 +212,9 @@
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\DebugShapeD3D.cpp">
       <Filter>ManagementModel\DebugShapeD3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\DebugShapes.cpp">
+      <Filter>ManagementModel</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -320,6 +323,12 @@
       <Filter>Shaders</Filter>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\animationPS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\colorPS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\colorVS.hlsl">
       <Filter>Shaders</Filter>
     </FxCompile>
   </ItemGroup>
