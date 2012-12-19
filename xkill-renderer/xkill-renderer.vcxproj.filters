@@ -35,9 +35,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\VB.h">
       <Filter>ManagementModel\VB</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\ModelD3D.h">
-      <Filter>ManagementModel</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Tex.h">
       <Filter>ManagementTex</Filter>
     </ClInclude>
@@ -115,8 +112,14 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\gBufferID.h">
       <Filter>ManagementGBuffer</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\DDSTextureLoader.h">
-      <Filter>ManagementTex\DDSTextureLoader</Filter>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ModelD3D.h">
+      <Filter>ManagementModel\ModelD3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\DebugShapeD3D.h">
+      <Filter>ManagementModel\DebugShapeD3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\DebugShapes.h">
+      <Filter>ManagementModel</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -135,12 +138,6 @@
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\IB.cpp">
       <Filter>ManagementModel\IB</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\VB.cpp">
-      <Filter>ManagementModel\VB</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\ModelD3D.cpp">
-      <Filter>ManagementModel</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Tex.cpp">
       <Filter>ManagementTex</Filter>
@@ -210,8 +207,14 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\GBuffer.cpp">
       <Filter>ManagementGBuffer</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\DDSTextureLoader.cpp">
-      <Filter>ManagementTex\DDSTextureLoader</Filter>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ModelD3D.cpp">
+      <Filter>ManagementModel\ModelD3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\DebugShapeD3D.cpp">
+      <Filter>ManagementModel\DebugShapeD3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\DebugShapes.cpp">
+      <Filter>ManagementModel</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -284,8 +287,11 @@
     <Filter Include="ManagementCB">
       <UniqueIdentifier>{2c84bf73-10e2-4e8f-92c7-623b95c48cbd}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ManagementTex\DDSTextureLoader">
-      <UniqueIdentifier>{dae565f7-1e7d-4a9b-a176-7be5f4821558}</UniqueIdentifier>
+    <Filter Include="ManagementModel\ModelD3D">
+      <UniqueIdentifier>{7d76cd4d-c457-42ea-8336-227feec624f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ManagementModel\DebugShapeD3D">
+      <UniqueIdentifier>{2180d5b3-0691-4b4f-a093-d8e60799994f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -317,6 +323,12 @@
       <Filter>Shaders</Filter>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\animationPS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\colorPS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\colorVS.hlsl">
       <Filter>Shaders</Filter>
     </FxCompile>
   </ItemGroup>
