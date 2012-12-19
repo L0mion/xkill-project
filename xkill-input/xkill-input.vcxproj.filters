@@ -34,9 +34,6 @@
     <Filter Include="InputObject\Button">
       <UniqueIdentifier>{67cdfeef-817c-47e7-a927-3396648dddb4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="InputObject\Hat Switch">
-      <UniqueIdentifier>{ecfd90d5-44cb-46fe-9f03-5722c392610d}</UniqueIdentifier>
-    </Filter>
     <Filter Include="InputObject\Trigger">
       <UniqueIdentifier>{76e8088c-8058-4a0f-ad87-25014af7db3f}</UniqueIdentifier>
     </Filter>
@@ -59,9 +56,6 @@
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-input\InputButtonObject.h">
       <Filter>InputObject\Button</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-input\InputHatSwitchObject.h">
-      <Filter>InputObject\Hat Switch</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-input\InputTriggerObject.h">
       <Filter>InputObject\Trigger</Filter>
@@ -87,6 +81,9 @@
     <ClInclude Include="..\..\xkill-source\xkill-input\KeyMapper.h">
       <Filter>KeyMapper</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-input\TimeSystem.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-input\WindowsTime.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-input\InputActions.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-input\InputManager.cpp">
@@ -116,9 +113,6 @@
     <ClCompile Include="..\..\xkill-source\xkill-input\InputButtonObject.cpp">
       <Filter>InputObject\Button</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-input\InputHatSwitchObject.cpp">
-      <Filter>InputObject\Hat Switch</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-input\InputTriggerObject.cpp">
       <Filter>InputObject\Trigger</Filter>
     </ClCompile>
@@ -132,5 +126,6 @@
     <ClCompile Include="..\..\xkill-source\xkill-input\KeyMapper.cpp">
       <Filter>KeyMapper</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-input\WindowsTime.cpp" />
   </ItemGroup>
 </Project>

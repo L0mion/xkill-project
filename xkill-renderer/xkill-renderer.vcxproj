@@ -23,6 +23,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\d3dDebug.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\d3dInterface.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\D3DManagement.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\DDSTextureLoader.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\dllRenderer.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\fxManagement.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\gBuffer.h" />
@@ -60,6 +61,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\CBManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DDebug.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\D3DManagement.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\DDSTextureLoader.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\FXManagement.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\GBuffer.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\IB.cpp" />
@@ -268,7 +270,8 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>DLL_RENDERER;WIN32;_DEBUG;_WINDOWS;_USRDLL;;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DLL_RENDERER;WIN32;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -293,7 +296,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <ImportLibrary>$(OutDir)/../../xkill-project/xkill-dependencies/xkill/lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
-      <AdditionalDependencies>DDSTextureLoader.lib;xkill-utilities.lib;d3d11.lib;d3dcompiler.lib;DXGI.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xkill-utilities.lib;d3d11.lib;d3dcompiler.lib;DXGI.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">
