@@ -19,6 +19,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\AnimationClip.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\BoneAnimation.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CBDesc.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\DDSTextureLoader.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\DebugShapeD3D.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\DebugShapes.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementCB.h" />
@@ -62,6 +63,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\AnimatedMesh.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\AnimationClip.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\BoneAnimation.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\DDSTextureLoader.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\DebugShapeD3D.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\DebugShapes.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementCB.cpp" />

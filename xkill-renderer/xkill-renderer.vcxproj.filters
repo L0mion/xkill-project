@@ -121,6 +121,9 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\DebugShapes.h">
       <Filter>ManagementModel</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\DDSTextureLoader.h">
+      <Filter>ManagementTex</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RenderingComponent.cpp" />
@@ -215,6 +218,9 @@
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\DebugShapes.cpp">
       <Filter>ManagementModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\DDSTextureLoader.cpp">
+      <Filter>ManagementTex</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
