@@ -124,6 +124,10 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\DDSTextureLoader.h">
       <Filter>ManagementTex</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\TypeFX.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementMath.h">
+      <Filter>ManagementMath</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RenderingComponent.cpp" />
@@ -222,6 +226,9 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\DDSTextureLoader.cpp">
       <Filter>ManagementTex</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementMath.cpp">
+      <Filter>ManagementMath</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Utilities">
@@ -298,6 +305,9 @@
     </Filter>
     <Filter Include="ManagementModel\DebugShapeD3D">
       <UniqueIdentifier>{2180d5b3-0691-4b4f-a093-d8e60799994f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ManagementMath">
+      <UniqueIdentifier>{3bfda70c-be48-47eb-bb0f-d7a2b5546cf0}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
