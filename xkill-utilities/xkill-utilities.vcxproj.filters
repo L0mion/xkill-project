@@ -91,6 +91,7 @@
       <Filter>State Machine</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\LeanWindows.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\DebugShape.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Events">

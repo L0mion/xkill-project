@@ -20,30 +20,36 @@
     <ClInclude Include="..\..\xkill-source\xkill-input\DirectInputKeyboard.h" />
     <ClInclude Include="..\..\xkill-source\xkill-input\DirectInputMouse.h" />
     <ClInclude Include="..\..\xkill-source\xkill-input\dllInput.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-input\FileParser.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-input\InputActions.h" />
     <ClInclude Include="..\..\xkill-source\xkill-input\InputAxisObject.h" />
     <ClInclude Include="..\..\xkill-source\xkill-input\InputButtonObject.h" />
     <ClInclude Include="..\..\xkill-source\xkill-input\InputComponent.h" />
     <ClInclude Include="..\..\xkill-source\xkill-input\InputDevice.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-input\InputHatSwitchObject.h" />
     <ClInclude Include="..\..\xkill-source\xkill-input\InputManager.h" />
     <ClInclude Include="..\..\xkill-source\xkill-input\InputObject.h" />
     <ClInclude Include="..\..\xkill-source\xkill-input\InputTriggerObject.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-input\KeyMapper.h" />
     <ClInclude Include="..\..\xkill-source\xkill-input\QTInputDevices.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-input\TimeSystem.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-input\WindowsTime.h" />
     <ClInclude Include="..\..\xkill-source\xkill-input\XInputDevice.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-input\DirectInputDevice.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-input\DirectInputKeyboard.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-input\DirectInputMouse.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-input\FileParser.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-input\InputAxisObject.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-input\InputButtonObject.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-input\InputComponent.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-input\InputDevice.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-input\InputHatSwitchObject.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-input\InputManager.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-input\InputObject.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-input\InputTriggerObject.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-input\KeyMapper.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-input\QTInputDevices.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-input\WindowsTime.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-input\XInputDevice.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
