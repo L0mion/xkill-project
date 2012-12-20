@@ -36,6 +36,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Keyframe.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\LightDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementLight.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementMath.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementModel.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ModelD3D.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\M3DLoader.h" />
@@ -54,6 +55,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\TexLoader.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementTex.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\SkinnedData.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\TypeFX.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\VB.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementSS.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementViewport.h" />
@@ -75,6 +77,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementGBuffer.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementIED.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementLight.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementMath.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementModel.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ModelD3D.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\M3DLoader.cpp" />
