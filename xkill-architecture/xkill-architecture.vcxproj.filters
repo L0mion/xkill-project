@@ -3,31 +3,16 @@
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-architecture\dllArchitecture.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\GameManager.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\Entity.h">
-      <Filter>Entities</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-architecture\EntityManager.h">
       <Filter>Entities</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeManager.h">
-      <Filter>Attributes</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-architecture\ComponentManager.h">
       <Filter>Components</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeController.h">
-      <Filter>Attributes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeStorage.h">
-      <Filter>Attributes</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-architecture\CameraComponent.h">
       <Filter>Components\Implementations</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-architecture\Camera.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\IAttributeStorage.h">
-      <Filter>Attributes</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-architecture\GameComponent.h">
       <Filter>Components\Implementations</Filter>
     </ClInclude>
@@ -68,9 +53,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Attributes">
-      <UniqueIdentifier>{1d1b2cd3-c4d0-4d1c-a092-71fa13b36a20}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Components">
       <UniqueIdentifier>{85b2aab4-770f-4caf-908c-c36ab467ede3}</UniqueIdentifier>
     </Filter>
