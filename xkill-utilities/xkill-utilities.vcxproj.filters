@@ -38,6 +38,9 @@
     <ClCompile Include="..\..\xkill-source\xkill-utilities\FiniteStateMachine.cpp">
       <Filter>State Machine</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\AttributeManager.cpp">
+      <Filter>[Static Linking]</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\dllUtilities.h" />

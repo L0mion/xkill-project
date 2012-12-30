@@ -15,6 +15,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\AttributeManager.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\AttributePointer.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\AttributeType.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\EventManager.cpp" />
