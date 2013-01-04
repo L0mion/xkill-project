@@ -18,6 +18,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-utilities\AttributeManager.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\AttributePointer.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\AttributeType.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\Entity.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\EventManager.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\EventType.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\FiniteState.cpp" />
