@@ -15,19 +15,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeController.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeManager.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\AttributeStorage.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\Camera.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\CameraComponent.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\ComponentManager.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\dllArchitecture.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\Entity.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\EntityFactory.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\EntityManager.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\GameComponent.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\GameManager.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\IAttributeStorage.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\ScoreComponent.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\States.h" />
   </ItemGroup>
