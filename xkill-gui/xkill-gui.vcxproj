@@ -313,7 +313,9 @@
     <ClInclude Include="..\..\xkill-source\xkill-gui\MenuManager.h" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="xkill-gui.rc" />
+    <ResourceCompile Include="xkill-gui.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\xkill-resources\xkill-gui\MainWindow.ui">
