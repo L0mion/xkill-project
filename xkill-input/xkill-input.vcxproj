@@ -31,8 +31,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-input\InputTriggerObject.h" />
     <ClInclude Include="..\..\xkill-source\xkill-input\KeyMapper.h" />
     <ClInclude Include="..\..\xkill-source\xkill-input\QTInputDevices.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-input\TimeSystem.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-input\WindowsTime.h" />
     <ClInclude Include="..\..\xkill-source\xkill-input\XInputDevice.h" />
   </ItemGroup>
   <ItemGroup>
@@ -49,7 +47,6 @@
     <ClCompile Include="..\..\xkill-source\xkill-input\InputTriggerObject.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-input\KeyMapper.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-input\QTInputDevices.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-input\WindowsTime.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-input\XInputDevice.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
