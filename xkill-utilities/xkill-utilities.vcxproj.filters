@@ -44,6 +44,9 @@
     <ClCompile Include="..\..\xkill-source\xkill-utilities\Entity.cpp">
       <Filter>[Work-In-Progress]</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\StringConv.cpp">
+      <Filter>Conversions</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\dllUtilities.h" />
@@ -116,6 +119,9 @@
     <ClInclude Include="..\..\xkill-source\xkill-utilities\IAttributeStorage.h">
       <Filter>[Work-In-Progress]</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\StringConv.h">
+      <Filter>Conversions</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Events">
@@ -138,6 +144,9 @@
     </Filter>
     <Filter Include="[Work-In-Progress]">
       <UniqueIdentifier>{808f7273-26e7-47ab-a457-bfbe5a613003}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Conversions">
+      <UniqueIdentifier>{c970da88-710f-42c9-a28b-69038b33bbf9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
