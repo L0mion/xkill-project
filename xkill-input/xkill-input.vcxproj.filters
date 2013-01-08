@@ -81,8 +81,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-input\KeyMapper.h">
       <Filter>KeyMapper</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-input\TimeSystem.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-input\WindowsTime.h" />
     <ClInclude Include="..\..\xkill-source\xkill-input\InputActions.h" />
   </ItemGroup>
   <ItemGroup>
@@ -126,6 +124,5 @@
     <ClCompile Include="..\..\xkill-source\xkill-input\KeyMapper.cpp">
       <Filter>KeyMapper</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-input\WindowsTime.cpp" />
   </ItemGroup>
 </Project>
