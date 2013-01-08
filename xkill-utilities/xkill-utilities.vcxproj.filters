@@ -38,6 +38,12 @@
     <ClCompile Include="..\..\xkill-source\xkill-utilities\FiniteStateMachine.cpp">
       <Filter>State Machine</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\AttributeManager.cpp">
+      <Filter>[Work-In-Progress]</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\Entity.cpp">
+      <Filter>[Work-In-Progress]</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\dllUtilities.h" />
@@ -92,6 +98,24 @@
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\LeanWindows.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\DebugShape.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\Iterator.h">
+      <Filter>[Work-In-Progress]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\Entity.h">
+      <Filter>[Work-In-Progress]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\AttributeStorage.h">
+      <Filter>[Work-In-Progress]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\AttributeController.h">
+      <Filter>[Work-In-Progress]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\AttributeManager.h">
+      <Filter>[Work-In-Progress]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\IAttributeStorage.h">
+      <Filter>[Work-In-Progress]</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Events">
@@ -111,6 +135,9 @@
     </Filter>
     <Filter Include="State Machine">
       <UniqueIdentifier>{2c31e36b-e6b4-45b2-af74-78e3b620c796}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[Work-In-Progress]">
+      <UniqueIdentifier>{808f7273-26e7-47ab-a457-bfbe5a613003}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
