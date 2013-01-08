@@ -34,6 +34,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-io\SimpleStringSplitter.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\Writer.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\WriterPGY.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-io\WriteTime.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-io\dllIO.h" />
@@ -61,6 +62,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-io\VarStatus.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\Writer.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\WriterPGY.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\WriteTime.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{90632FA5-BF8B-4798-96B4-DA358FE33D8F}</ProjectGuid>

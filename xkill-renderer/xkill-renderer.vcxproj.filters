@@ -65,9 +65,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\SubsetD3D.h">
       <Filter>ManagementModel\SubsetD3D</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\StringConv.h">
-      <Filter>Utilities</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Renderer.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Winfo.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementViewport.h">
@@ -169,9 +166,6 @@
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\SubsetD3D.cpp">
       <Filter>ManagementModel\SubsetD3D</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\StringConv.cpp">
-      <Filter>Utilities</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Renderer.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Winfo.cpp" />

@@ -12,9 +12,6 @@
     <ClCompile Include="..\..\xkill-source\xkill-io\LoaderPGY.cpp">
       <Filter>.pgy</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-io\MeshMakerObj.cpp">
-      <Filter>.obj</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-io\MTL.cpp">
       <Filter>.mtl</Filter>
     </ClCompile>
@@ -52,6 +49,10 @@
     <ClCompile Include="..\..\xkill-source\xkill-io\MdlDesc.cpp">
       <Filter>.mdldesc</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-io\MeshMakerObj.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-io\WriteTime.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-io\Loader.h" />
@@ -64,9 +65,6 @@
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-io\LoaderPGY.h">
       <Filter>.pgy</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-io\MeshMakerObj.h">
-      <Filter>.obj</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-io\MTL.h">
       <Filter>.mtl</Filter>
@@ -122,6 +120,10 @@
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-io\MdlDescModel.h">
       <Filter>.mdldesc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\MeshMakerObj.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\WriteTime.h">
+      <Filter>util</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
