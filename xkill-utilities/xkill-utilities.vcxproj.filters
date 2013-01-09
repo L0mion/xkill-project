@@ -47,6 +47,9 @@
     <ClCompile Include="..\..\xkill-source\xkill-utilities\StringConv.cpp">
       <Filter>Conversions</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\EntityStorage.cpp">
+      <Filter>[Work-In-Progress]</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\dllUtilities.h" />
@@ -123,6 +126,9 @@
       <Filter>Conversions</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\LightStructs.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\EntityStorage.h">
+      <Filter>[Work-In-Progress]</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Events">
