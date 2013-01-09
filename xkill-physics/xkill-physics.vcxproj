@@ -15,21 +15,31 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\xkill-source\xkill-physics\BulletPhysicsComponent.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-physics\CollisionShapeManager.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-physics\mathBasic.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-physics\objLoaderBasic.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-physics\motionState.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-physics\PhysicsComponent.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-physics\physicsObject.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-physics\physicsUtilities.cpp" />
+    <ClCompile Include="..\xkill-dependencies\bullet\includes\Serialize\BulletFileLoader\bChunk.cpp" />
+    <ClCompile Include="..\xkill-dependencies\bullet\includes\Serialize\BulletFileLoader\bDNA.cpp" />
+    <ClCompile Include="..\xkill-dependencies\bullet\includes\Serialize\BulletFileLoader\bFile.cpp" />
+    <ClCompile Include="..\xkill-dependencies\bullet\includes\Serialize\BulletFileLoader\btBulletFile.cpp" />
+    <ClCompile Include="..\xkill-dependencies\bullet\includes\Serialize\BulletWorldImporter\btBulletWorldImporter.cpp" />
+    <ClCompile Include="..\xkill-dependencies\bullet\includes\Serialize\BulletWorldImporter\btWorldImporter.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\xkill-source\xkill-physics\CollisionShapeManager.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\dllPhysics.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-physics\BulletPhysicsComponent.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\mathBasic.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-physics\objLoaderBasic.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-physics\motionState.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-physics\PhysicsComponent.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\physicsObject.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\physicsUtilities.h" />
+    <ClInclude Include="..\xkill-dependencies\bullet\includes\Serialize\BulletFileLoader\bChunk.h" />
+    <ClInclude Include="..\xkill-dependencies\bullet\includes\Serialize\BulletFileLoader\bDNA.h" />
+    <ClInclude Include="..\xkill-dependencies\bullet\includes\Serialize\BulletFileLoader\bFile.h" />
+    <ClInclude Include="..\xkill-dependencies\bullet\includes\Serialize\BulletFileLoader\btBulletFile.h" />
+    <ClInclude Include="..\xkill-dependencies\bullet\includes\Serialize\BulletWorldImporter\btBulletWorldImporter.h" />
+    <ClInclude Include="..\xkill-dependencies\bullet\includes\Serialize\BulletWorldImporter\btWorldImporter.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{64C38E56-52DE-4A78-B32E-C2FE02506CF5}</ProjectGuid>
