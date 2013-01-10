@@ -23,9 +23,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\RenderingUtilities.h">
       <Filter>Utilities</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\LightDesc.h">
-      <Filter>ManagementLight</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CBDesc.h">
       <Filter>ManagementCB</Filter>
     </ClInclude>
@@ -125,6 +122,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementMath.h">
       <Filter>ManagementMath</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ViewportData.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RenderingComponent.cpp" />
