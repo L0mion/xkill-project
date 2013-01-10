@@ -50,6 +50,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-utilities\EntityStorage.cpp">
       <Filter>[Work-In-Progress]</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\LightDesc.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\dllUtilities.h" />
