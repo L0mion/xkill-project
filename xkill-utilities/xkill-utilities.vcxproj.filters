@@ -50,6 +50,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-utilities\EntityStorage.cpp">
       <Filter>[Work-In-Progress]</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\LightDesc.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\dllUtilities.h" />
@@ -125,10 +126,10 @@
     <ClInclude Include="..\..\xkill-source\xkill-utilities\StringConv.h">
       <Filter>Conversions</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-utilities\LightStructs.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\EntityStorage.h">
       <Filter>[Work-In-Progress]</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\LightDesc.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Events">

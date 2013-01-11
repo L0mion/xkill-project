@@ -24,6 +24,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-utilities\EventType.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\FiniteState.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\FiniteStateMachine.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\LightDesc.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\Math.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshGeometry.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshMaterial.cpp" />
@@ -56,7 +57,7 @@
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\Iterator.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\LeanWindows.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-utilities\LightStructs.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\LightDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\Math.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshGeometry.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshMaterial.h" />
