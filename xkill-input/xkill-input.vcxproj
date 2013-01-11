@@ -28,6 +28,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-input\InputDevice.h" />
     <ClInclude Include="..\..\xkill-source\xkill-input\InputManager.h" />
     <ClInclude Include="..\..\xkill-source\xkill-input\InputObject.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-input\InputObjectArray.h" />
     <ClInclude Include="..\..\xkill-source\xkill-input\InputTriggerObject.h" />
     <ClInclude Include="..\..\xkill-source\xkill-input\KeyMapper.h" />
     <ClInclude Include="..\..\xkill-source\xkill-input\QTInputDevices.h" />
