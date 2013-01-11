@@ -82,6 +82,9 @@
       <Filter>KeyMapper</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-input\InputActions.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-input\InputObjectArray.h">
+      <Filter>InputObject</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-input\InputManager.cpp">
