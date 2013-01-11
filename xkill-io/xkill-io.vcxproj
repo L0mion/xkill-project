@@ -16,6 +16,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-io\Loader.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-io\LoaderFbx.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-io\LoaderFbxAnimation.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-io\LoaderFbxMaterial.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-io\LoaderFbxMaterialDesc.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-io\LoaderFbxMesh.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\LoaderMdlDesc.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\LoaderMTL.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\LoaderObj.cpp" />
@@ -39,6 +44,11 @@
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-io\dllIO.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\Loader.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderFbx.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderFbxAnimation.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderFbxMaterial.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderFbxMaterialDesc.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderFbxMesh.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\LoaderMdlDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\LoaderMTL.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\LoaderObj.h" />
@@ -127,7 +137,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>DLL_IO_FLAG;WIN32;_DEBUG;_WINDOWS;_USRDLL;;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>FBXSDK_SHARED;FBXSDK_NEW_API;DLL_IO_FLAG;WIN32;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -144,7 +154,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>DLL_IO_FLAG;WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>FBXSDK_SHARED;FBXSDK_NEW_API;DLL_IO_FLAG;WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -163,7 +173,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>XKILL_DEBUG;DLL_IO_FLAG;WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>FBXSDK_SHARED;FBXSDK_NEW_API;XKILL_DEBUG;DLL_IO_FLAG;WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

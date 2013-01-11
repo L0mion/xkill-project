@@ -53,6 +53,21 @@
     <ClCompile Include="..\..\xkill-source\xkill-io\WriteTime.cpp">
       <Filter>util</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-io\LoaderFbx.cpp">
+      <Filter>.fbx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-io\LoaderFbxAnimation.cpp">
+      <Filter>.fbx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-io\LoaderFbxMaterial.cpp">
+      <Filter>.fbx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-io\LoaderFbxMesh.cpp">
+      <Filter>.fbx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-io\LoaderFbxMaterialDesc.cpp">
+      <Filter>.fbx</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-io\Loader.h" />
@@ -124,6 +139,21 @@
     <ClInclude Include="..\..\xkill-source\xkill-io\MeshMakerObj.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\WriteTime.h">
       <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderFbx.h">
+      <Filter>.fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderFbxAnimation.h">
+      <Filter>.fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderFbxMaterial.h">
+      <Filter>.fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderFbxMesh.h">
+      <Filter>.fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderFbxMaterialDesc.h">
+      <Filter>.fbx</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
