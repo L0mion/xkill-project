@@ -15,6 +15,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\xkill-source\xkill-physics\collisionShapes.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-physics\mathBasic.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-physics\motionState.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-physics\PhysicsComponent.cpp" />
@@ -28,6 +29,7 @@
     <ClCompile Include="..\xkill-dependencies\bullet\includes\Serialize\BulletWorldImporter\btWorldImporter.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\xkill-source\xkill-physics\collisionShapes.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\dllPhysics.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\mathBasic.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\motionState.h" />

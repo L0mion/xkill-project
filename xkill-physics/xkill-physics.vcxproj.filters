@@ -24,6 +24,7 @@
     <ClCompile Include="..\xkill-dependencies\bullet\includes\Serialize\BulletFileLoader\bChunk.cpp">
       <Filter>BulletSerialize</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-physics\collisionShapes.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-physics\physicsObject.h" />
@@ -50,6 +51,7 @@
     <ClInclude Include="..\xkill-dependencies\bullet\includes\Serialize\BulletFileLoader\bChunk.h">
       <Filter>BulletSerialize</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-physics\collisionShapes.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="BulletSerialize">
