@@ -51,6 +51,9 @@
       <Filter>[Work-In-Progress]</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-utilities\LightDesc.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\DataItem.h">
+      <Filter>Attributes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\dllUtilities.h" />
