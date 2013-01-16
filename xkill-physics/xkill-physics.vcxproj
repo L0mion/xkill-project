@@ -16,6 +16,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-physics\CollisionShapes.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-physics\ExplosionSpherePhysicsObject.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-physics\MathBasic.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-physics\MotionState.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-physics\objLoaderBasic.cpp" />
@@ -34,6 +35,7 @@
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-physics\CollisionShapes.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\dllPhysics.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-physics\ExplosionSpherePhysicsObject.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\MathBasic.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\MotionState.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\objLoaderBasic.h" />

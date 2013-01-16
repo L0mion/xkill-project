@@ -34,6 +34,9 @@
     <ClCompile Include="..\..\xkill-source\xkill-physics\MotionState.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-physics\objLoaderBasic.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-physics\PhysicsComponent.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-physics\ExplosionSpherePhysicsObject.cpp">
+      <Filter>PhysicsObjects</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\xkill-dependencies\bullet\includes\Serialize\BulletWorldImporter\btBulletWorldImporter.h">
@@ -70,6 +73,9 @@
     <ClInclude Include="..\..\xkill-source\xkill-physics\MathBasic.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\MotionState.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\objLoaderBasic.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-physics\ExplosionSpherePhysicsObject.h">
+      <Filter>PhysicsObjects</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="BulletSerialize">
