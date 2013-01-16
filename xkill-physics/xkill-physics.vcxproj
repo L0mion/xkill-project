@@ -15,12 +15,15 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\xkill-source\xkill-physics\collisionShapes.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-physics\mathBasic.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-physics\motionState.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-physics\CollisionShapes.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-physics\MathBasic.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-physics\MotionState.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-physics\objLoaderBasic.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-physics\PhysicsComponent.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-physics\physicsObject.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-physics\physicsUtilities.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-physics\PhysicsObject.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-physics\PhysicsUtilities.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-physics\PlayerPhysicsObject.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-physics\ProjectilePhysicsObject.cpp" />
     <ClCompile Include="..\xkill-dependencies\bullet\includes\Serialize\BulletFileLoader\bChunk.cpp" />
     <ClCompile Include="..\xkill-dependencies\bullet\includes\Serialize\BulletFileLoader\bDNA.cpp" />
     <ClCompile Include="..\xkill-dependencies\bullet\includes\Serialize\BulletFileLoader\bFile.cpp" />
@@ -29,13 +32,16 @@
     <ClCompile Include="..\xkill-dependencies\bullet\includes\Serialize\BulletWorldImporter\btWorldImporter.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\xkill-source\xkill-physics\collisionShapes.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-physics\CollisionShapes.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\dllPhysics.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-physics\mathBasic.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-physics\motionState.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-physics\MathBasic.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-physics\MotionState.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-physics\objLoaderBasic.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\PhysicsComponent.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-physics\physicsObject.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-physics\physicsUtilities.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-physics\PhysicsObject.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-physics\PhysicsUtilities.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-physics\PlayerPhysicsObject.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-physics\ProjectilePhysicsObject.h" />
     <ClInclude Include="..\xkill-dependencies\bullet\includes\Serialize\BulletFileLoader\bChunk.h" />
     <ClInclude Include="..\xkill-dependencies\bullet\includes\Serialize\BulletFileLoader\bDNA.h" />
     <ClInclude Include="..\xkill-dependencies\bullet\includes\Serialize\BulletFileLoader\bFile.h" />

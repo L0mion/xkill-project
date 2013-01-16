@@ -1,11 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="..\..\xkill-source\xkill-physics\physicsObject.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-physics\mathBasic.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-physics\physicsUtilities.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-physics\motionState.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-physics\PhysicsComponent.cpp" />
     <ClCompile Include="..\xkill-dependencies\bullet\includes\Serialize\BulletWorldImporter\btBulletWorldImporter.cpp">
       <Filter>BulletSerialize</Filter>
     </ClCompile>
@@ -24,15 +19,23 @@
     <ClCompile Include="..\xkill-dependencies\bullet\includes\Serialize\BulletFileLoader\bChunk.cpp">
       <Filter>BulletSerialize</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-physics\collisionShapes.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-physics\PlayerPhysicsObject.cpp">
+      <Filter>PhysicsObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-physics\ProjectilePhysicsObject.cpp">
+      <Filter>PhysicsObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-physics\PhysicsObject.cpp">
+      <Filter>PhysicsObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-physics\PhysicsUtilities.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-physics\CollisionShapes.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-physics\MathBasic.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-physics\MotionState.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-physics\objLoaderBasic.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-physics\PhysicsComponent.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\xkill-source\xkill-physics\physicsObject.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-physics\dllPhysics.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-physics\mathBasic.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-physics\physicsUtilities.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-physics\motionState.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-physics\PhysicsComponent.h" />
     <ClInclude Include="..\xkill-dependencies\bullet\includes\Serialize\BulletWorldImporter\btBulletWorldImporter.h">
       <Filter>BulletSerialize</Filter>
     </ClInclude>
@@ -51,11 +54,29 @@
     <ClInclude Include="..\xkill-dependencies\bullet\includes\Serialize\BulletFileLoader\bChunk.h">
       <Filter>BulletSerialize</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-physics\collisionShapes.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-physics\PlayerPhysicsObject.h">
+      <Filter>PhysicsObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-physics\ProjectilePhysicsObject.h">
+      <Filter>PhysicsObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-physics\PhysicsObject.h">
+      <Filter>PhysicsObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-physics\PhysicsComponent.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-physics\PhysicsUtilities.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-physics\CollisionShapes.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-physics\dllPhysics.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-physics\MathBasic.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-physics\MotionState.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-physics\objLoaderBasic.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="BulletSerialize">
       <UniqueIdentifier>{16c378bb-9962-4f31-ba1f-f54b90cecfae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PhysicsObjects">
+      <UniqueIdentifier>{3aab5264-080b-4da2-91e4-9424041eaddd}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
