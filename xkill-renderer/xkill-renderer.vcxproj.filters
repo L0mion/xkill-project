@@ -342,5 +342,8 @@
     <FxCompile Include="..\..\xkill-source\xkill-shaders\LightDesc.hlsl">
       <Filter>Shaders</Filter>
     </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\utilities.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
   </ItemGroup>
 </Project>
