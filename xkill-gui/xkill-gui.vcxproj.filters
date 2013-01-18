@@ -48,6 +48,36 @@
     <ClCompile Include="..\..\xkill-source\xkill-gui\GameTimer.cpp">
       <Filter>Files\Utilities</Filter>
     </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_GameWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_GameWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MainWindow.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MainWindow.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_Menu_Editor.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Menu_Editor.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_Menu_InGame.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Menu_InGame.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_Menu_Main.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Menu_Main.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_Editor.cpp">
       <Filter>Files\Menus</Filter>
     </ClCompile>
@@ -69,58 +99,7 @@
     <ClCompile Include="GeneratedFiles\qrc_xkill.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_Menu_Main.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_Menu_Main.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\DebugRelease\moc_Menu_Main.cpp">
-      <Filter>Generated Files\DebugRelease</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_Menu_InGame.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_Menu_InGame.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\DebugRelease\moc_Menu_InGame.cpp">
-      <Filter>Generated Files\DebugRelease</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_Menu_Editor.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_Menu_Editor.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\DebugRelease\moc_Menu_Editor.cpp">
-      <Filter>Generated Files\DebugRelease</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_MainWindow.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_MainWindow.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\DebugRelease\moc_MainWindow.cpp">
-      <Filter>Generated Files\DebugRelease</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_GameWidget.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_GameWidget.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\DebugRelease\moc_GameWidget.cpp">
-      <Filter>Generated Files\DebugRelease</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_InputTable.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_InputTable.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-gui\InputTable.cpp">
+    <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_ScoreBoard.cpp">
       <Filter>Files\Menus</Filter>
     </ClCompile>
   </ItemGroup>
@@ -157,9 +136,6 @@
     </CustomBuild>
     <CustomBuild Include="..\..\xkill-resources\xkill-gui\HUD.ui">
       <Filter>Files\Form Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\..\xkill-source\xkill-gui\InputTable.h">
-      <Filter>Files\Menus</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
