@@ -17,11 +17,11 @@
 
 #include <fbxsdk/core/fbxobject.h>
 #include <fbxsdk/core/base/fbxarray.h>
-#include <fbxsdk/core/base/fbxerror.h>
 #include <fbxsdk/core/math/fbxmatrix.h>
 
 #include <fbxsdk/fbxsdk_nsbegin.h>
 
+class FbxStatus;
 class FbxPose;
 class FbxNode;
 class FbxUserNotification;
@@ -274,12 +274,13 @@ public:
 		  *
 		  * \param pRoot This node is used as the stop point when visiting the parents (cannot be NULL).
 		  * \param pMatrixCmpTolerance Tolerance value when comparing the matrices.
+          * \param pStatus The FbxStatus object to hold error codes.
 		  * \return true if all the above conditions are met and false otherwise.
 		  * \remarks If the returned value is false, querying for the error will return the reason of the failure.
 		  *  As soon as one of the above conditions is not met, this method return ignoring any subsequent errors.
 		  * Run the IsBindPoseVerbose if more details are needed.
 		  */
-		bool IsValidBindPose(FbxNode* pRoot, double pMatrixCmpTolerance=0.0001);
+		bool IsValidBindPose(FbxNode* pRoot, double pMatrixCmpTolerance=0.0001, FbxStatus* pStatus = NULL);
 
 		/** Same as IsValidBindPose() but slower because it will not stop as soon as a failure occurs. Instead,
 		  * keeps running to accumulate the faulty nodes (stored in the appropriate array). It is then up to the
@@ -291,8 +292,9 @@ public:
 		  * \param pMissingDeformersAncestors Each deformer ancestors missing from the BindPose is added to this list.
 		  * \param pWrongMatrices Nodes that yield to a wrong matrix comparisons are added to this list.
 		  * \param pMatrixCmpTolerance Tolerance value when comparing the matrices.
+          * \param pStatus The FbxStatus object to hold error codes.
 		  */
-		bool IsValidBindPoseVerbose(FbxNode* pRoot, NodeList& pMissingAncestors, NodeList& pMissingDeformers, NodeList& pMissingDeformersAncestors, NodeList& pWrongMatrices, double pMatrixCmpTolerance=0.0001);
+		bool IsValidBindPoseVerbose(FbxNode* pRoot, NodeList& pMissingAncestors, NodeList& pMissingDeformers, NodeList& pMissingDeformersAncestors, NodeList& pWrongMatrices, double pMatrixCmpTolerance=0.0001, FbxStatus* pStatus = NULL);
 
 		/** Same as IsValidBindPose() but slower because it will not stop as soon as a failure occurs. Instead,
 		  * keeps running to accumulate the faulty nodes and send them directly to the UserNotification.
@@ -300,44 +302,11 @@ public:
 		  * \param pRoot This node is used as the stop point when visiting the parents (cannot be NULL).
 		  * \param pUserNotification Pointer to the user notification where the messages will be accumulated.
 		  * \param pMatrixCmpTolerance Tolerance value when comparing the matrices.
+          * \param pStatus The FbxStatus object to hold error codes.
 		  * \remarks If the pUserNotification parameter is NULL, this method will call IsValidBindPose().
 		  */
-		bool IsValidBindPoseVerbose(FbxNode* pRoot, FbxUserNotification* pUserNotification, double pMatrixCmpTolerance=0.0001);
+		bool IsValidBindPoseVerbose(FbxNode* pRoot, FbxUserNotification* pUserNotification, double pMatrixCmpTolerance=0.0001, FbxStatus* pStatus = NULL);
 
-	/**
-	  * \name Error Management
-	  */
-	//@{
-		/** Retrieve error object.
-		  * \return Reference to error object.
-		  */
-		FbxError& GetError();
-
-		/** \enum EErrorCode Error identifiers.
-		  * - \e eError
-		  * - \e eErrorCount
-		  */
-		enum EErrorCode
-		{
-			eError,
-			eInvalidObject,
-			eInvalidRoot,
-			eNotAllAncestorsNodes,
-			eNotAllDeformingNodes,
-			eNotAllAncestorsDefinitionNodes,
-			eRelativeMatrix,
-			eErrorCount
-		};
-
-		/** Get last error code.
-		  * \return Last error code.
-		  */
-		EErrorCode GetLastErrorID() const;
-
-		/** Get last error string.
-		  * \return Textual description of the last error.
-		  */
-		const char* GetLastErrorString() const;
 	//@}
 
 /*****************************************************************************************************************************
@@ -359,12 +328,10 @@ protected:
     bool				LocalValidateParams(const FbxNode* pNode, const FbxMatrix& pMatrix, int& pPos);
     static bool			GetSpecificPoseContaining(int poseType, FbxScene* pScene, FbxNode* pNode, PoseList& pPoseList, FbxArray<int>& pIndex);
 
-    FbxError			mError;
-
 private:
     FbxPoseInfo*		GetItem(int pIndex) const;
     void                UpdatePosInfoList();
-    bool				IsValidBindPoseCommon(FbxNode* pRoot, NodeList* pMissingAncestors, NodeList* pMissingDeformers, NodeList* pMissingDeformersAncestors, NodeList* pWrongMatrices, double pMatrixCmpTolerance=0.0001);
+    bool				IsValidBindPoseCommon(FbxNode* pRoot, NodeList* pMissingAncestors, NodeList* pMissingDeformers, NodeList* pMissingDeformersAncestors, NodeList* pWrongMatrices, FbxStatus* pStatus, double pMatrixCmpTolerance=0.0001);
 
     char				        mType;
     PoseInfoList		        mPoseInfo;

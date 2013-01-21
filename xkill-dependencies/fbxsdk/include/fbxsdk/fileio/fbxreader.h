@@ -18,7 +18,6 @@
 #include <fbxsdk/core/base/fbxarray.h>
 #include <fbxsdk/core/base/fbxstring.h>
 #include <fbxsdk/core/base/fbxtime.h>
-#include <fbxsdk/core/base/fbxerror.h>
 #include <fbxsdk/fileio/fbx/fbxio.h>
 
 #include <fbxsdk/fbxsdk_nsbegin.h>
@@ -38,6 +37,7 @@ class FbxSystemUnit;
 class FbxNode;
 class FbxProgress;
 class FbxTakeInfo;
+
 
  /** Base class of other readers used internally.
    * This class provides the interfaces for reading files.
@@ -68,29 +68,14 @@ public:
 	/** Constructor.
       *	\param pManager        The FbxManager Object.
       * \param pID             Id for current reader.
+      * \param pStatus         The FbxStatus object to hold error codes.
       */
-    FbxReader(FbxManager& pManager, int pID);
+    FbxReader(FbxManager& pManager, int pID, FbxStatus& pStatus);
 
 	 /** Destructor.
       */
     virtual ~FbxReader();
     
-	/** Error identifiers. */
-    enum EErrorCode
-    {
-        eFileCorrupted,
-        eFileVersionNotSupportedYet,
-        eFileVersionNotSupportedAnymore,
-        eFileNotOpened,
-        eFileNotCreated,
-        eWrongPassword,
-        eInvalidDocumentHandle,
-        eDocumentNotSupported,
-        eUnresolvedExternalReferences,
-        eUnknownError,
-        eErrorCount
-    };
-
 	/** Information type to request.
 			  * \remarks Used internally to get reader file information.
 	          */
@@ -224,35 +209,7 @@ public:
       *	\return \c true If the file format is internal plug-in , \c false Otherwise.
       */
 	bool						IsGenuine();
-
-	/** Retrieves error objects.
-      * \return Reference to error objects.
-      */
-    FbxError&						GetError();
-
-	/** Returns the ID of the last error that occurred when the file was read.
-      * \return Last error ID.
-      */
-    EErrorCode						GetLastErrorID() const;
-
-	/** Returns the error string that describes the last error that occurred when the file was read.
-      * \return A text description of the last error.
-      */
-    const char*					GetLastErrorString() const;
-
-	/** Returns a warning message that describes what occurred when the file was read.
-      *	\param pMessage			The returned warning message.
-      */
-    void						GetMessage(FbxString& pMessage) const;
-
-	/** Returns a warning message that describes what occurred when the file was read.
-      *	\return The warning message.
-      */
-    FbxString&					GetMessage();
-
-	/** Clears the warning message string.      */
-    void						ClearMessage();
-
+   
     /** Access to a IOSettings object.
       * \return A pointer to IOSettings used for this reader or NULL if the object
       * has not been allocated.
@@ -280,6 +237,8 @@ public:
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
     virtual bool				FileOpen(FbxFile * pFile);
 
+    FbxStatus& GetStatus()              { return mStatus; }
+
 protected:
 	void						SetDefaultRenderResolution(const char* pCamName, const char* pResolutionMode, double pW, double pH);
 	void						PluginsReadBegin(FbxScene& pScene);
@@ -288,12 +247,11 @@ protected:
     FbxReader&					operator=(FbxReader const&) { return *this; }
     virtual bool				CheckDuplicateNodeNames(FbxNode* pRootNode, FbxString& pDuplicateNodeNameList);
 
+    FbxStatus&                      mStatus;
     FbxManager&						mManager;
     FbxIODefaultRenderResolution*	mData;
 
 private:
-    FbxError		mError;
-    FbxString		mMessage;
 	int				mInternalID;
 	FbxIOSettings*	mIOSettings;
 

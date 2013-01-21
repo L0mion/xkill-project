@@ -98,8 +98,9 @@ public:
       *	\param pManager        the FbxManager Object
       * \param pImporter       the FbxImporter to import the SDK objects
       * \param pID             id for current reader
+      * \param pStatus         the FbxStatus object to hold error codes
       */
-    FbxReaderFbx6(FbxManager& pManager, FbxImporter& pImporter, int pID);
+    FbxReaderFbx6(FbxManager& pManager, FbxImporter& pImporter, int pID, FbxStatus& pStatus);
 
     /** Destructor
       *
@@ -1074,27 +1075,27 @@ private:
 
     FbxReaderFbx6& operator=(FbxReaderFbx6 const&) { return *this; }
 
-    FbxIO*                       mFileObject;
-    FbxImporter&               mImporter;
-    FbxCharPtrSet                 mNodeArrayName;
-    FbxObjectStringMap         mObjectMap;
+    FbxIO*                  mFileObject;
+    FbxImporter&            mImporter;
+    FbxCharPtrSet           mNodeArrayName;
+    FbxObjectStringMap      mObjectMap;
 
-    bool						mParseGlobalSettings;
-    FbxAxisSystem				mAxisSystem;
-    FbxSystemUnit				mSystemUnit;
+    bool					mParseGlobalSettings;
+    FbxAxisSystem			mAxisSystem;
+    FbxSystemUnit			mSystemUnit;
 	FbxTime::EMode			mFrameRate;
 
-    bool						mRetrieveStats;
-    FbxStatistics			  *	mDefinitionsStatistics;
+    bool					mRetrieveStats;
+    FbxStatistics*	        mDefinitionsStatistics;
     FbxArray<FbxTakeInfo *> mTakeInfo;
-    FbxDocumentInfo          * mSceneInfo;
-    FbxAnimLayer             * mAnimLayer;
-	FbxSet						mNickToKFCurveNodeTimeWarpsSet;
-	FbxSet*						mNickToAnimCurveTimeWarpsSet;
+    FbxDocumentInfo*        mSceneInfo;
+    FbxAnimLayer*           mAnimLayer;
+	FbxSet					mNickToKFCurveNodeTimeWarpsSet;
+	FbxSet*					mNickToAnimCurveTimeWarpsSet;
 
-    Fbx6ClassTemplateMap        mClassTemplateMap;
-    FbxProgress              * mProgress;
-    bool                        mProgressPause;
+    Fbx6ClassTemplateMap    mClassTemplateMap;
+    FbxProgress*            mProgress;
+    bool                    mProgressPause;
 };
 
 #include <fbxsdk/fbxsdk_nsend.h>

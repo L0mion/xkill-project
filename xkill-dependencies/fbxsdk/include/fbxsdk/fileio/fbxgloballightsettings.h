@@ -19,7 +19,6 @@
 
 #include <fbxsdk/fbxsdk_nsbegin.h>
 
-class FbxError;
 class FbxGlobalLightSettingsProperties;
 
 /** This class contains functions for accessing global light settings.
@@ -189,10 +188,10 @@ public:
 
     /** Returns a shadow plane at the specified index.
       * \param pIndex               Shadow plane index.
+      * \param pStatus              The FbxStatus object to hold error codes.
       * \return                     Pointer the shadow plane, or \c NULL if the index is out of range.
-      * \remarks                    To identify the error, use FbxGlobalLightSettings::GetLastErrorID() which returns eIndexOutOfRange.
       */
-    ShadowPlane* GetShadowPlane(int pIndex);
+    ShadowPlane* GetShadowPlane(int pIndex, FbxStatus* pStatus=NULL);
 
     /** Adds a shadow plane.
       * \param pShadowPlane         The shadow plane to be added.
@@ -201,38 +200,6 @@ public:
 
     //! Removes all shadow planes.
     void RemoveAllShadowPlanes();
-
-    //@}
-
-    /**
-      * \name Error Management
-      */
-    //@{
-
-    /** Retrieves the error object.
-     *  \return                     Reference to the error object.
-     */
-    FbxError& GetError();
-
-    /** \enum EErrorCode                Error identification.
-     *  - \e eIndexOutOfRange
-     *  - \e eErrorCount
-     */
-    enum EErrorCode
-    {
-        eIndexOutOfRange,	//! Index out of range error.
-        eErrorCount			//! Mark the end of the error enum.
-    };
-
-    /** Returns the last error code.
-     *  \return                     The last error code.
-     */
-    EErrorCode GetLastErrorID() const;
-
-    /** Returns the last error string.
-     *  \return                     Text description of the last error.
-     */
-    const char* GetLastErrorString() const;
 
     //@}
 

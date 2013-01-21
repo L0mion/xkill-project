@@ -204,8 +204,10 @@ public:
       */
     virtual void SetControlPointAt(FbxVector4 &pCtrlPoint, FbxVector4 &pNormal , int pIndex);
 
-     //!Returns the NURBS surface's control points.
-    virtual FbxVector4* GetControlPoints() const;
+     /** Returns the NURBS surface's control points.
+       * \param pStatus         The FbxStatus object to hold error codes.
+       */
+    virtual FbxVector4* GetControlPoints(FbxStatus* pStatus = NULL) const;
 
 /*****************************************************************************************************************************
 ** WARNING! Anything beyond these lines is for internal use, may not be documented and is subject to change without notice! **

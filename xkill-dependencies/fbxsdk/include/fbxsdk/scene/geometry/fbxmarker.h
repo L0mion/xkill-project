@@ -132,6 +132,30 @@ public:
 	  */
 	void SetDefaultIKReachRotation(double pIKReachRotation);
 
+	/** Get default IK pull.
+	  * \return A value between 0.0 and 100.0, 100.0 means complete IK pull.
+	  * \remarks This function only works if marker type is set to FbxMarker::eIK_EFFECTOR.
+	  */
+	double GetDefaultIKPull() const;
+
+	/** Set default IK pull.
+	  * \param pIKPull A value between 0.0 and 100.0, 100.0 means complete IK pull.
+	  * \remarks This function only works if marker type is set to FbxMarker::eIK_EFFECTOR.
+	  */
+	void SetDefaultIKPull(double pIKPull);
+
+	/** Get default IK pull hips.
+	  * \return A value between 0.0 and 100.0, 100.0 means complete IK pull.
+	  * \remarks This function only works if marker type is set to FbxMarker::eIK_EFFECTOR.
+	  */
+	double GetDefaultIKPullHips() const;
+
+	/** Set default IK pull hips.
+	  * \param pIKPull A value between 0.0 and 100.0, 100.0 means complete IK pull.
+	  * \remarks This function only works if marker type is set to FbxMarker::eIK_EFFECTOR.
+	  */
+	void SetDefaultIKPullHips(double pIKPullHips);
+
 	//@}
 
 	/**
@@ -241,6 +265,16 @@ public:
 	  * is invalid, return NULL
 	  */
 	FbxProperty* GetIKReachRotation();
+	/** This method grants access to the IKPull property.
+	  * \remarks If the marker is not of type IK Effector or the property
+	  * is invalid, return NULL
+	  */
+	FbxProperty* GetIKPull();
+	/** This method grants access to the IKPullHips property.
+	  * \remarks If the marker is not of type IK Effector or the property
+	  * is invalid, return NULL
+	  */
+	FbxProperty* GetIKPullHips();
 
 /*****************************************************************************************************************************
 ** WARNING! Anything beyond these lines is for internal use, may not be documented and is subject to change without notice! **

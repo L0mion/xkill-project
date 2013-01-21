@@ -182,7 +182,7 @@ public:
 
 		// UV set to use.
         /** This property handles the use of UV sets.
-          * Default value is default.
+          * Default value is "default".
           */
 		FbxPropertyT<FbxString>			UVSet;
 

@@ -349,34 +349,6 @@ public:
 	//! Reference character.
 	FbxPropertyT<FbxReference> Character;
 
-	/**
-	  * \name Error Management
-	  * The same error object is shared among instances of this class.
-	  */
-	//@{
-		/** Retrieve error object.
-		  * \return Reference to error object.
-		  */
-		FbxError& GetError();
-
-		//! Error identifiers.
-		enum EErrorCode
-		{
-			eError,
-			eErrorCount
-		};
-
-		/** Get last error code.
-		  * \return     Last error code.
-		  */
-		EErrorCode GetLastErrorID() const;
-
-		/** Get last error string.
-		  * \return     Textual description of the last error.
-		  */
-		const char* GetLastErrorString() const;
-	//@}
-
 protected:
 	virtual void Construct(const FbxControlSetPlug* pFrom);
 	virtual FbxStringList GetTypeFlags() const;
@@ -384,8 +356,6 @@ protected:
 private:
 	FbxArray<FbxProperty>    mFKBuf;
 	FbxArray<FbxProperty>    mIKBuf;
-
-	FbxError mError;
 
 	friend class FbxScene;
 	friend class FbxControlSet;

@@ -15,11 +15,11 @@
 
 #include <fbxsdk/fbxsdk_def.h>
 
-#include <fbxsdk/core/base/fbxerror.h>
 #include <fbxsdk/utils/fbxrenamingstrategy.h>
 
 #include <fbxsdk/fbxsdk_nsbegin.h>
 
+class FbxStatus;
 class FbxManager;
 class FbxFile;
 class FbxStream;
@@ -61,26 +61,12 @@ public:
 	/** Constructor.
       *	\param pManager        The FbxManager Object.
       * \param pID             Id for current writer.
+      * \param pStatus         The FbxStatus object to hold error codes.
       */
-    FbxWriter(FbxManager& pManager, int pID);
+    FbxWriter(FbxManager& pManager, int pID, FbxStatus& pStatus);
 
 	/** Destructor.    */
     virtual ~FbxWriter();
-
-   	/** Error identifiers.
-     */
-    enum EErrorCode
-    {
-        eFileCorrupted,
-        eFileNotOpened,
-        eFileNotCreated,
-        eOutOfSpace,
-        eInvalidDocumentHandle,
-        eDocumentNotSupported,
-        eUnknownError,
-        eEmbeddedOutOfSpace,
-        eErrorCount
-    };
 
 	/** Information type to request.
 	 * \remarks Used internally to get writer file information.
@@ -116,7 +102,7 @@ public:
     virtual bool					FileCreate(FbxStream* pStream, void* pStreamData);
 	
 	/** Closes the file.
-	*/
+	  */
     virtual bool					FileClose() = 0;
 	
 	/**  Test if the file is open.
@@ -188,35 +174,6 @@ public:
       */
 	bool							IsGenuine();
 
-	/** Returns error object(s).
-      * \return References to the error object(s).
-      */
-    FbxError&							GetError();
-
-	/** Returns the ID of the last error that occurred when the file was written.
-      * \return The last error ID.
-      */
-    EErrorCode							GetLastErrorID() const;
-
-	/** Returns the error string that describes the last error that occurred when the file was written.
-      * \return A textual description of the last error.
-      */
-    const char*						GetLastErrorString() const;
-
-	/** Returns a warning message that describes what occurred when the file was written.
-      *	\param pMessage The returned warning message.
-      */
-    void							GetMessage(FbxString &pMessage) const;
-
-	/** Returns a warning message that describes what occurred when the file was written.
-      *	\return The returned warning message.
-      */
-    FbxString&						GetMessage();
-
-	/** Empties the message string.
-      */
-    void							ClearMessage();
-
     /** Access to a IOSettings object.
       * \return The pointer to IOSettings or \c NULL \c if the object
       * has not been allocated.
@@ -248,22 +205,31 @@ protected:
     //! Function called by FBX after writing out the scene (FbxScene).
     void							PluginsWriteEnd(FbxScene& pScene);
 
+/*****************************************************************************************************************************
+** WARNING! Anything beyond these lines is for internal use, may not be documented and is subject to change without notice! **
+*****************************************************************************************************************************/
+public:
+#ifndef DOXYGEN_SHOULD_SKIP_THIS
+    FbxStatus& GetStatus()              { return mStatus; }
+
+protected:
+
     FbxWriter&						operator=(FbxWriter const&) { return *this; }
 
-    FbxManager& 				mManager;
+    FbxStatus&                          mStatus;
+    FbxManager& 				        mManager;
     FbxString							mFileVersion;
     //! Resample rate for animation.
-    double							mResamplingRate;
+    double							    mResamplingRate;
     //! The mode describing from which format to which format when write FBX file.
-    FbxSceneRenamer::ERenamingMode	mRenamingMode;
+    FbxSceneRenamer::ERenamingMode	    mRenamingMode;
 
 private:
-    FbxError							mError;
-    FbxString         				mMessage;
-	int								mInternalID;
-	FbxIOSettings *                mIOSettings;
+	int								    mInternalID;
+	FbxIOSettings *                     mIOSettings;
 
 	friend struct FbxWriterFbx7_Impl;
+#endif /* !DOXYGEN_SHOULD_SKIP_THIS *****************************************************************************************/
 };
 
 //! Helper to access the IOSetting object pointer as a ref ex: IOS_REF.GetBoolProp( ... );

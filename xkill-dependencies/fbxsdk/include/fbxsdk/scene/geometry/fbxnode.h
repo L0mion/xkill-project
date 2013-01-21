@@ -16,11 +16,11 @@
 #include <fbxsdk/fbxsdk_def.h>
 
 #include <fbxsdk/core/fbxobject.h>
-#include <fbxsdk/core/base/fbxerror.h>
 #include <fbxsdk/core/math/fbxtransforms.h>
 
 #include <fbxsdk/fbxsdk_nsbegin.h>
 
+class FbxStatus;
 class FbxNodeAttribute;
 class FbxCachedEffect;
 class FbxLODGroup;
@@ -286,22 +286,20 @@ public:
 		/** Set index of the default node attribute.
 		  * \param pIndex Identifies which of the connected node attributes is becoming the default one.
 		  *               This value represent the connection number of the node.
+           * \param pStatus The FbxStatus object to hold error codes.
 		  * \return \c true if the operation succeeds or \c false if the passed index is invalid.
-		  * In this case, FbxNode::GetLastErrorID() returns eIndexOutOfRange.
 		  */
-		bool SetDefaultNodeAttributeIndex(int pIndex);
+		bool SetDefaultNodeAttributeIndex(int pIndex, FbxStatus* pStatus = NULL);
 
 		/** Get the connected node attribute by specifying its index in the connection list.
 		  * \param pIndex The connection number of the node.
 		  * \return Pointer to corresponding node attribute or \c NULL if the index is out of range.
-		  * In this case, FbxNode::GetLastErrorID() returns eIndexOutOfRange.
 		  */
 		FbxNodeAttribute* GetNodeAttributeByIndex(int pIndex);
 
 		/** Get the connected node attribute by specifying its index in the connection list.
 		  * \param pIndex The connection number of the node.
 		  * \return Pointer to corresponding node attribute or \c NULL if the index is out of range.
-		  * In this case, FbxNode::GetLastErrorID() returns eIndexOutOfRange.
 		  */
 		FbxNodeAttribute const* GetNodeAttributeByIndex(int pIndex) const;
 
@@ -309,28 +307,28 @@ public:
 		  * This method will do a linear search of all the connected node attributes (from the last to
 		  * the first connection) until it finds \e pNodeAttribue.
 		  * \param pNodeAttribute The pointer to the node attribute.
+          * \param pStatus The FbxStatus object to hold error codes.
 		  * \return The connection number of the node attribute or \c -1 if pNodeAttribute is \c NULL 
-		  * or not connected to this node. For both failing conditions, FbxNode::GetLastErrorID() 
-		  * returns eAttributeNotConnected.
+		  * or not connected to this node. 
 		  */
-		int GetNodeAttributeIndex(FbxNodeAttribute* pNodeAttribute) const;
+		int GetNodeAttributeIndex(FbxNodeAttribute* pNodeAttribute, FbxStatus* pStatus = NULL) const;
 
 		/** Add the new node attribute to this node.
 		  * If no other node attribute is already set as the default one, this new node attribute is
 		  * automatically set as the default one.
 		  * \param pNodeAttribute The pointer to a node attribute.
+          * \param pStatus The FbxStatus object to hold error codes.
 		  * \return \c true if the operation succeeded or \c false if the operation failed.
 		  * \remarks The failing conditions for this methods are:
 		  *      - The received object pointer is \c NULL.
 		  *      - The received object is already connected to this node.
 		  *      - An internal error prevented the connection to successfully complete.
 		  */
-		bool AddNodeAttribute(FbxNodeAttribute* pNodeAttribute);
+		bool AddNodeAttribute(FbxNodeAttribute* pNodeAttribute, FbxStatus* pStatus = NULL);
 
 		/** Remove the node attribute from the connection list of this node.
 		  * \param pNodeAttribute The pointer to a node attribute.
 		  * \return Pointer to the removed node attribute or \c NULL if the operation failed.
-		  * In this case, FbxNode::GetLastErrorID() returns eAttributeNotConnected.
 		  */
 		FbxNodeAttribute* RemoveNodeAttribute(FbxNodeAttribute* pNodeAttribute);
 
@@ -999,8 +997,8 @@ public:
 		  * attributes defined in the pivot sets and can process animation data defined on different animation
 		  * stack. 
 		  * \param pAnimStackName The name of animation stack on which the conversion will take place.
-		  *                       If equals \c NULL or is an empty string, the first animation stack 
-		  *                       will be used.
+		  *                       If equals an empty string, the first animation stack will be used.
+          *                       If equals \c NULL, convert the animation on all the animation stacks at once.
 		  * \param pConversionTarget If set to EPivotSet::eDestinationPivot,
 		  *                          convert animation data from the EPivotSet::eSourcePivot pivot context
 		  *                          to the EPivotSet::eDestinationPivot pivot context. Otherwise, the
@@ -1205,37 +1203,6 @@ public:
 	//@}
 
 	/**
-	  * \name Error Management
-	  * The same error object is shared among instances of this class.
-	  */
-	//@{
-		/** Retrieve error object.
-		  * \return Reference to error object.
-		  */
-		FbxError& GetError();
-
-		/** \enum EErrorCode  Error identifiers.
-		  */
-		enum EErrorCode
-		{
-			eIndexOutOfRange,		//!< The index argument is outside the allowed values.
-			eAttributeNotConnected,	//!< The requested node attribute is invalid or not connected to this node.
-			eErrorCount
-		};
-
-		/** Get last error code.
-		  * \return Last error code.
-		  */
-		EErrorCode GetLastErrorID() const;
-
-		/** Get last error string.
-		  * \return Textual description of the last error.
-		  */
-		const char* GetLastErrorString() const;
-	//@}
-
-
-	/**
 	  * \name Public and fast access Properties
 	  */
 	//@{
@@ -1351,7 +1318,12 @@ public:
 		*/
 		FbxPropertyT<FbxDouble3> ScalingPivot;
 
-		/** This property contains the translation active information of the node
+		/** This property enables or disables the limit on translation. 
+        * When set to \c false the object can translate in any direction without limitations.
+		* Else the 
+        * \ref TranslationMinX, \ref TranslationMinY, \ref TranslationMinZ,
+        * \ref TranslationMaxX, \ref TranslationMaxY and \ref TranslationMaxZ flags are used to
+        * limit the translation on each individual axis.
 		*
 		* To access this property do: TranslationActive.Get().
 		* To set this property do: TranslationActive.Set(FbxBool).
@@ -1360,15 +1332,7 @@ public:
 		*/
 		FbxPropertyT<FbxBool> TranslationActive;
 
-		/** This property contains the translation information of the node
-		*
-		* To access this property do: Translation.Get().
-		* To set this property do: Translation.Set(FbxDouble3).
-		*
-		*/
-		FbxPropertyT<FbxDouble3> Translation;
-
-		/** This property contains the min translation limit information of the node
+		/** This property sets the minimum translation values the object can occupy on each individual axis.
 		*
 		* To access this property do: TranslationMin.Get().
 		* To set this property do: TranslationMin.Set(FbxDouble3).
@@ -1377,7 +1341,7 @@ public:
 		*/
 		FbxPropertyT<FbxDouble3> TranslationMin;
 
-		/** This property contains the max translation limit information of the node
+		/** This property sets the maximum translation values the object can occupy on each individual axis.
 		*
 		* To access this property do: TranslationMax.Get().
 		* To set this property do: TranslationMax.Set(FbxDouble3).
@@ -1386,7 +1350,8 @@ public:
 		*/
 		FbxPropertyT<FbxDouble3> TranslationMax;
 
-		/** This property contains the flag which actives the x component of min translation limit of the node
+		/** This property enables or disables the limit on translation X. 
+		* When set to \c true, the object translation is constrained by the value of \ref TranslationMin.
 		*
 		* To access this property do: TranslationMinX.Get().
 		* To set this property do: TranslationMinX.Set(FbxBool).
@@ -1395,7 +1360,8 @@ public:
 		*/
 		FbxPropertyT<FbxBool> TranslationMinX;
 
-		/** This property contains the flag which actives the y component of min translation limit of the node
+		/** This property enables or disables the limit on translation Y. 
+		* When set to \c true, the object translation is constrained by the value of \ref TranslationMin.
 		*
 		* To access this property do: TranslationMinY.Get().
 		* To set this property do: TranslationMinY.Set(FbxBool).
@@ -1404,7 +1370,9 @@ public:
 		*/
 		FbxPropertyT<FbxBool> TranslationMinY;
 
-		/** This property contains the flag which actives the z component of min translation limit of the node
+		
+		/** This property enables or disables the limit on translation Z. 
+		* When set to \c true, the object translation is constrained by the value of \ref TranslationMin.
 		*
 		* To access this property do: TranslationMinZ.Get().
 		* To set this property do: TranslationMinZ.Set(FbxBool).
@@ -1413,7 +1381,8 @@ public:
 		*/
 		FbxPropertyT<FbxBool> TranslationMinZ;
 
-		/** This property contains the flag which actives the x component of max translation limit of the node
+		/** This property enables or disables the limit on translation X. 
+		* When set to \c true, the object translation is constrained by the value of \ref TranslationMax.
 		*
 		* To access this property do: TranslationMaxX.Get().
 		* To set this property do: TranslationMaxX.Set(FbxBool).
@@ -1422,7 +1391,8 @@ public:
 		*/
 		FbxPropertyT<FbxBool> TranslationMaxX;
 
-		/** This property contains the flag which actives the y component of max translation limit of the node
+		/** This property enables or disables the limit on translation Y. 
+		* When set to \c true, the object translation is constrained by the value of \ref TranslationMax.
 		*
 		* To access this property do: TranslationMaxY.Get().
 		* To set this property do: TranslationMaxY.Set(FbxBool).
@@ -1431,7 +1401,8 @@ public:
 		*/
 		FbxPropertyT<FbxBool> TranslationMaxY;
 
-		/** This property contains the flag which actives the z component of max translation limit of the node
+		/** This property enables or disables the limit on translation Z. 
+		* When set to \c true, the object translation is constrained by the value of \ref TranslationMax.
 		*
 		* To access this property do: TranslationMaxZ.Get().
 		* To set this property do: TranslationMaxZ.Set(FbxBool).
@@ -1449,7 +1420,9 @@ public:
 		*/
 		FbxPropertyT<EFbxRotationOrder> RotationOrder;
 
-		/** This property contains the rotation space for limit only flag of the node
+		/** This property contains the rotation space for limit only flag of the node.
+		* When set to \c true, the Rotation space is applied only on the limit data (provided the \ref RotationActive is
+        * also \c true).
 		*
 		* To access this property do: RotationSpaceForLimitOnly.Get().
 		* To set this property do: RotationSpaceForLimitOnly.Set(FbxBool).
@@ -1512,7 +1485,14 @@ public:
 		*/
 		FbxPropertyT<FbxDouble3> PostRotation;
 
-		/** This property contains rotation active information of the node
+		/** This property enables or disables the limit on rotation. 
+        * When set to \c false the object can rotate in any direction without limitations.
+		* Else the 
+		* \ref RotationMinX, \ref RotationMinY, \ref RotationMinZ,
+        * \ref RotationMaxX, \ref RotationMaxY and \ref RotationMaxZ flags are used to
+        * limit the rotation on each individual axis.
+		* \remarks The PreRotation value is applied before the limit, while the PostRotation is applied
+		* after the limit.
 		*
 		* To access this property do: RotationActive.Get().
 		* To set this property do: RotationActive.Set(FbxBool).
@@ -1521,7 +1501,7 @@ public:
 		*/
 		FbxPropertyT<FbxBool> RotationActive;
 
-		/** This property contains the min rotation limit information of the node
+		/** This property sets the minimum rotation values the object can occupy on each individual axis.
 		*
 		* To access this property do: RotationMin.Get().
 		* To set this property do: RotationMin.Set(FbxDouble3).
@@ -1530,7 +1510,7 @@ public:
 		*/
 		FbxPropertyT<FbxDouble3> RotationMin;
 
-		/** This property contains the max rotation limit information of the node
+		/** This property sets the maximum rotation values the object can occupy on each individual axis.
 		*
 		* To access this property do: RotationMax.Get().
 		* To set this property do: RotationMax.Set(FbxDouble3).
@@ -1539,7 +1519,8 @@ public:
 		*/
 		FbxPropertyT<FbxDouble3> RotationMax;
 
-		/** This property contains the flag which actives the x component of min rotation limit of the node
+		/** This property enables or disables the limit on rotation X. 
+		* When set to \c true, the object rotation is constrained by the value of \ref RotationMin.
 		*
 		* To access this property do: RotationMinX.Get().
 		* To set this property do: RotationMinX.Set(FbxBool).
@@ -1548,7 +1529,8 @@ public:
 		*/
 		FbxPropertyT<FbxBool> RotationMinX;
 
-		/** This property contains the flag which actives the y component of min rotation limit of the node
+		/** This property enables or disables the limit on rotation Y. 
+		* When set to \c true, the object rotation is constrained by the value of \ref RotationMin.
 		*
 		* To access this property do: RotationMinY.Get().
 		* To set this property do: RotationMinY.Set(FbxBool).
@@ -1557,7 +1539,8 @@ public:
 		*/
 		FbxPropertyT<FbxBool> RotationMinY;
 
-		/** This property contains the flag which actives the z component of min rotation limit of the node
+		/** This property enables or disables the limit on rotation Z. 
+		* When set to \c true, the object rotation is constrained by the value of \ref RotationMin.
 		*
 		* To access this property do: RotationMinZ.Get().
 		* To set this property do: RotationMinZ.Set(FbxBool).
@@ -1566,7 +1549,8 @@ public:
 		*/
 		FbxPropertyT<FbxBool> RotationMinZ;
 
-		/** This property contains the flag which actives the x component of max rotation limit of the node
+		/** This property enables or disables the limit on rotation X. 
+		* When set to \c true, the object rotation is constrained by the value of \ref RotationMax.
 		*
 		* To access this property do: RotationMaxX.Get().
 		* To set this property do: RotationMaxX.Set(FbxBool).
@@ -1575,7 +1559,8 @@ public:
 		*/
 		FbxPropertyT<FbxBool> RotationMaxX;
 
-		/** This property contains the flag which actives the y component of max rotation limit of the node
+		/** This property enables or disables the limit on rotation Y. 
+		* When set to \c true, the object rotation is constrained by the value of \ref RotationMax.
 		*
 		* To access this property do: RotationMaxY.Get().
 		* To set this property do: RotationMaxY.Set(FbxBool).
@@ -1584,7 +1569,8 @@ public:
 		*/
 		FbxPropertyT<FbxBool> RotationMaxY;
 
-		/** This property contains the flag which actives the z component of max rotation limit of the node
+		/** This property enables or disables the limit on rotation Z.
+		* When set to \c true, the object rotation is constrained by the value of \ref RotationMax.
 		*
 		* To access this property do: RotationMaxZ.Get().
 		* To set this property do: RotationMaxZ.Set(FbxBool).
@@ -1602,7 +1588,12 @@ public:
 		*/
 		FbxPropertyT<FbxTransform::EInheritType> InheritType;
 
-		/** This property contains scaling active information of the node
+		/** This property enables or disables the limit on scaling. 
+        * When set to \c false the object can scale in any direction without limitations.
+		* Else the 
+		* \ref ScalingMinX, \ref ScalingMinY, \ref ScalingMinZ,
+        * \ref ScalingMaxX, \ref ScalingMaxY and \ref ScalingMaxZ flags are used to
+        * limit the scaling on each individual axis.
 		*
 		* To access this property do: ScalingActive.Get().
 		* To set this property do: ScalingActive.Set(FbxBool).
@@ -1611,15 +1602,7 @@ public:
 		*/
 		FbxPropertyT<FbxBool> ScalingActive;
 
-		/** This property contains scaling information of the node
-		*
-		* To access this property do: Scaling.Get().
-		* To set this property do: Scaling.Set(FbxDouble3).
-		* 
-		*/
-		FbxPropertyT<FbxDouble3> Scaling;
-
-		/** This property contains the min scaling limit information of the node
+		/** This property sets the minimum scaling values the object can occupy on each individual axis.
 		*
 		* To access this property do: ScalingMin.Get().
 		* To set this property do: ScalingMin.Set(FbxDouble3).
@@ -1628,7 +1611,7 @@ public:
 		*/
 		FbxPropertyT<FbxDouble3> ScalingMin;
 
-		/** This property contains the max scaling limit information of the node
+		/** This property sets the maximum scaling values the object can occupy on each individual axis.
 		*
 		* To access this property do: ScalingMax.Get().
 		* To set this property do: ScalingMax.Set(FbxDouble3).
@@ -1637,7 +1620,8 @@ public:
 		*/
 		FbxPropertyT<FbxDouble3> ScalingMax;
 
-		/** This property contains the flag which actives the x component of min scaling limit of the node
+		/** This property activates or disables the limit on scaling X. When active, the object scaling
+		* is constrained by the value of \ref ScalingMin.
 		*
 		* To access this property do: ScalingMinX.Get().
 		* To set this property do: ScalingMinX.Set(FbxBool).
@@ -1646,7 +1630,8 @@ public:
 		*/
 		FbxPropertyT<FbxBool> ScalingMinX;
 
-		/** This property contains the flag which actives the y component of min scaling limit of the node
+		/** This property enables or disables the limit on scaling Y. 
+		* When set to \c true, the object scaling is constrained by the value of \ref ScalingMin.
 		*
 		* To access this property do: ScalingMinY.Get().
 		* To set this property do: ScalingMinY.Set(FbxBool).
@@ -1655,7 +1640,8 @@ public:
 		*/
 		FbxPropertyT<FbxBool> ScalingMinY;
 
-		/** This property contains the flag which actives the z component of min scaling limit of the node
+		/** This property enables or disables the limit on scaling Z. 
+		* When set to \c true, the object scaling is constrained by the value of \ref ScalingMin.
 		*
 		* To access this property do: ScalingMinZ.Get().
 		* To set this property do: ScalingMinZ.Set(FbxBool).
@@ -1664,7 +1650,8 @@ public:
 		*/
 		FbxPropertyT<FbxBool> ScalingMinZ;
 
-		/** This property contains the flag which actives the x component of max scaling limit of the node
+		/** This property enables or disables the limit on scaling X. 
+		* When set to \c true, the object scaling is constrained by the value of \ref ScalingMax.
 		*
 		* To access this property do: ScalingMaxX.Get().
 		* To set this property do: ScalingMaxX.Set(FbxBool).
@@ -1673,7 +1660,8 @@ public:
 		*/
 		FbxPropertyT<FbxBool> ScalingMaxX;
 
-		/** This property contains the flag which actives the y component of max scaling limit of the node
+		/** This property enables or disables the limit on scaling Y. 
+		* When set to \c true, the object scaling is constrained by the value of \ref ScalingMax.
 		*
 		* To access this property do: ScalingMaxY.Get().
 		* To set this property do: ScalingMaxY.Set(FbxBool).
@@ -1682,7 +1670,8 @@ public:
 		*/
 		FbxPropertyT<FbxBool> ScalingMaxY;
 
-		/** This property contains the flag which actives the z component of max scaling limit of the node
+		/** This property enables or disables the limit on scaling Z. 
+		* When set to \c true, the object scaling is constrained by the value of \ref ScalingMax.
 		*
 		* To access this property do: ScalingMaxZ.Get().
 		* To set this property do: ScalingMaxZ.Set(FbxBool).
@@ -2394,7 +2383,6 @@ private:
 	FbxVector4					mTargetUpVector;
 	FbxNode::EShadingMode		mShadingMode;
 	FbxArray<LinkToCharacter>	mLinkToCharacter;
-	mutable FbxError			mError;
 #endif /* !DOXYGEN_SHOULD_SKIP_THIS *****************************************************************************************/
 };
 

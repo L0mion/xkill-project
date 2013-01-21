@@ -484,10 +484,24 @@ public:
       */
     int GetMeshEdgeIndex( int pStartVertexIndex, int pEndVertexIndex, bool& pReversed, int pExistedEdgeCount = -1 );
 
+    /**  Use this method before calling GetMeshEdgeIndexForPolygon if making several calls to that method.
+      *  Once done calling GetMeshEdgeIndexForPolygon, call EndGetMeshEdgeIndex. This will optimize access time.
+      *  Do not modify the mesh between calls to BeginGetMeshEdgeIndex and EndGetMeshEdgeIndex.
+      */
+    void BeginGetMeshEdgeIndexForPolygon();
+
+    /**  Use this method after calling GetMeshEdgeIndexForPolygon if making several calls to that method.
+	  *  This will optimize access time.
+	  *  Do not modify the mesh between calls to BeginGetMeshEdgeIndex and EndGetMeshEdgeIndex.
+	  */
+    void EndGetMeshEdgeIndexForPolygon();
+
 	/** Get the index for the specific edge of pPolygon.
 	  * \param pPolygon The polygon of interest.
-	  * \param pPositionInPolygon The specific edge number in the polygon.
+	  * \param pPositionInPolygon The specific edge number in the polygon.      
 	  * \return -1 if the specific edge does not exist.
+      * \remarks To optimize access time when making several calls to this method, enclose these calls 
+      *          between the BeginGetMeshEdgeIndexForPolygon() and EndGetMeshEdgeIndexForPolygon() calls.
 	  */
     int GetMeshEdgeIndexForPolygon( int pPolygon, int pPositionInPolygon );
 
@@ -579,21 +593,6 @@ public:
       * \return true on success, false on failure. ( edge for the poly and position already exists )
       */
     bool SetMeshEdgeIndex( int pEdgeIndex, int pPolygonIndex, int pPositionInPolygon );
-
-
-	//!Internal structure used to keep the mapping information between edges and polygons.
-    struct ComponentMap
-    {
-        FbxArray<int> mData; //!< The array to store data.
-        FbxArray<int> mOffsets; //!< The array to store the offsets of the data in mData.
-
-        int GetDataCount(int pIndex) { return mOffsets[pIndex + 1] - mOffsets[pIndex]; }
-        int GetData(int pIndex, int pSubIndex) { return mData[ mOffsets[pIndex] + pSubIndex ]; }
-        int GetComponentCount() { return mOffsets.GetCount() - 1; }
-    };
-
-	//! Compute component maps.
-    void ComputeComponentMaps( ComponentMap& pEdgeToPolyMap, ComponentMap& pPolyToEdgeMap );
 
     /** Determines if the mesh is composed entirely of triangles.
       * \return true if all polygons are triangles, false otherwise
@@ -875,9 +874,25 @@ public:
 	//DO NOT MODIFY them directly, otherwise unexpected behavior will occur.
 	//These members are public only for application data copy performance reasons.
 	struct PolygonDef{ int mIndex; int mSize; int mGroup; };
+
     FbxArray<PolygonDef> mPolygons;
     FbxArray<int> mPolygonVertices;
     FbxArray<int> mEdgeArray;
+
+
+	//Internal structure used to keep the mapping information between edges and polygons.
+    struct ComponentMap
+    {
+        FbxArray<int> mData; // The array to store data.
+        FbxArray<int> mOffsets; // The array to store the offsets of the data in mData.
+
+        int GetDataCount(int pIndex) { return mOffsets[pIndex + 1] - mOffsets[pIndex]; }
+        int GetData(int pIndex, int pSubIndex) { return mData[ mOffsets[pIndex] + pSubIndex ]; }
+        int GetComponentCount() { return mOffsets.GetCount() - 1; }
+    };
+
+	// Compute component maps.
+    void ComputeComponentMaps( ComponentMap& pEdgeToPolyMap, ComponentMap& pPolyToEdgeMap );
 
 protected:
 	virtual void Construct(const FbxMesh* pFrom);
@@ -925,6 +940,11 @@ protected:
         int* mV2PVCount;
         int* mPVEdge;
         bool mValid;
+
+        FbxArray<int> mV2Edge; // used for fast search in GetMeshEdgeIndexForPolygon
+        // this array does not follow the same allocation as the above ones because it
+        // is not used in the normal BeginAddMeshEdgeIndex(). It is filled only by the
+        // call to BeginGetMeshEdgeIndexForPolygon().
     };
     V2PVMap mV2PVMap;
 
@@ -943,6 +963,10 @@ protected:
     template<class T> bool	GetPolygonVertexLayerElementValue(const FbxLayerElementTemplate<T>* pLayerElement, int pPolyIndex, int pVertexIndex, T& pValue) const;
 
     friend class FbxGeometryConverter;
+
+private:
+    void FillMeshEdgeTable(FbxArray<int>& pTable, int* pValue, void (*FillFct)(FbxArray<int>& pTable, int pIndex, int* pValue));
+
 #endif /* !DOXYGEN_SHOULD_SKIP_THIS *****************************************************************************************/
 };
 

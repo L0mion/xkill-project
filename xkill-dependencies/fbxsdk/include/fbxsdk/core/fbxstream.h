@@ -74,6 +74,9 @@ public:
 	  * \param pStopAtFirstWhiteSpace Stop reading when any whitespace is encountered. 
 										Otherwise read to end of line (like fgets()).
 	  * \return pBuffer, if successful, else NULL.
+      * \remarks The default implementation terminates the \e pBuffer with a null character and
+      *          assumes there is enough room for it. For example, a call with \e pMaxSize = 1 will 
+      *          fill \e pBuffer with the null character only.
 	  */
 	virtual char* ReadString(char* pBuffer, int pMaxSize, bool pStopAtFirstWhiteSpace=false);
 

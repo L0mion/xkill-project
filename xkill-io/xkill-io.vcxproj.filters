@@ -68,6 +68,15 @@
     <ClCompile Include="..\..\xkill-source\xkill-io\LoaderFbxMaterialDesc.cpp">
       <Filter>.fbx</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-io\LoaderFbxTexture.cpp">
+      <Filter>.fbx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-io\LoaderFbxMeshDesc.cpp">
+      <Filter>.fbx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-io\LoaderFbxTextureDesc.cpp">
+      <Filter>.fbx</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-io\Loader.h" />
@@ -153,6 +162,15 @@
       <Filter>.fbx</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-io\LoaderFbxMaterialDesc.h">
+      <Filter>.fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderFbxTexture.h">
+      <Filter>.fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderFbxMeshDesc.h">
+      <Filter>.fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderFbxTextureDesc.h">
       <Filter>.fbx</Filter>
     </ClInclude>
   </ItemGroup>

@@ -53,7 +53,7 @@
 #include <fbxsdk/core/base/fbxcharptrset.h>
 #include <fbxsdk/core/base/fbxcontainerallocators.h>
 #include <fbxsdk/core/base/fbxdynamicarray.h>
-#include <fbxsdk/core/base/fbxerror.h>
+#include <fbxsdk/core/base/fbxstatus.h>
 #include <fbxsdk/core/base/fbxfile.h>
 #include <fbxsdk/core/base/fbxfolder.h>
 #include <fbxsdk/core/base/fbxhashmap.h>
@@ -114,7 +114,6 @@
 #include <fbxsdk/fileio/fbxfiletokens.h>
 #include <fbxsdk/fileio/fbxglobalcamerasettings.h>
 #include <fbxsdk/fileio/fbxgloballightsettings.h>
-#include <fbxsdk/fileio/fbxglobaltimesettings.h>
 #include <fbxsdk/fileio/fbxgobo.h>
 #include <fbxsdk/fileio/fbximporter.h>
 #include <fbxsdk/fileio/fbxiobase.h>
@@ -252,10 +251,6 @@
 #include <fbxsdk/utils/fbxusernotification.h>
 
 //---------------------------------------------------------------------------------------
-#ifndef FBXSDK_NEW_API
-	#include <fbxsdk/fbxsdk_compatibility.h>
-#endif
-
 #if defined(FBXSDK_NAMESPACE) && (FBXSDK_NAMESPACE_USING == 1)
 	using namespace FBXSDK_NAMESPACE;
 #endif

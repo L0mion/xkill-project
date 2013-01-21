@@ -26,7 +26,7 @@ typedef FbxArray<FbxTakeInfo*> TakeInfoArray;
 class FbxWriterFbx6 : public FbxWriter
 {
 public:
-    FbxWriterFbx6(FbxManager& pManager, FbxExporter& pExporter, int pID);
+    FbxWriterFbx6(FbxManager& pManager, FbxExporter& pExporter, int pID, FbxStatus& pStatus);
     virtual ~FbxWriterFbx6();
 
     virtual bool    FileCreate(char* pFileName);
@@ -296,7 +296,7 @@ private:
 
     struct ModifiedPropertyInfo { FbxObject* mObj; FbxString mPropName; };
     FbxArray<ModifiedPropertyInfo*> mModifiedProperties;
-    void ReplaceUnsupportedProperties(FbxScene* pScene, bool pPreprocessPass, unsigned int pFormatV);
+    void ReplaceUnsupportedProperties(FbxScene* pScene, bool pPreprocessPass, int pFormatV);
 	void StoreUnsupportedProperty(FbxObject* pObject, FbxProperty& pProperty);
 
     FbxProgress* mProgress;

@@ -157,7 +157,7 @@ public:
 		bool IsEmpty() const;
 
 		//! Discard the content of the string.
-		FbxString& Empty();
+		FbxString& Clear();
 
 		/** Access by reference.
 		* \param pIndex   The index.

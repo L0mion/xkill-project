@@ -244,6 +244,8 @@
 #define FIELD_KFBXMARKER_IK_PIVOT                "IKPivot"
 #define FIELD_KFBXMARKER_IK_REACH_TRANSLATION    "IKReachTranslation"
 #define FIELD_KFBXMARKER_IK_REACH_ROTATION       "IKReachRotation"
+#define FIELD_KFBXMARKER_IK_PULL                 "IKPull"
+#define FIELD_KFBXMARKER_IK_PULL_HIPS            "IKPullHips"
 
 //
 // FbxCamera
@@ -386,9 +388,13 @@
 #define FIELD_KFBXGEOMETRYMESH_GEOMETRY_VERSION      "GeometryVersion"
 #define FIELD_KFBXGEOMETRYMESH_VERTICES              "Vertices"
 #define FIELD_KFBXGEOMETRYMESH_EDGES                 "Edges"
+#define FIELD_KFBXGEOMETRYMESH_INTERNAL_EDGES        "InternalEdges"
 #define FIELD_KFBXGEOMETRYMESH_NORMALS               "Normals"
+#define FIELD_KFBXGEOMETRYMESH_NORMALS_WCOMPONENT    "NormalsW"
 #define FIELD_KFBXGEOMETRYMESH_BINORMALS             "Binormals"
+#define FIELD_KFBXGEOMETRYMESH_BINORMALS_WCOMPONENT  "BinormalsW"
 #define FIELD_KFBXGEOMETRYMESH_TANGENTS              "Tangents"
+#define FIELD_KFBXGEOMETRYMESH_TANGENTS_WCOMPONENT   "TangentsW"
 #define FIELD_KFBXGEOMETRYMESH_NORMALS_INDEX         "NormalsIndex"
 #define FIELD_KFBXGEOMETRYMESH_BINORMALS_INDEX       "BinormalsIndex"
 #define FIELD_KFBXGEOMETRYMESH_TANGENTS_INDEX        "TangentsIndex"

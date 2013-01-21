@@ -37,7 +37,6 @@ class FbxCharacterPose;
 class FbxVideo;
 class FbxGlobalLightSettings;
 class FbxGlobalCameraSettings;
-class FbxGlobalTimeSettings;
 
 /** This class contains the description of a 3D scene. It contains the nodes (including the root node) (FbxNode),
   * materials, textures, videos, gobos, 
@@ -606,15 +605,15 @@ public:
 
     FbxClassId ConvertAttributeTypeToClassID(FbxNodeAttribute::EType pAttributeType);
 
+    // These data structures are only used for legacy FBX files (version 6.x and earlier). The
+    // validity of their content is not guaranteed with the most recent versions.
     FbxGlobalLightSettings&  GlobalLightSettings()  { return *mGlobalLightSettings; }
     FbxGlobalCameraSettings& GlobalCameraSettings() { return *mGlobalCameraSettings; }
-    FbxGlobalTimeSettings&   GlobalTimeSettings()   { return *mGlobalTimeSettings; }
 
 private:
     FbxNode*					mRootNode;
     FbxGlobalLightSettings*		mGlobalLightSettings;
     FbxGlobalCameraSettings*	mGlobalCameraSettings;
-    FbxGlobalTimeSettings*		mGlobalTimeSettings;
 	FbxAnimEvaluator*			mEvaluator;
     FbxCharPtrSet				mTakeTimeWarpSet;
 #endif /* !DOXYGEN_SHOULD_SKIP_THIS *****************************************************************************************/

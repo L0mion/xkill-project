@@ -103,7 +103,8 @@ public:
                                   if not specified, plugin will detect the file format according to file suffix automatically.
 	  * \param pIOSettings        client IOSettings, if not specified, a default IOSettings will be created
 	  * \return                   \c true on success, \c false otherwise.
-	  * \remarks                  To identify the error that occurred, call FbxIOBase::GetLastErrorID().	
+      * \remarks                  To identify the error that occurred, inspect the status object accessed 
+      *                           using the GetStatus() function.
       * \remarks                  You do not need to give the pFileFormat if the suffix of pFileName is recognized
 	  */
 	virtual bool Initialize(const char* pFileName, const int pFileFormat=-1, FbxIOSettings * pIOSettings=NULL);
@@ -115,7 +116,8 @@ public:
                                   if not specified, plugin will request the file format from the stream automatically.
 	  * \param pIOSettings        client IOSettings, if not specified, a default IOSettings will be created
       *	\return                   \c true on success, \c false otherwise.
-	  * \remarks                  To identify the error that occurred, call FbxIOBase::GetLastErrorID().	  
+      * \remarks                  To identify the error that occurred, inspect the status object accessed 
+      *                           using the GetStatus() function.
       * \remarks                  You do not need to give the pFileFormat if the suffix of pFileName is recognized
       */
 	virtual bool Initialize(FbxStream* pStream, void* pStreamData=NULL, const int pFileFormat=-1, FbxIOSettings* pIOSettings=NULL);
@@ -173,10 +175,11 @@ public:
 	  * \param pNonBlocking       If true, the import process will be executed in a new thread, allowing it to be non-blocking.
 	                              To determine if the import finished, refer to the function IsImporting().
 	  *	\return                   \c true on success, \c false otherwise.
-	  * \remarks                  To identify the error that occurred, call FbxIOBase::GetLastErrorID().
+      * \remarks                  To identify the error that occurred, inspect the status object accessed 
+      *                           using the GetStatus() function.
 	  *                           If the imported file is password protected and the password is not
-	  *                           set or wrong, function FbxIOBase::GetLastErrorID() returns 
-	  *                           FbxIOBase::ePasswordError.
+	  *                           set or wrong, the FbxStatus object access with GetStatus() will be set with
+	  *                           FbxStatus::ePasswordError.
       */
 	  bool Import(FbxDocument* pDocument, bool pNonBlocking=false);
 

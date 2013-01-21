@@ -20,6 +20,7 @@
 
 #include <fbxsdk/fbxsdk_nsbegin.h>
 
+
 /** Class to read a Collada file and import it to a FBX scene.
   *
   * Some terms about COLLADA (from the spec of the COLLADA).
@@ -59,9 +60,10 @@ public:
 
     /** Constructor.
     * \param pManager FBX SDK object Manager.
-    * \param pID Internal ID.
+    * \param pID      Internal ID.
+    * \param pStatus  The FbxStatus object to hold error codes.
     */
-    FbxReaderCollada(FbxManager& pManager, int pID); 
+    FbxReaderCollada(FbxManager& pManager, int pID, FbxStatus& pStatus); 
 	
     //! Destructor.
     virtual ~FbxReaderCollada();

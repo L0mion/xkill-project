@@ -29,8 +29,8 @@ public:
         eENCRYPTED
     } EExportMode;
 
-    FbxWriterFbx7(FbxManager& pManager, FbxExporter& pExporter, int pID);
-    FbxWriterFbx7(FbxManager& pManager, FbxExporter& pExporter, EExportMode pMode, int pID);
+    FbxWriterFbx7(FbxManager& pManager, FbxExporter& pExporter, int pID, FbxStatus& pStatus);
+    FbxWriterFbx7(FbxManager& pManager, FbxExporter& pExporter, EExportMode pMode, int pID, FbxStatus& pStatus);
     virtual ~FbxWriterFbx7();
 
     virtual bool FileCreate(char* pFileName);

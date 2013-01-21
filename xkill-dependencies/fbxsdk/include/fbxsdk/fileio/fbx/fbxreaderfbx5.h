@@ -22,7 +22,8 @@ class Fbx5ObjectTypeInfo;
 
 FbxReader* CreateFBXReader(FbxManager& pManager, 
 							FbxImporter& pImporter,
-							int pID);
+							int pID,
+                            FbxStatus& pStatus);
 void GetInfoFBXReader(int* pCount, 
 					  char const* const* * pExtensions, 
 					  char const* const* * pDescriptions);
@@ -30,7 +31,7 @@ void GetInfoFBXReader(int* pCount,
 class FbxReaderFbx5 : public FbxReader
 {
 public:
-	FbxReaderFbx5(FbxManager& pManager, FbxImporter& pImporter, int pID);
+	FbxReaderFbx5(FbxManager& pManager, FbxImporter& pImporter, int pID, FbxStatus& pStatus);
 	virtual ~FbxReaderFbx5();
 
     virtual bool FileOpen(char* pFileName, bool pIgnoredArg);

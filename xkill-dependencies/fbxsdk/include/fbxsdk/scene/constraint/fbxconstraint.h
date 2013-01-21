@@ -16,8 +16,6 @@
 #include <fbxsdk/fbxsdk_def.h>
 
 #include <fbxsdk/core/fbxobject.h>
-#include <fbxsdk/core/base/fbxerror.h>
-
 #include <fbxsdk/fbxsdk_nsbegin.h>
 
 /** Base class for weighted animation constraints.
@@ -99,34 +97,6 @@ public:
       */
     double GetSourceWeight(const FbxObject* pObject) const;
 
-    /**
-      * \name Error Management
-      */
-    //@{
-        /** Retrieve error object.
-          * \return     Reference to error object.
-          */
-        FbxError& GetError();
-
-        /** \enum EErrorCode Error identifiers.
-          */
-        enum EErrorCode
-        {
-            eError,		//! Error identifiers.
-            eErrorCount	//! Mark the end of the error enum.
-        };
-
-        /** Get last error code.
-          * \return     Last error code.
-          */
-        EErrorCode GetLastErrorID() const;
-
-        /** Get last error string.
-          * \return     Textual description of the last error.
-          */
-        const char* GetLastErrorString() const;
-    //@}
-
 /*****************************************************************************************************************************
 ** WARNING! Anything beyond these lines is for internal use, may not be documented and is subject to change without notice! **
 *****************************************************************************************************************************/
@@ -135,8 +105,6 @@ protected:
 	virtual void Construct(const FbxConstraint* pFrom);
     virtual void ConstructProperties(bool pForceSet);
 
-private:
-    FbxError mError;
 #endif /* !DOXYGEN_SHOULD_SKIP_THIS *****************************************************************************************/
 };
 

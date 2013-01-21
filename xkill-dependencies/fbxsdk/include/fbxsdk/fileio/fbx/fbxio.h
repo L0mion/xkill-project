@@ -17,6 +17,7 @@
 
 #include <fbxsdk/core/base/fbxstring.h>
 #include <fbxsdk/core/base/fbxtime.h>
+#include <fbxsdk/core/base/fbxstatus.h>
 
 #include <fbxsdk/fbxsdk_nsbegin.h>
 
@@ -26,7 +27,6 @@ class FbxWriter;
 class FbxFile;
 class FbxStream;
 class FbxXRefManager;
-class FbxError;
 
 /** 
     Defines the current FBX file version number in four digits. The first digit is the 
@@ -109,11 +109,16 @@ class FbxError;
 	\li Version 7300
 	Changed the way the CharacterPoses are written.
 	Changed light property name HotSpot and ConeAngle to InnerAngle and OuterAngle
-*/
 
-#define FBX_DEFAULT_VERSION_NUMBER 7300
+ 	\li Version 7400
+	Normals, tangents and binormals save the 4th component into a separate array	
+   
+ */
+
+#define FBX_DEFAULT_VERSION_NUMBER 7400
 
 //File version strings
+#define FBX2014_00_COMPATIBLE		"FBX201400"
 #define FBX2013_00_COMPATIBLE		"FBX201300"
 #define FBX2012_00_COMPATIBLE		"FBX201200"
 #define FBX2011_00_COMPATIBLE		"FBX201100"
@@ -156,7 +161,7 @@ enum
   * \endcode
   * \returns the file version number or 0 if an unsupported string value is passed.
   */
-FBXSDK_DLL unsigned int FbxFileVersionStrToInt(FbxString pFileVersion);
+FBXSDK_DLL int FbxFileVersionStrToInt(FbxString pFileVersion);
 
 /** Render and resolution information.
 * \nosubgrouping 
@@ -331,12 +336,13 @@ public:
     };
 
 	/** Creation function for this FbxIO class
+      * \param pStatus  The FbxStatus object to hold error codes.
 	  * \return a new FbxIO object pointer
 	  */
-    static FbxIO* Create(){ return FbxNew< FbxIO >(); }
+    static FbxIO* Create(FbxStatus& pStatus){ return FbxNew< FbxIO >(pStatus); }
 
 	/** Default constructor */
-    FbxIO();
+    FbxIO(FbxStatus& pStatus);
 
 	/** Destructor */
     virtual ~FbxIO();
@@ -1606,48 +1612,6 @@ public:
 
     //@}
 
-    /**
-    * \name Error related functions to get some information when an error occur
-	*       following a read or write operation.
-    */
-    //@{
-
-    //! Error code
-    enum EErrorCode
-    {
-        eFileCorrupted,						//!< A file don't have a valid format of data.
-        eFileVersionNotSupportedYet,		//!< A file version is over the latest file version supported.
-        eFileVersionNotSupportedAnymore,	//!< A file version is obsolete. ex: 4.0
-        eFileNotOpened,						//!< A file fail to open.
-        eFileNotCreated,					//!< A file can't be created.
-        eDirectoryNotCreated,				//!< A directory can't be created.
-        eCrcCheckFailed,					//!< A check of the CRC fail.
-        eNonExistingSection,				//!< The section was not found.
-        eOperationCanceled,					//!< The current operation is canceled.
-        eCountError,						//!< Wrong number of data found.
-        eInvalidData,						//!< An invalid data found.
-        eWriteError,						//!< A write error.
-        eReadError,							//!< A read error.
-        eErrorCount							//!< Number of error enum values.
-    };
-
-    /** Retrieve error object.
-    *  \return error object.
-    */
-    FbxError& GetError();
-
-    /** Get last error code.
-    *  \return last error code.
-    */
-    EErrorCode GetLastErrorID() const;
-
-    /** Get last error code.
-    *  \return last error code.
-    */
-    const char* GetLastErrorString() const;
-
-    //@}
-
 #ifdef _DEBUG
     // Dump function for debugging purpose only
     void StdoutDump();
@@ -1685,6 +1649,11 @@ public:
     bool ProjectOpen (FbxFile * pFile, FbxReader* pReader, bool pCheckCRC = false, bool pOpenMainSection = true, FbxIOFileHeaderInfo* pFileHeaderInfo = NULL);
 
 private:
+    // to resolve warning C4512: 'class' : assignment operator could not be generated
+    FbxIO& operator=(const FbxIO& pOther);
+
+    FbxStatus& mStatus;
+
     struct InternalImpl;
     InternalImpl* mImpl;
 

@@ -40,8 +40,9 @@ public:
       *	\param pManager        the FbxManager Object
       * \param pImporter       the FbxImporter to import the SDK objects
       * \param pID             id for current reader
+      * \param pStatus         the FbxStatus object to hold error codes
       */
-    FbxReaderFbx7(FbxManager& pManager, FbxImporter& pImporter, int pID);
+    FbxReaderFbx7(FbxManager& pManager, FbxImporter& pImporter, int pID, FbxStatus& pStatus);
 
     /** Destructor
       *

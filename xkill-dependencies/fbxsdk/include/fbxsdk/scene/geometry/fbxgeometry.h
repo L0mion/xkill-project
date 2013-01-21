@@ -23,6 +23,7 @@
 
 #include <fbxsdk/fbxsdk_nsbegin.h>
 
+class FbxStatus;
 class FbxGeometryWeightedMap;
 
 /** The base class of geometric objects that support control point deformations (e.g. FbxMesh, FbxNurbs, 
@@ -67,11 +68,11 @@ public:
     int AddDeformer(FbxDeformer* pDeformer);
 
 	/** Remove a deformer.
-	* \param pIndex Index of deformer to remove.
-	* \return Pointer to the removed deformer (or \c NULL if pIndex is out of range). If pIndex is out of range
-	*         FbxGeometry::GetLastErrorID() returns eIndexOutOfRange.
+	* \param pIndex  Index of deformer to remove.
+    * \param pStatus The FbxStatus object to hold error codes.
+	* \return Pointer to the removed deformer (or \c NULL if pIndex is out of range).
 	*/
-	FbxDeformer* RemoveDeformer(int pIndex);
+	FbxDeformer* RemoveDeformer(int pIndex, FbxStatus* pStatus = NULL);
 
     /** Returns the number of deformers.
       * \return     The number of deformers that are connected to this geometry.
@@ -80,10 +81,10 @@ public:
 
     /** Returns the deformer at the specified index.
       * \param pIndex     The specified deformer index.
-      * \return           Pointer to the deformer (or \c NULL if pIndex is out of range). If pIndex is out of range,
-      *                   FbxGeometry::GetLastErrorID() returns eIndexOutOfRange.
+      * \param pStatus    The FbxStatus object to hold error codes.
+      * \return           Pointer to the deformer (or \c NULL if pIndex is out of range).
       */
-    FbxDeformer* GetDeformer(int pIndex) const;
+    FbxDeformer* GetDeformer(int pIndex, FbxStatus* pStatus = NULL) const;
 
     /** Returns the number of deformers of a specified type.
       * \param pType     The specified deformer type.
@@ -94,10 +95,10 @@ public:
     /** Returns the deformer of a specified type at the specified index.
       * \param pIndex     The specified deformer index.
       * \param pType      The specified deformer type.
-      * \return           Pointer to the deformer (or \c NULL if pIndex is out of range). If pIndex is out of range,
-      *                   FbxGeometry::GetLastErrorID() returns eIndexOutOfRange.
+      * \param pStatus    The FbxStatus object to hold error codes.
+      * \return           Pointer to the deformer (or \c NULL if pIndex is out of range).
       */
-    FbxDeformer* GetDeformer(int pIndex, FbxDeformer::EDeformerType pType) const;
+    FbxDeformer* GetDeformer(int pIndex, FbxDeformer::EDeformerType pType, FbxStatus* pStatus = NULL) const;
 
     //@}
 
@@ -130,13 +131,14 @@ public:
 	//@{
 
 	/** Add a shape to the specified blend shape deformer and blend shape channel of this geometry.
-	* \param pBlendShapeIndex              The blend shape deformer index.
-	* \param pBlendShapeChannelIndex       The blend shape channel index.
-	* \param pShape         Pointer to the shape object to be added.
-	* \param pPercent       The full deform percentage of this shape.
-	* \return               \c true if success, \c false otherwise.
+	* \param pBlendShapeIndex           The blend shape deformer index.
+	* \param pBlendShapeChannelIndex    The blend shape channel index.
+	* \param pShape                     Pointer to the shape object to be added.
+	* \param pPercent                   The full deform percentage of this shape.
+    * \param pStatus                    The FbxStatus object to hold error codes.
+	* \return  \c true if success, \c false otherwise.
 	*/
-	bool AddShape(int pBlendShapeIndex, int pBlendShapeChannelIndex, FbxShape* pShape, double pPercent = 100);
+	bool AddShape(int pBlendShapeIndex, int pBlendShapeChannelIndex, FbxShape* pShape, double pPercent = 100, FbxStatus* pStatus = NULL);
 
 	/** Removes all the shapes without destroying them.
 	* If shapes aren't explicitly destroyed before calling this function, they will be
@@ -152,42 +154,41 @@ public:
 	/** Returns the number of shapes.
 	* \param pBlendShapeIndex              The blend shape deformer index.
 	* \param pBlendShapeChannelIndex       The blend shape channel index.
+    * \param pStatus                       The FbxStatus object to hold error codes.
 	* \return     The number of shapes that have been added to this blend shape channel of this blend shape deformer.
 	*/
-	int GetShapeCount(int pBlendShapeIndex, int pBlendShapeChannelIndex) const;
+	int GetShapeCount(int pBlendShapeIndex, int pBlendShapeChannelIndex, FbxStatus* pStatus = NULL) const;
 
 	/** Returns the shape found at the specified index on a blend shape channel of a blend shape deformer.
 	* \param pBlendShapeIndex              The blend shape deformer index.
 	* \param pBlendShapeChannelIndex       The blend shape channel index.
 	* \param pShapeIndex                   The specified shape index.
-	* \return                              Pointer to the shape (or \c NULL if pIndex is out of range). If pIndex is out of range,
-	*                                      FbxGeometry::GetLastErrorID() returns eIndexOutOfRange.
+    * \param pStatus                       The FbxStatus object to hold error codes.
+	* \return                              Pointer to the shape (or \c NULL if pIndex is out of range). 
 	*/
-	FbxShape* GetShape(int pBlendShapeIndex, int pBlendShapeChannelIndex, int pShapeIndex);
+	FbxShape* GetShape(int pBlendShapeIndex, int pBlendShapeChannelIndex, int pShapeIndex, FbxStatus* pStatus = NULL);
 
 	/** Returns the shape found at the specified index on a blend shape channel of a blend shape deformer.
 	* \param pBlendShapeIndex              The blend shape deformer index.
 	* \param pBlendShapeChannelIndex       The blend shape channel index.
 	* \param pShapeIndex                   The specified shape index.
-	* \return                              Pointer to the shape (or \c NULL if pIndex is out of range). If pIndex is out of range,
-	*                                      FbxGeometry::GetLastErrorID() returns eIndexOutOfRange.
+    * \param pStatus                       The FbxStatus object to hold error codes.
+	* \return                              Pointer to the shape (or \c NULL if pIndex is out of range).
 	*/
-	FbxShape const* GetShape(int pBlendShapeIndex, int pBlendShapeChannelIndex, int pShapeIndex) const;
+	FbxShape const* GetShape(int pBlendShapeIndex, int pBlendShapeChannelIndex, int pShapeIndex, FbxStatus* pStatus = NULL) const;
 
 	/** Get the shape animation curve.
 	* The shape channel is an animatable property with a value range from 0 to 100 (with 100 being full shape deformation).
 	* The default value is 0.
 	* \param pBlendShapeIndex              The blend shape deformer index.
 	* \param pBlendShapeChannelIndex       The blend shape channel index.
-	* \param pCreateAsNeeded If \c true, creates the animation curve if it is not already present.
-	* \param pLayer          The animation layer from which we want to get the requested animation curve.
-	* \return                Animation curve (or NULL if an error occurred). If an error occurs,
-	*                        FbxGeometry::GetLastErrorID() returns one of the following:
-	*                             - eIndexOutOfRange: Shape index is out of range.
-	*                             - eShapeNoCurveFound: Shape curve could not be found.
+	* \param pLayer                        The animation layer from which we want to get the requested animation curve.
+	* \param pCreateAsNeeded               If \c true, creates the animation curve if it is not already present.
+    * \param pStatus                       The FbxStatus object to hold error codes.
+	* \return Animation curve (or NULL if an error occurred).
 	* \remarks If pLayer is left at NULL, the method will use the first layer of the Animation stack.
 	*/
-	FbxAnimCurve* GetShapeChannel(int pBlendShapeIndex, int pBlendShapeChannelIndex, FbxAnimLayer* pLayer, bool pCreateAsNeeded = false);
+	FbxAnimCurve* GetShapeChannel(int pBlendShapeIndex, int pBlendShapeChannelIndex, FbxAnimLayer* pLayer, bool pCreateAsNeeded = false, FbxStatus* pStatus = NULL);
 	//@}
 
     /** NURBS and Patches surface modes.
@@ -277,42 +278,6 @@ public:
 
 	//@}
 
-    /**
-      * \name Error Management
-      */
-    //@{
-
-    /** Retrieves the error object.
-     *  \return Reference to the error object.
-     */
-    FbxError& GetError ();
-
-    /** \enum EErrorCode Error identifiers.
-      */
-    enum EErrorCode
-    {
-        eIndexOutOfRange,			/*!< The index used to access an item is out of range. */
-        eNullParameter,				/*!< Requested pointer to shape object is \c NULL. */
-        eShapeAlreadyAdded,			/*!< The specified shape has already been added to this object. */
-        eShapeInvalidName,			/*!< The provided name argument is empty. */
-        eShapeNameClash,				/*!< The provided name is already used by another shape. */
-        eShapeNoCurveFound,			/*!< The shape's animation curve could not be found. */
-        eUnknownError,					/*!< Generic error message. */
-        eErrorCount
-    };
-
-    /** Returns the last error code.
-     *  \return     The last error code.
-     */
-    EErrorCode GetLastErrorID() const;
-
-    /** Returns the last error string.
-     *  \return     Text description of the last error.
-     */
-    const char* GetLastErrorString() const;
-
-    //@}
-
 /*****************************************************************************************************************************
 ** WARNING! Anything beyond these lines is for internal use, may not be documented and is subject to change without notice! **
 *****************************************************************************************************************************/
@@ -346,7 +311,6 @@ protected:
 
     FbxAMatrix* mPivot;
 
-    mutable FbxError mError;
 #endif /* !DOXYGEN_SHOULD_SKIP_THIS *****************************************************************************************/
 };
 

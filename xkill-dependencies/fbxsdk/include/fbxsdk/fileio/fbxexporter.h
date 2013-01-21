@@ -101,27 +101,29 @@ public:
 								 if not specified, plugin will detect the file format according to file suffix automatically.
 		  * \param pIOSettings   client IOSettings, if not specified, a default IOSettings will be created
 		  *	\return              \c true on success, \c false otherwise.
-		  * \remarks             To identify the error that occurred, call FbxIOBase::GetLastErrorID().
+		  * \remarks             To identify the error that occurred, inspect the status object accessed 
+          *                      using the GetStatus() function.
 		  */
 		virtual bool Initialize(const char* pFileName, int pFileFormat = -1, FbxIOSettings* pIOSettings = NULL);
-
-		/** Setup file export options settings.
-		  *	\return              \c true on success, \c false otherwise.
-		  */	
-		bool GetExportOptions();
 
 	    /** Initialize object.
 	    * \param pStream       stream to access.
 	    * \param pStreamData   user-defined stream data.
         * \param pFileFormat   file format identifier User does not need to specify it by default.
-                             if not specified, plugin will request the file format from the stream.
+                               if not specified, plugin will request the file format from the stream.
 	    * \param pIOSettings   client IOSettings, if not specified, a default IOSettings will be created
         * \return              \c true on success, \c false otherwise.
-	    * \remarks             To identify the error that occurred, call FbxIOBase::GetLastErrorID().
+	    * \remarks             To identify the error that occurred, inspect the status object accessed 
+        *                      using the GetStatus() function.
 	    */
         virtual bool Initialize(FbxStream* pStream, void* pStreamData=NULL, int pFileFormat = -1, FbxIOSettings * pIOSettings = NULL);
 
-		/** Access to a IOSettings object.
+		/** Setup file export options settings.
+		  *	\return \c true on success, \c false otherwise.
+		  */	
+		bool GetExportOptions();
+
+        /** Access to a IOSettings object.
 		  * \return The pointer to IOSettings or \c NULL \c if the object has not been allocated.
 		  */
 		FbxIOSettings* GetIOSettings();
@@ -137,7 +139,8 @@ public:
 		  * \param pNonBlocking       If true, the export process will be executed in a new thread, allowing it to be non-blocking.
 									  To determine if the export finished, refer to the function IsExporting().
 		  *	\return                   \c true on success, \c false otherwise.
-		  * \remarks                  To identify the error, call FbxIOBase::GetLastErrorID().
+	      * \remarks                  To identify the error that occurred, inspect the status object accessed 
+          *                           using the GetStatus() function.
 		  */
 		bool Export(FbxDocument* pDocument, bool pNonBlocking=false);
 

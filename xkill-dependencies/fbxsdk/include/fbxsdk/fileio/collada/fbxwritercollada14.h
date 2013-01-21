@@ -32,9 +32,10 @@ public:
 
     /** Constructor.
     * \param pManager FBX SDK object Manager.
-    * \param pID Internal ID.
+    * \param pID      Internal ID.
+    * \param pStatus  The FbxStatus object to hold error codes.
     */
-    FbxWriterCollada(FbxManager& pManager, int pID);
+    FbxWriterCollada(FbxManager& pManager, int pID, FbxStatus& pStatus);
 
     //! Destructor.
     virtual ~FbxWriterCollada();

@@ -16,8 +16,6 @@
 #include <fbxsdk/fbxsdk_def.h>
 
 #include <fbxsdk/core/fbxobject.h>
-#include <fbxsdk/core/base/fbxerror.h>
-
 #include <fbxsdk/fbxsdk_nsbegin.h>
 
 /** Base class for skin deformer (FbxSkin) and vertex cache deformer (FbxVertexCacheDeformer).
@@ -80,36 +78,6 @@ public:
         virtual EDeformerType GetDeformerType() const { return eUnknown; }
         //@}
 
-        /**
-          * \name Error Management
-          */
-        //@{
-
-        /** Retrieve error object.
-          * \return     Reference to error object.
-          */
-        FbxError& GetError();
-
-        /** \enum EErrorCode Error identifiers.
-          */
-        enum EErrorCode
-        {
-            eError,		//!< An error occurred
-            eErrorCount	//!< Number of error identifiers
-        };
-
-        /** Get last error code.
-          * \return     Last error code.
-          */
-        EErrorCode GetLastErrorID() const;
-
-        /** Get last error string.
-          * \return     Textual description of the last error.
-          */
-        const char* GetLastErrorString() const;
-
-        //@}
-
 /*****************************************************************************************************************************
 ** WARNING! Anything beyond these lines is for internal use, may not be documented and is subject to change without notice! **
 *****************************************************************************************************************************/
@@ -118,7 +86,6 @@ protected:
 	virtual void Construct(const FbxDeformer* pFrom);
 	virtual FbxStringList GetTypeFlags() const { return FbxStringList(); }
 
-	FbxError	mError;
 	bool		mMultiLayer;
 #endif /* !DOXYGEN_SHOULD_SKIP_THIS *****************************************************************************************/
 };

@@ -24,7 +24,7 @@
 class FbxWriterFbx5 : public FbxWriter
 {
 public:
-	FbxWriterFbx5(FbxManager& pManager, FbxExporter& pExporter, int pID);
+	FbxWriterFbx5(FbxManager& pManager, FbxExporter& pExporter, int pID, FbxStatus& pStatus);
 	virtual ~FbxWriterFbx5();
 
 	virtual bool FileCreate(char* pFileName);

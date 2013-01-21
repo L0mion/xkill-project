@@ -112,5 +112,6 @@
 #define FBX_SAFE_DELETE_ARRAY(a)	{FbxDeleteArray(a);(a)=NULL;}
 #define FBX_SAFE_DESTROY(p)			if(p){(p)->Destroy();(p)=NULL;}
 #define FBX_SAFE_FREE(p)			if(p){FbxFree(p);(p)=NULL;}
+#define FBX_UNUSED(p)               (p)
 
 #endif /* _FBXSDK_DEFINITION_H_ */

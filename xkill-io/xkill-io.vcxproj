@@ -21,6 +21,9 @@
     <ClCompile Include="..\..\xkill-source\xkill-io\LoaderFbxMaterial.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\LoaderFbxMaterialDesc.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\LoaderFbxMesh.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-io\LoaderFbxMeshDesc.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-io\LoaderFbxTexture.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-io\LoaderFbxTextureDesc.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\LoaderMdlDesc.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\LoaderMTL.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\LoaderObj.cpp" />
@@ -49,6 +52,9 @@
     <ClInclude Include="..\..\xkill-source\xkill-io\LoaderFbxMaterial.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\LoaderFbxMaterialDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\LoaderFbxMesh.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderFbxMeshDesc.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderFbxTexture.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderFbxTextureDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\LoaderMdlDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\LoaderMTL.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\LoaderObj.h" />
@@ -137,13 +143,15 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>FBXSDK_SHARED;FBXSDK_NEW_API;DLL_IO_FLAG;WIN32;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>FBXSDK_SHARED;DLL_IO_FLAG;WIN32;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)/../../xkill-project/xkill-dependencies/xkill/lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
-      <AdditionalDependencies>xkill-utilities.lib;fbxsdk-2013.3d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>wininet.lib;xkill-utilities.lib;fbxsdk-2014.0d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -154,7 +162,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>FBXSDK_SHARED;FBXSDK_NEW_API;DLL_IO_FLAG;WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>FBXSDK_SHARED;DLL_IO_FLAG;WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -162,7 +170,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <ImportLibrary>$(OutDir)/../../xkill-project/xkill-dependencies/xkill/lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
-      <AdditionalDependencies>xkill-utilities.lib;fbxsdk-2013.3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xkill-utilities.lib;fbxsdk-2014.0.lib;wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">

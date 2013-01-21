@@ -817,7 +817,6 @@ protected:
 private:
 	bool					InverseProperty(FbxProperty& pProp);
 
-	FbxError				mError;
 	int						mCharacterVersion;
 	FbxCharacterLink		mCharacterLink[eNodeIdCount];
 	FbxControlSet*			mControlSet;

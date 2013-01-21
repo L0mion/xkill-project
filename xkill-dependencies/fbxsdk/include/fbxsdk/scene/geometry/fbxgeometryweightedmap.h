@@ -16,7 +16,6 @@
 #include <fbxsdk/fbxsdk_def.h>
 
 #include <fbxsdk/core/fbxobject.h>
-#include <fbxsdk/core/base/fbxerror.h>
 #include <fbxsdk/scene/geometry/fbxweightedmapping.h>
 
 #include <fbxsdk/fbxsdk_nsbegin.h>
@@ -43,35 +42,6 @@ class FBXSDK_DLL FbxGeometryWeightedMap : public FbxObject
     FBXSDK_OBJECT_DECLARE(FbxGeometryWeightedMap, FbxObject);
 
 public:
-    /**
-    * \name Error Management
-    */
-    //@{
-
-    /** Retrieve error object.
-    * \return     Reference to error object.
-    */
-    FbxError& GetError();
-
-    /** \enum EErrorCode Error identifiers.
-    */
-    enum EErrorCode
-    {
-        eError,		//!< Error identifiers.
-        eErrorCount	//!< Mark the end of the error enum.
-    };
-
-    /** Get last error code.
-    * \return     Last error code.
-    */
-    EErrorCode GetLastErrorID() const;
-
-    /** Get last error string.
-    * \return     Textual description of the last error.
-    */
-    const char* GetLastErrorString() const;
-
-    //@}
 
     /** Set correspondence values.
       * \param pWeightedMappingTable     Pointer to the table containing values
@@ -109,8 +79,6 @@ protected:
     // Real weigths table
     FbxWeightedMapping* mWeightedMapping;
 
-private:
-    FbxError mError;
 #endif /* !DOXYGEN_SHOULD_SKIP_THIS *****************************************************************************************/
 };
 

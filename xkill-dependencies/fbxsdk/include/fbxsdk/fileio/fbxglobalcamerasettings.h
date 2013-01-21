@@ -17,7 +17,7 @@
 
 #include <fbxsdk/fbxsdk_nsbegin.h>
 
-class FbxError;
+class FbxStatus;
 class FbxString;
 class FbxManager;
 class FbxScene;
@@ -50,12 +50,13 @@ class FBXSDK_DLL FbxGlobalCameraSettings
 public:
     /** Sets the default camera.
       * \param pCameraName              Name of the default camera.
+      * \param pStatus                  The FbxStatus object to hold error codes.
       * \return                         \c True if camera name is valid, returns \c false if it is not valid.
       * \remarks                        A valid camera name must be either one of the defined tokens (PRODUCER_PERSPECTIVE, PRODUCER_TOP,
       *                                 PRODUCER_BOTTOM, PRODUCER_FRONT, PRODUCER_BACK, PRODUCER_RIGHT, PRODUCER_LEFT and CAMERA_SWITCHER) or the name
       *                                 of a camera that is inserted in the node tree under the scene's root node.
       */
-    bool SetDefaultCamera(char* pCameraName);
+    bool SetDefaultCamera(char* pCameraName, FbxStatus* pStatus = NULL);
 
     /** Returns the default camera name.
       * \return                         The default camera name, or returns an empty string if no camera name has been specified.
@@ -166,47 +167,13 @@ public:
       */
     FbxCamera* GetCameraProducerLeft() const;
 
-    //@}
+//@}
 
     /** Assignment operator.
 	  * \param pGlobalCameraSettings    FbxGlobalCameraSettings object assigned to this one.
 	  */
     const FbxGlobalCameraSettings& operator=(const FbxGlobalCameraSettings& pGlobalCameraSettings);
 
-    /**
-      * \name Error Management
-      * The same error object is shared among instances of this class.
-      */
-    //@{
-
-    /** Retrieves the error object.
-     *  \return                         Reference to the error object.
-     */
-    FbxError& GetError();
-
-    /** \enum EErrorCode                    Error identifiers, most of these are only used internally.
-      * - \e eNullParameter
-      * - \e eUnknownCameraName
-      * - \e eErrorCount
-      */
-    enum EErrorCode
-    {
-        eNullParameter,
-        eUnknownCameraName,
-        eErrorCount
-    };
-
-    /** Returns last error code.
-     *  \return                         Last error code.
-     */
-    EErrorCode GetLastErrorID() const;
-
-    /** Returns the last error string.
-     *  \return                         Text description of the last error.
-     */
-    const char* GetLastErrorString() const;
-
-//@}
 
 /*****************************************************************************************************************************
 ** WARNING! Anything beyond these lines is for internal use, may not be documented and is subject to change without notice! **

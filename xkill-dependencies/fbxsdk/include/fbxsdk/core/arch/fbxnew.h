@@ -242,6 +242,72 @@ template<typename T, typename T1, typename T2, typename T3, typename T4> T* FbxN
 	return new(p)T(p1, p2, p3, p4);
 }
 
+template<typename T, typename T1, typename T2, typename T3, typename T4, typename T5> T* FbxNew(T1& p1, T2& p2, T3& p3, T4& p4, T5& p5)
+{
+	T* p = (T*)FbxMalloc(sizeof(T));
+	return new(p)T(p1,p2,p3,p4,p5);
+}
+
+template<typename T, typename T1, typename T2, typename T3, typename T4, typename T5> T* FbxNew(const T1& p1, T2& p2, T3& p3, T4& p4, T5& p5)
+{
+	T* p = (T*)FbxMalloc(sizeof(T));
+	return new(p)T(p1,p2,p3,p4,p5);
+}
+
+template<typename T, typename T1, typename T2, typename T3, typename T4, typename T5> T* FbxNew(const T1& p1, const T2& p2, T3& p3, T4& p4, T5& p5)
+{
+	T* p = (T*)FbxMalloc(sizeof(T));
+	return new(p)T(p1,p2,p3,p4,p5);
+}
+
+template<typename T, typename T1, typename T2, typename T3, typename T4, typename T5> T* FbxNew(const T1& p1, T2& p2, const T3& p3, T4& p4, T5& p5)
+{
+	T* p = (T*)FbxMalloc(sizeof(T));
+	return new(p)T(p1,p2,p3,p4,p5);
+}
+
+template<typename T, typename T1, typename T2, typename T3, typename T4, typename T5> T* FbxNew(const T1& p1, T2& p2, T3& p3, const T4& p4, T5& p5)
+{
+	T* p = (T*)FbxMalloc(sizeof(T));
+	return new(p)T(p1,p2,p3,p4,p5);
+}
+
+template<typename T, typename T1, typename T2, typename T3, typename T4, typename T5> T* FbxNew(const T1& p1, T2& p2, T3& p3, T4& p4, const T5& p5)
+{
+	T* p = (T*)FbxMalloc(sizeof(T));
+	return new(p)T(p1,p2,p3,p4,p5);
+}
+
+template<typename T, typename T1, typename T2, typename T3, typename T4, typename T5> T* FbxNew(const T1& p1, const T2& p2, const T3& p3, T4& p4, T5& p5)
+{
+	T* p = (T*)FbxMalloc(sizeof(T));
+	return new(p)T(p1,p2,p3,p4,p5);
+}
+
+template<typename T, typename T1, typename T2, typename T3, typename T4, typename T5> T* FbxNew(const T1& p1, const T2& p2, T3& p3, const T4& p4, T5& p5)
+{
+	T* p = (T*)FbxMalloc(sizeof(T));
+	return new(p)T(p1,p2,p3,p4,p5);
+}
+
+template<typename T, typename T1, typename T2, typename T3, typename T4, typename T5> T* FbxNew(const T1& p1, const T2& p2, T3& p3, T4& p4, const T5& p5)
+{
+	T* p = (T*)FbxMalloc(sizeof(T));
+	return new(p)T(p1,p2,p3,p4,p5);
+}
+
+template<typename T, typename T1, typename T2, typename T3, typename T4, typename T5> T* FbxNew(const T1& p1, const T2& p2, const T3& p3, const T4& p4, T5& p5)
+{
+	T* p = (T*)FbxMalloc(sizeof(T));
+	return new(p)T(p1,p2,p3,p4,p5);
+}
+
+template<typename T, typename T1, typename T2, typename T3, typename T4, typename T5> T* FbxNew(const T1& p1, const T2& p2, const T3& p3, T4& p4, const T5& p5)
+{
+	T* p = (T*)FbxMalloc(sizeof(T));
+	return new(p)T(p1,p2,p3,p4,p5);
+}
+
 template<typename T, typename T1, typename T2, typename T3, typename T4, typename T5> T* FbxNew(const T1& p1, const T2& p2, const T3& p3, const T4& p4, const T5& p5)
 {
 	T* p = (T*)FbxMalloc(sizeof(T));
@@ -355,6 +421,7 @@ template<typename T> void FbxDeleteArray(T* p)
 	friend T* FBXSDK_NAMESPACE::FbxNew(const T1& p1, const T2& p2, T3& p3);\
 	template<typename T, typename T1, typename T2, typename T3>\
 	friend T* FBXSDK_NAMESPACE::FbxNew(const T1& p1, const T2& p2, const T3& p3);\
+    \
 	template<typename T, typename T1, typename T2, typename T3, typename T4>\
 	friend T* FBXSDK_NAMESPACE::FbxNew(T1& p1, T2& p2, T3& p3, T4& p4);\
 	template<typename T, typename T1, typename T2, typename T3, typename T4>\
@@ -387,8 +454,32 @@ template<typename T> void FbxDeleteArray(T* p)
 	friend T* FBXSDK_NAMESPACE::FbxNew(const T1& p1, const T2& p2, const T3& p3, T4& p4);\
 	template<typename T, typename T1, typename T2, typename T3, typename T4>\
 	friend T* FBXSDK_NAMESPACE::FbxNew(const T1& p1, const T2& p2, const T3& p3, const T4& p4);\
-	template<typename T, typename T1, typename T2, typename T3, typename T4, typename T5>\
-	friend T* FBXSDK_NAMESPACE::FbxNew(const T1& p1, const T2& p2, const T3& p3, const T4& p4, const T5& p5);\
+    \
+    template<typename T, typename T1, typename T2, typename T3, typename T4, typename T5>\
+    friend T* FBXSDK_NAMESPACE::FbxNew(T1& p1, T2& p2, T3& p3, T4& p4, T5& p5);\
+    template<typename T, typename T1, typename T2, typename T3, typename T4, typename T5>\
+    friend T* FBXSDK_NAMESPACE::FbxNew(const T1& p1, T2& p2, T3& p3, T4& p4, T5& p5);\
+    template<typename T, typename T1, typename T2, typename T3, typename T4, typename T5>\
+    friend T* FBXSDK_NAMESPACE::FbxNew(const T1& p1, const T2& p2, T3& p3, T4& p4, T5& p5);\
+    template<typename T, typename T1, typename T2, typename T3, typename T4, typename T5>\
+    friend T* FBXSDK_NAMESPACE::FbxNew(const T1& p1, T2& p2, const T3& p3, T4& p4, T5& p5);\
+    template<typename T, typename T1, typename T2, typename T3, typename T4, typename T5>\
+    friend T* FBXSDK_NAMESPACE::FbxNew(const T1& p1, T2& p2, T3& p3, const T4& p4, T5& p5);\
+    template<typename T, typename T1, typename T2, typename T3, typename T4, typename T5>\
+    friend T* FBXSDK_NAMESPACE::FbxNew(const T1& p1, T2& p2, T3& p3, T4& p4, const T5& p5);\
+    template<typename T, typename T1, typename T2, typename T3, typename T4, typename T5>\
+    friend T* FBXSDK_NAMESPACE::FbxNew(const T1& p1, const T2& p2, const T3& p3, T4& p4, T5& p5);\
+    template<typename T, typename T1, typename T2, typename T3, typename T4, typename T5>\
+    friend T* FBXSDK_NAMESPACE::FbxNew(const T1& p1, const T2& p2, T3& p3, const T4& p4, T5& p5);\
+    template<typename T, typename T1, typename T2, typename T3, typename T4, typename T5>\
+    friend T* FBXSDK_NAMESPACE::FbxNew(const T1& p1, const T2& p2, T3& p3, T4& p4, const T5& p5);\
+    template<typename T, typename T1, typename T2, typename T3, typename T4, typename T5>\
+    friend T* FBXSDK_NAMESPACE::FbxNew(const T1& p1, const T2& p2, const T3& p3, const T4& p4, T5& p5);\
+    template<typename T, typename T1, typename T2, typename T3, typename T4, typename T5>\
+    friend T* FBXSDK_NAMESPACE::FbxNew(const T1& p1, const T2& p2, const T3& p3, T4& p4, const T5& p5);\
+    template<typename T, typename T1, typename T2, typename T3, typename T4, typename T5>\
+    friend T* FBXSDK_NAMESPACE::FbxNew(const T1& p1, const T2& p2, const T3& p3, const T4& p4, const T5& p5);\
+    \
 	template<typename T, typename T1, typename T2, typename T3, typename T4, typename T5, typename T6>\
 	friend T* FBXSDK_NAMESPACE::FbxNew(const T1& p1, const T2& p2, const T3& p3, const T4& p4, const T5& p5, const T6& p6);\
 	template<typename T, typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7>\

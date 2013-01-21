@@ -15,11 +15,11 @@
 
 #include <fbxsdk/fbxsdk_def.h>
 
-#include <fbxsdk/core/base/fbxerror.h>
 #include <fbxsdk/scene/fbxcollection.h>
 
 #include <fbxsdk/fbxsdk_nsbegin.h>
 
+class FbxStatus;
 class FbxTakeInfo;
 class FbxPeripheral;
 class FbxDocumentInfo;
@@ -169,21 +169,17 @@ public:
         */
         virtual FbxPeripheral* GetPeripheral();
 
-        /** Unload all the unloadable objects contained in the document using the
-          * currently set peripheral.
-		  * Errors that occurred during the operation can be inspected using the
-          * GetError() method.
+        /** Unload all the unloadable objects contained in the document using the currently set peripheral. 
+          * \param pStatus The FbxStatus object to hold error codes.
           * \return The number of objects that the document has been able to unload.
           */
-        int UnloadContent();
+        int UnloadContent(FbxStatus* pStatus = NULL);
 
-        /** Load all the objects contained in the document with the data from the
-          * currently set peripheral.
-		  * Errors that occurred during the operation can be inspected using the
-          * GetError() method.
+        /** Load all the objects contained in the document with the data from the currently set peripheral.
+          * \param pStatus The FbxStatus object to hold error codes.
           * \return The number of loaded objects.
           */
-        int LoadContent();
+        int LoadContent(FbxStatus* pStatus = NULL);
 
     //@}
 
@@ -260,11 +256,12 @@ public:
           * In case of error, FbxDocument::GetLastErrorID() will return
           * \c eTakeError.
           * \param pName Animation stack name.
+          * \param pStatus The FbxStatus object to hold error codes.
           * \return \c true if a new FbxAnimStack has been successfully created,
           * \c false if an error occurred or if the specified name defines
           * a FbxAnimStack that already exists in the document.
           */
-        bool CreateAnimStack(const char* pName);
+        bool CreateAnimStack(const char* pName, FbxStatus* pStatus = NULL);
 
         /** Destroy the animation stack object identified by pName from this document.
           * \param pName Name of the animation stack to be deleted.
@@ -302,42 +299,6 @@ public:
 
     //@}
 
-    /**
-      * \name Error Management
-      * The same error object is shared among instances of this class.
-      */
-    //@{
-
-        /** Retrieve error object for error inspection.
-          * \return Reference to error object.
-          */
-        FbxError& GetError();
-
-        /** Error identifiers.
-          * Most of these are only used internally.
-          */
-        enum EErrorCode
-        {
-            eTakeError,					//! Could not create animation stack
-            eObjectIsNull,				//! Null object
-            eObjectAlreadyOwned,		//! Object is already owned by the document
-            eObjectUnknown,				//! Object does not belong to the document
-            eMissingPeripheral,			//! Could not find offload peripheral associated to this document
-            eObjectPeripheralFailure,	//! Peripheral failed to offload one or more objects
-            eErrorCount					//! Number of errors
-        };
-
-        /** Get last error code.
-          * \return Last error code.
-          */
-        EErrorCode GetLastErrorID() const;
-
-        /** Get last error string.
-          * \return Textual description of the last error.
-          */
-        const char* GetLastErrorString() const;
-    //@}
-
 /*****************************************************************************************************************************
 ** WARNING! Anything beyond these lines is for internal use, may not be documented and is subject to change without notice! **
 *****************************************************************************************************************************/
@@ -359,7 +320,6 @@ protected:
 
 private:
 	FbxPeripheral*		mPeripheral;
-	FbxError			mError;
 	FbxDocumentInfo*	mDocumentInfo;
 #endif /* !DOXYGEN_SHOULD_SKIP_THIS *****************************************************************************************/
 };

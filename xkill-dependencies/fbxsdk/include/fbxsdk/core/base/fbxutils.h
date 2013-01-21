@@ -16,6 +16,7 @@
 #include <fbxsdk/fbxsdk_def.h>
 
 #include <fbxsdk/core/base/fbxstring.h>
+#include <fbxsdk/core/base/fbxstatus.h>
 
 #include <fbxsdk/fbxsdk_nsbegin.h>
 
@@ -113,6 +114,31 @@ public:
 	  */
 	static FbxString GenerateFileName(const char* pFolder, const char* pPrefix);
 };
+
+/**
+   Global accessor to an FbxStatus object.
+   This object is not used internally by the FBX SDK. It is provided for convenience and its usage
+   is shown in the custom reader/writers samples.
+*/
+class FBXSDK_DLL FbxStatusGlobal
+{
+public:
+    static FbxStatus& GetRef() 
+    { 
+        if (mStatusPtr == NULL) 
+        { 
+            mStatusPtr = FbxNew<FbxStatus>(); 
+        } 
+        return *mStatusPtr; 
+    }
+
+private:
+     FbxStatusGlobal()  { mStatusPtr = NULL; }
+    ~FbxStatusGlobal()  { FbxDelete<FbxStatus>(mStatusPtr); }
+    static FbxStatusGlobal sgFbxStatusGlobal;
+    static FbxStatus* mStatusPtr;
+};
+
 
 #include <fbxsdk/fbxsdk_nsend.h>
 
