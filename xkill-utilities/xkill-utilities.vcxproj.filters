@@ -50,7 +50,13 @@
     <ClCompile Include="..\..\xkill-source\xkill-utilities\EntityStorage.cpp">
       <Filter>[Work-In-Progress]</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshOrigins.cpp">
+      <Filter>Mesh</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-utilities\LightDesc.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\DataItem.h">
+      <Filter>Attributes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\dllUtilities.h" />
@@ -128,6 +134,9 @@
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\EntityStorage.h">
       <Filter>[Work-In-Progress]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshOrigins.h">
+      <Filter>Mesh</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\LightDesc.h" />
   </ItemGroup>

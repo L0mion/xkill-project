@@ -15,6 +15,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\DataItem.h" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\AttributeManager.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\AttributePointer.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\AttributeType.cpp" />
@@ -29,6 +30,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshGeometry.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshMaterial.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshModel.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshOrigins.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshSubset.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\StringConv.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\TexDesc.cpp" />
@@ -62,6 +64,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshGeometry.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshMaterial.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshModel.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshOrigins.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshSubset.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshVertices.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\StringConv.h" />
@@ -127,7 +130,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>DLL_UTILITIES;WIN32;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>XKILL_DEBUG;DLL_UTILITIES;WIN32;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

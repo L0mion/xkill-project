@@ -15,7 +15,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\Camera.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\CameraComponent.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\ComponentManager.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\dllArchitecture.h" />
@@ -27,7 +26,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-architecture\States.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\xkill-source\xkill-architecture\Camera.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-architecture\CameraComponent.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-architecture\ComponentManager.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-architecture\GameComponent.cpp" />
@@ -99,7 +97,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>DLL_ARCHITECTURE;WIN32;_DEBUG;_WINDOWS;_USRDLL;;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>XKILL_DEBUG;DLL_ARCHITECTURE;WIN32;_DEBUG;_WINDOWS;_USRDLL;;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

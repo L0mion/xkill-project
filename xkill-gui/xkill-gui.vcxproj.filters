@@ -99,6 +99,9 @@
     <ClCompile Include="GeneratedFiles\qrc_xkill.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_ScoreBoard.cpp">
+      <Filter>Files\Menus</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\xkill-resources\xkill-gui\MainWindow.ui">

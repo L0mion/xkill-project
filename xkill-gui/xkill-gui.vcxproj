@@ -151,6 +151,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_Editor.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_InGame.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_Main.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_ScoreBoard.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-gui\ToggleHelper.cpp" />
     <ClCompile Include="GeneratedFiles\Debug\moc_GameWidget.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
