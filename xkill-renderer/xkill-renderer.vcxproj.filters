@@ -123,6 +123,13 @@
       <Filter>ManagementMath</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ViewportData.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshVerticesInstanced.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\InstancedData.h">
+      <Filter>ManagementInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementInstance.h">
+      <Filter>ManagementInstance</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RenderingComponent.cpp" />
@@ -221,6 +228,13 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementMath.cpp">
       <Filter>ManagementMath</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshVerticesInstanced.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\InstancedData.cpp">
+      <Filter>ManagementInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementInstance.cpp">
+      <Filter>ManagementInstance</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Utilities">
@@ -301,6 +315,9 @@
     <Filter Include="ManagementMath">
       <UniqueIdentifier>{3bfda70c-be48-47eb-bb0f-d7a2b5546cf0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ManagementInstance">
+      <UniqueIdentifier>{7c6e99c2-5f68-422f-a228-75a1a0c39da3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\defaultDeferredPS.hlsl">
@@ -340,9 +357,6 @@
       <Filter>Shaders</Filter>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\LightDesc.hlsl">
-      <Filter>Shaders</Filter>
-    </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\utilities.hlsl">
       <Filter>Shaders</Filter>
     </FxCompile>
   </ItemGroup>
