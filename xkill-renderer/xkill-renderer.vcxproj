@@ -22,6 +22,9 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\DDSTextureLoader.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\DebugShapeD3D.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\DebugShapes.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\InstancedData.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementInstance.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshVerticesInstanced.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementCB.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementDebug.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\d3dInterface.h" />
@@ -67,6 +70,9 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\DDSTextureLoader.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\DebugShapeD3D.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\DebugShapes.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\InstancedData.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementInstance.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshVerticesInstanced.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementCB.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementDebug.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementD3D.cpp" />
