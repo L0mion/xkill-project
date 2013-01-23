@@ -40,6 +40,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-physics\FrustumPhysicsObject.cpp">
       <Filter>PhysicsObjects</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-physics\debugDrawDispatcher.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\xkill-dependencies\bullet\includes\Serialize\BulletWorldImporter\btBulletWorldImporter.h">
@@ -82,6 +83,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-physics\FrustumPhysicsObject.h">
       <Filter>PhysicsObjects</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-physics\debugDrawDispatcher.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="BulletSerialize">
