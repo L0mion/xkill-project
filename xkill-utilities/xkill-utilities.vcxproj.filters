@@ -57,6 +57,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-utilities\DataItem.h">
       <Filter>Attributes</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\MutatorSettings.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\dllUtilities.h" />
@@ -139,6 +140,8 @@
       <Filter>Mesh</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\LightDesc.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\MutatorSettings.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\WeaponStructs.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Events">
