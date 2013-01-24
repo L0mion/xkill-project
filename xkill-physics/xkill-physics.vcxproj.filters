@@ -30,11 +30,12 @@
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-physics\PhysicsUtilities.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-physics\CollisionShapes.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-physics\MathBasic.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-physics\MotionState.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-physics\objLoaderBasic.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-physics\PhysicsComponent.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-physics\ExplosionSpherePhysicsObject.cpp">
+      <Filter>PhysicsObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-physics\FrustumPhysicsObject.cpp">
       <Filter>PhysicsObjects</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-physics\debugDrawDispatcher.cpp" />
@@ -71,10 +72,11 @@
     <ClInclude Include="..\..\xkill-source\xkill-physics\PhysicsUtilities.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\CollisionShapes.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\dllPhysics.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-physics\MathBasic.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\MotionState.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-physics\objLoaderBasic.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\ExplosionSpherePhysicsObject.h">
+      <Filter>PhysicsObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-physics\FrustumPhysicsObject.h">
       <Filter>PhysicsObjects</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-physics\debugDrawDispatcher.h" />
