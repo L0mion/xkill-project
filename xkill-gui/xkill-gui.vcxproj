@@ -148,7 +148,9 @@
     <ClCompile Include="..\..\xkill-source\xkill-gui\main.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-gui\MainWindow.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-gui\MenuManager.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_Ammo.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_Editor.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_FiringMode.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_InGame.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_Main.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_ScoreBoard.cpp" />
@@ -321,6 +323,8 @@
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DNDEBUG "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\."</Command>
     </CustomBuild>
     <ClInclude Include="..\..\xkill-source\xkill-gui\MenuManager.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-gui\Menu_Ammo.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-gui\Menu_FiringMode.h" />
     <ClInclude Include="..\..\xkill-source\xkill-gui\Menu_ScoreBoard.h" />
     <ClInclude Include="..\..\xkill-source\xkill-gui\ToggleHelper.h" />
     <ClInclude Include="GeneratedFiles\ui_HUD.h" />
