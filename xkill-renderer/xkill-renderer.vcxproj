@@ -24,6 +24,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\DebugShapes.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\InstancedData.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementInstance.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementSprites.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshVerticesInstanced.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementCB.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementDebug.h" />
@@ -72,6 +73,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\DebugShapes.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\InstancedData.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementInstance.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementSprites.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshVerticesInstanced.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementCB.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementDebug.cpp" />
@@ -243,6 +245,28 @@
       <EntryPointName Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">lightingCS</EntryPointName>
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">Compute</ShaderType>
       <ShaderModel Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\spritePS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">spritePS</EntryPointName>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">spritePS</EntryPointName>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">spritePS</EntryPointName>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\spriteVS.hlsl">
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">spriteVS</EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">5.0</ShaderModel>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">spriteVS</EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">spriteVS</EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\structs.hlsl">
       <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
