@@ -130,6 +130,9 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementInstance.h">
       <Filter>ManagementInstance</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementSprites.h">
+      <Filter>ManagementSprites</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RenderingComponent.cpp" />
@@ -235,6 +238,9 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementInstance.cpp">
       <Filter>ManagementInstance</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementSprites.cpp">
+      <Filter>ManagementSprites</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Utilities">
@@ -318,6 +324,9 @@
     <Filter Include="ManagementInstance">
       <UniqueIdentifier>{7c6e99c2-5f68-422f-a228-75a1a0c39da3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ManagementSprites">
+      <UniqueIdentifier>{079bc0a3-d368-4f48-b4eb-5a33ea0cfb4e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\defaultDeferredPS.hlsl">
@@ -357,6 +366,12 @@
       <Filter>Shaders</Filter>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\LightDesc.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\spritePS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\spriteVS.hlsl">
       <Filter>Shaders</Filter>
     </FxCompile>
   </ItemGroup>
