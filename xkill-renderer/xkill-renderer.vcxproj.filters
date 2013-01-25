@@ -130,6 +130,9 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementInstance.h">
       <Filter>ManagementInstance</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\LightPos.h">
+      <Filter>ManagementLight</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RenderingComponent.cpp" />
@@ -330,6 +333,9 @@
     <Filter Include="Shaders\Util">
       <UniqueIdentifier>{1395f05a-6f6c-4fe6-8f27-1d19fcb60dcb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Shaders\Tiling">
+      <UniqueIdentifier>{bb18a64d-5fae-4194-8efd-a271c24f3243}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\defaultDeferredPS.hlsl">
@@ -391,6 +397,12 @@
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\UtilSphereMapTransform.hlsl">
       <Filter>Shaders\Util</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\TilingFrustum.hlsl">
+      <Filter>Shaders\Tiling</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\LightPos.hlsl">
+      <Filter>Shaders\Light\Structs</Filter>
     </FxCompile>
   </ItemGroup>
 </Project>
