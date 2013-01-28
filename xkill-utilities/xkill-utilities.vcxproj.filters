@@ -142,6 +142,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-utilities\LightDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\MutatorSettings.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\WeaponStructs.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\Enums.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Events">

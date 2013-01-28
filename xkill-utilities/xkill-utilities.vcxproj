@@ -47,6 +47,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-utilities\dllUtilities.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\Entity.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\EntityStorage.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\Enums.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\EventManager.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\EventType.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\FiniteState.h" />

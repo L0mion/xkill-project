@@ -23,6 +23,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-physics\PhysicsComponent.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-physics\PhysicsObject.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-physics\PhysicsUtilities.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-physics\PickupablePhysicsObject.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-physics\PlayerPhysicsObject.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-physics\ProjectilePhysicsObject.cpp" />
     <ClCompile Include="..\xkill-dependencies\bullet\includes\Serialize\BulletFileLoader\bChunk.cpp" />
@@ -42,6 +43,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-physics\PhysicsComponent.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\PhysicsObject.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\PhysicsUtilities.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-physics\PickupablePhysicsObject.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\PlayerPhysicsObject.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\ProjectilePhysicsObject.h" />
     <ClInclude Include="..\xkill-dependencies\bullet\includes\Serialize\BulletFileLoader\bChunk.h" />
