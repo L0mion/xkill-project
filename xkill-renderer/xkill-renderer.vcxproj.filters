@@ -132,6 +132,9 @@
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\LightPos.h">
       <Filter>ManagementLight</Filter>
+	  </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementSprites.h">
+      <Filter>ManagementSprites</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -238,6 +241,9 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementInstance.cpp">
       <Filter>ManagementInstance</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementSprites.cpp">
+      <Filter>ManagementSprites</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Utilities">
@@ -335,6 +341,9 @@
     </Filter>
     <Filter Include="Shaders\Tiling">
       <UniqueIdentifier>{bb18a64d-5fae-4194-8efd-a271c24f3243}</UniqueIdentifier>
+	  </Filter>
+    <Filter Include="ManagementSprites">
+      <UniqueIdentifier>{079bc0a3-d368-4f48-b4eb-5a33ea0cfb4e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -406,6 +415,12 @@
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\UtilDebug.hlsl">
       <Filter>Shaders\Util</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\spritePS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\spriteVS.hlsl">
+      <Filter>Shaders</Filter>
     </FxCompile>
   </ItemGroup>
 </Project>
