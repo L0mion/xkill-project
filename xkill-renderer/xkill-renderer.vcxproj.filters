@@ -130,6 +130,9 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementInstance.h">
       <Filter>ManagementInstance</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\LightPos.h">
+      <Filter>ManagementLight</Filter>
+	  </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementSprites.h">
       <Filter>ManagementSprites</Filter>
     </ClInclude>
@@ -324,6 +327,21 @@
     <Filter Include="ManagementInstance">
       <UniqueIdentifier>{7c6e99c2-5f68-422f-a228-75a1a0c39da3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Shaders\Light">
+      <UniqueIdentifier>{6d7124e0-926a-40d5-b9f5-63ead03c3adc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Light\Structs">
+      <UniqueIdentifier>{8be895ae-192b-421f-9532-ac55d0165d73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Light\Methods">
+      <UniqueIdentifier>{99d035f9-ce88-44bd-8da9-7d0e15bba69e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Util">
+      <UniqueIdentifier>{1395f05a-6f6c-4fe6-8f27-1d19fcb60dcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Tiling">
+      <UniqueIdentifier>{bb18a64d-5fae-4194-8efd-a271c24f3243}</UniqueIdentifier>
+	  </Filter>
     <Filter Include="ManagementSprites">
       <UniqueIdentifier>{079bc0a3-d368-4f48-b4eb-5a33ea0cfb4e}</UniqueIdentifier>
     </Filter>
@@ -347,9 +365,6 @@
     <FxCompile Include="..\..\xkill-source\xkill-shaders\constantBuffers.hlsl">
       <Filter>Shaders</Filter>
     </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\lightFunctions.hlsl">
-      <Filter>Shaders</Filter>
-    </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\lightingCS.hlsl">
       <Filter>Shaders</Filter>
     </FxCompile>
@@ -365,8 +380,41 @@
     <FxCompile Include="..\..\xkill-source\xkill-shaders\colorVS.hlsl">
       <Filter>Shaders</Filter>
     </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\LightDesc.hlsl">
-      <Filter>Shaders</Filter>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\LightDescDir.hlsl">
+      <Filter>Shaders\Light\Structs</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\LightDescPoint.hlsl">
+      <Filter>Shaders\Light\Structs</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\LightDescSpot.hlsl">
+      <Filter>Shaders\Light\Structs</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\LightSurfaceMaterial.hlsl">
+      <Filter>Shaders\Light\Structs</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\LightDir.hlsl">
+      <Filter>Shaders\Light\Methods</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\LightSpot.hlsl">
+      <Filter>Shaders\Light\Methods</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\LightPoint.hlsl">
+      <Filter>Shaders\Light\Methods</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\UtilReconstructPosition.hlsl">
+      <Filter>Shaders\Util</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\UtilSphereMapTransform.hlsl">
+      <Filter>Shaders\Util</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\TilingFrustum.hlsl">
+      <Filter>Shaders\Tiling</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\LightPos.hlsl">
+      <Filter>Shaders\Light\Structs</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\UtilDebug.hlsl">
+      <Filter>Shaders\Util</Filter>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\spritePS.hlsl">
       <Filter>Shaders</Filter>
