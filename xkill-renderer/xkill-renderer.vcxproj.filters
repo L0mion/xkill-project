@@ -404,5 +404,8 @@
     <FxCompile Include="..\..\xkill-source\xkill-shaders\LightPos.hlsl">
       <Filter>Shaders\Light\Structs</Filter>
     </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\UtilDebug.hlsl">
+      <Filter>Shaders\Util</Filter>
+    </FxCompile>
   </ItemGroup>
 </Project>
