@@ -74,6 +74,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-utilities\TexDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\TexDescHeader.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\TexDescTex.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\Util.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\WeaponStructs.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
