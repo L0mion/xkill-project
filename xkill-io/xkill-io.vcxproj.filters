@@ -89,6 +89,18 @@
     <ClCompile Include="..\..\xkill-source\xkill-io\LoaderFbxModelDesc.cpp">
       <Filter>.fbx</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-io\MeshDesc.cpp">
+      <Filter>MeshDesc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-io\VertexDesc.cpp">
+      <Filter>MeshDesc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-io\SubsetDesc.cpp">
+      <Filter>MeshDesc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-io\MaterialDesc.cpp">
+      <Filter>MeshDesc</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-io\Loader.h" />
@@ -197,6 +209,18 @@
     <ClInclude Include="..\..\xkill-source\xkill-io\LoaderFbxModelDesc.h">
       <Filter>.fbx</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\MeshDesc.h">
+      <Filter>MeshDesc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\VertexDesc.h">
+      <Filter>MeshDesc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\SubsetDesc.h">
+      <Filter>MeshDesc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\MaterialDesc.h">
+      <Filter>MeshDesc</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include=".mtl">
@@ -222,6 +246,9 @@
     </Filter>
     <Filter Include=".fbx">
       <UniqueIdentifier>{064285af-4c79-42cd-bb2f-7b53f7a789f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MeshDesc">
+      <UniqueIdentifier>{9353ff62-563d-4e7c-8781-ee460d6d7007}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
