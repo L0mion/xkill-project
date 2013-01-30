@@ -132,9 +132,12 @@
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\LightPos.h">
       <Filter>ManagementLight</Filter>
-	  </ClInclude>
+    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementSprites.h">
       <Filter>ManagementSprites</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\DataStreamShader.h">
+      <Filter>ManagementLight</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -341,7 +344,7 @@
     </Filter>
     <Filter Include="Shaders\Tiling">
       <UniqueIdentifier>{bb18a64d-5fae-4194-8efd-a271c24f3243}</UniqueIdentifier>
-	  </Filter>
+    </Filter>
     <Filter Include="ManagementSprites">
       <UniqueIdentifier>{079bc0a3-d368-4f48-b4eb-5a33ea0cfb4e}</UniqueIdentifier>
     </Filter>
