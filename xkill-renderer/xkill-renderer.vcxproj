@@ -19,7 +19,8 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\AnimationClip.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\BoneAnimation.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CBDesc.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\DataStreamShader.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\DataStreamBuffer.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\DataStreamSRV.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\DDSTextureLoader.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\DebugShapeD3D.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\DebugShapes.h" />

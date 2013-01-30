@@ -123,7 +123,6 @@
       <Filter>ManagementMath</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ViewportData.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshVerticesInstanced.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\InstancedData.h">
       <Filter>ManagementInstance</Filter>
     </ClInclude>
@@ -136,8 +135,14 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementSprites.h">
       <Filter>ManagementSprites</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\DataStreamShader.h">
-      <Filter>ManagementLight</Filter>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshVerticesInstanced.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\DataStreamSRV.h">
+      <Filter>DataStream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\DataStreamBuffer.h">
+      <Filter>DataStream</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -237,7 +242,6 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementMath.cpp">
       <Filter>ManagementMath</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshVerticesInstanced.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\InstancedData.cpp">
       <Filter>ManagementInstance</Filter>
     </ClCompile>
@@ -246,6 +250,9 @@
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementSprites.cpp">
       <Filter>ManagementSprites</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshVerticesInstanced.cpp">
+      <Filter>Mesh</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -347,6 +354,12 @@
     </Filter>
     <Filter Include="ManagementSprites">
       <UniqueIdentifier>{079bc0a3-d368-4f48-b4eb-5a33ea0cfb4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mesh">
+      <UniqueIdentifier>{5fea0197-e8cd-48ea-80c5-e6b0d3d734cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStream">
+      <UniqueIdentifier>{4cea32a4-d2f4-4ef4-8397-b49066703ef4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
