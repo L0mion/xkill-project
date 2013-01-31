@@ -49,7 +49,6 @@
     <ClCompile Include="..\..\xkill-source\xkill-io\MdlDesc.cpp">
       <Filter>.mdldesc</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-io\MeshMakerObj.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\WriteTime.cpp">
       <Filter>util</Filter>
     </ClCompile>
@@ -88,6 +87,9 @@
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-io\LoaderFbxModelDesc.cpp">
       <Filter>.fbx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-io\MeshMakerObj.cpp">
+      <Filter>.obj</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -157,7 +159,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-io\MdlDescModel.h">
       <Filter>.mdldesc</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-io\MeshMakerObj.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\WriteTime.h">
       <Filter>util</Filter>
     </ClInclude>
@@ -196,6 +197,9 @@
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-io\LoaderFbxModelDesc.h">
       <Filter>.fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\MeshMakerObj.h">
+      <Filter>.obj</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
