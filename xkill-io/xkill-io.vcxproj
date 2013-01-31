@@ -34,9 +34,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-io\LoaderPGY.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\IOComponent.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\LoaderTexDesc.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-io\MaterialDesc.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\MdlDesc.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-io\MeshDesc.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\MeshMakerObj.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\MTL.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\MTLMaterial.cpp" />
@@ -46,8 +44,6 @@
     <ClCompile Include="..\..\xkill-source\xkill-io\ObjGeometry.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\ObjGroup.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\SimpleStringSplitter.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-io\SubsetDesc.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-io\VertexDesc.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\Writer.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\WriterPGY.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-io\WriteTime.cpp" />
@@ -73,11 +69,9 @@
     <ClInclude Include="..\..\xkill-source\xkill-io\LoaderPGY.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\IOComponent.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\LoaderTexDesc.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-io\MaterialDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\MdlDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\MdlDescHeader.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\MdlDescModel.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-io\MeshDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\MeshMakerObj.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\MTL.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\MTLIllum.h" />
@@ -89,9 +83,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-io\ObjGroup.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\SimpleStringSplitter.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\SpecsPGY.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-io\SubsetDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\VarStatus.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-io\VertexDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\Writer.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\WriterPGY.h" />
     <ClInclude Include="..\..\xkill-source\xkill-io\WriteTime.h" />

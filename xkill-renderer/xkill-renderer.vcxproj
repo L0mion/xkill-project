@@ -36,7 +36,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementFX.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\gBuffer.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\gBufferID.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\IB.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementGBuffer.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementIED.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Keyframe.h" />
@@ -60,7 +59,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementTex.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\SkinnedData.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\TypeFX.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\VB.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementSS.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementViewport.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ViewportData.h" />
@@ -82,7 +80,6 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementD3D.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementFX.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\GBuffer.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\IB.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementGBuffer.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementIED.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementLight.cpp" />
