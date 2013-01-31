@@ -47,7 +47,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-utilities\dllUtilities.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\Entity.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\EntityStorage.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-utilities\Enums.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\EventManager.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\EventType.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\FiniteState.h" />
@@ -76,6 +75,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-utilities\TexDescTex.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\Util.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\WeaponStructs.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\XKILL_Enums.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{179430F3-FCF7-4C1B-A52C-5A6A3EB71CAB}</ProjectGuid>
