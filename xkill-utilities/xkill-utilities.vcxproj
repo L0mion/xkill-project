@@ -26,16 +26,15 @@
     <ClCompile Include="..\..\xkill-source\xkill-utilities\FiniteState.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\FiniteStateMachine.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\LightDesc.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\MaterialDesc.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\Math.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshGeometry.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshMaterial.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshModel.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshOrigins.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshSubset.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshDesc.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshVertices.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\MutatorSettings.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\StringConv.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\SubsetDesc.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\TexDesc.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshVertices.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\VertexDesc.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\AttributeController.h" />
@@ -62,19 +61,18 @@
     <ClInclude Include="..\..\xkill-source\xkill-utilities\Iterator.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\LeanWindows.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\LightDesc.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\MaterialDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\Math.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshGeometry.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshMaterial.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshModel.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshOrigins.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshSubset.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshVertices.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\MutatorSettings.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\StringConv.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\SubsetDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\TexDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\TexDescHeader.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\TexDescTex.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\Util.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\VertexDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\WeaponStructs.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
