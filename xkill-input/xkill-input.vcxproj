@@ -15,7 +15,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\xkill-source\xkill-input\Converter.h" />
     <ClInclude Include="..\..\xkill-source\xkill-input\DirectInputDevice.h" />
     <ClInclude Include="..\..\xkill-source\xkill-input\DirectInputKeyboard.h" />
     <ClInclude Include="..\..\xkill-source\xkill-input\DirectInputMouse.h" />

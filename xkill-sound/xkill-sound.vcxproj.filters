@@ -5,10 +5,10 @@
     <ClInclude Include="..\..\xkill-source\xkill-sound\FMODEventSystem.h" />
     <ClInclude Include="..\..\xkill-source\xkill-sound\FMODEventSystemProgrammerReportParser.h" />
     <ClInclude Include="..\..\xkill-source\xkill-sound\SoundComponent.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-sound\FileParser.h">
+    <ClInclude Include="..\..\xkill-source\xkill-sound\EventToFModConverter.h">
       <Filter>EventToFMod</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-sound\EventToFModConverter.h">
+    <ClInclude Include="..\..\xkill-source\xkill-input\FileParser.h">
       <Filter>EventToFMod</Filter>
     </ClInclude>
   </ItemGroup>
@@ -19,7 +19,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-sound\EventToFModConverter.cpp">
       <Filter>EventToFMod</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-sound\FileParser.cpp">
+    <ClCompile Include="..\..\xkill-source\xkill-input\FileParser.cpp">
       <Filter>EventToFMod</Filter>
     </ClCompile>
   </ItemGroup>

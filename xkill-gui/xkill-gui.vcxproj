@@ -216,8 +216,10 @@
     <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_Editor.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_FiringMode.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_InGame.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_Input.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_Main.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_ScoreBoard.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_Sound.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-gui\ToggleHelper.cpp" />
     <ClCompile Include="GeneratedFiles\DebugRelease\moc_GameWidget.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
@@ -491,7 +493,46 @@
     <ClInclude Include="..\..\xkill-source\xkill-gui\MenuManager.h" />
     <ClInclude Include="..\..\xkill-source\xkill-gui\Menu_Ammo.h" />
     <ClInclude Include="..\..\xkill-source\xkill-gui\Menu_FiringMode.h" />
+    <CustomBuild Include="..\..\xkill-source\xkill-gui\Menu_Input.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugRelease|x64'">
+      </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugRelease|x64'">
+      </Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugRelease|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">
+      </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">
+      </Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
     <ClInclude Include="..\..\xkill-source\xkill-gui\Menu_ScoreBoard.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-gui\Menu_Sound.h" />
     <ClInclude Include="..\..\xkill-source\xkill-gui\ToggleHelper.h" />
     <ClInclude Include="GeneratedFiles\ui_HUD.h" />
     <ClInclude Include="GeneratedFiles\ui_InGameMenu.h" />

@@ -43,6 +43,12 @@
     <Filter Include="Files\Menus\Mutator">
       <UniqueIdentifier>{a4eee50e-4797-4b63-9088-4728131117c6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Files\Menus\Input">
+      <UniqueIdentifier>{ad833837-3cfc-4fda-b081-7ad597bbf5aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Menus\Sound">
+      <UniqueIdentifier>{e5519b95-60e9-4d46-8114-f272275c8f90}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-gui\main.cpp">
@@ -126,6 +132,12 @@
     <ClCompile Include="GeneratedFiles\DebugRelease\moc_GameWidget.cpp">
       <Filter>Generated Files\DebugRelease</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_Input.cpp">
+      <Filter>Files\Menus\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_Sound.cpp">
+      <Filter>Files\Menus\Sound</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\xkill-resources\xkill-gui\MainWindow.ui">
@@ -161,6 +173,9 @@
     <CustomBuild Include="..\..\xkill-resources\xkill-gui\HUD.ui">
       <Filter>Files\Form Files</Filter>
     </CustomBuild>
+    <CustomBuild Include="..\..\xkill-source\xkill-gui\Menu_Input.h">
+      <Filter>Files\Menus\Input</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui_MainWindow.h">
@@ -195,6 +210,9 @@
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-gui\Menu_FiringMode.h">
       <Filter>Files\Menus\Mutator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-gui\Menu_Sound.h">
+      <Filter>Files\Menus\Sound</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

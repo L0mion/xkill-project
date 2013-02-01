@@ -69,21 +69,20 @@
     <ClInclude Include="..\..\xkill-source\xkill-input\DirectInputKeyboard.h">
       <Filter>InputDevice\DirectInputDevice\Keyboard</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-input\Converter.h" />
     <ClInclude Include="..\..\xkill-source\xkill-input\dllInput.h" />
     <ClInclude Include="..\..\xkill-source\xkill-input\InputComponent.h" />
     <ClInclude Include="..\..\xkill-source\xkill-input\QTInputDevices.h">
       <Filter>InputDevice\QTInputDevices</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-input\InputActions.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-input\InputObjectArray.h">
+      <Filter>InputObject</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-input\FileParser.h">
       <Filter>KeyMapper</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-input\KeyMapper.h">
       <Filter>KeyMapper</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-input\InputActions.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-input\InputObjectArray.h">
-      <Filter>InputObject</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
