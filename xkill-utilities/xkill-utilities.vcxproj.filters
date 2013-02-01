@@ -13,25 +13,10 @@
     <ClCompile Include="..\..\xkill-source\xkill-utilities\AttributeType.cpp">
       <Filter>Attributes</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshGeometry.cpp">
-      <Filter>Mesh</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshMaterial.cpp">
-      <Filter>Mesh</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshModel.cpp">
-      <Filter>Mesh</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshSubset.cpp">
-      <Filter>Mesh</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-utilities\TexDesc.cpp">
       <Filter>Tex Desc</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-utilities\Math.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshVertices.cpp">
-      <Filter>Mesh</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-utilities\FiniteState.cpp">
       <Filter>State Machine</Filter>
     </ClCompile>
@@ -50,14 +35,26 @@
     <ClCompile Include="..\..\xkill-source\xkill-utilities\EntityStorage.cpp">
       <Filter>[Work-In-Progress]</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshOrigins.cpp">
-      <Filter>Mesh</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-utilities\LightDesc.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\DataItem.h">
       <Filter>Attributes</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-utilities\MutatorSettings.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\MaterialDesc.cpp">
+      <Filter>Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshDesc.cpp">
+      <Filter>Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\SubsetDesc.cpp">
+      <Filter>Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\VertexDesc.cpp">
+      <Filter>Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshVertices.cpp">
+      <Filter>Mesh</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\dllUtilities.h" />
@@ -80,21 +77,6 @@
       <Filter>External Headers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\Math.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshGeometry.h">
-      <Filter>Mesh</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshMaterial.h">
-      <Filter>Mesh</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshModel.h">
-      <Filter>Mesh</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshSubset.h">
-      <Filter>Mesh</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshVertices.h">
-      <Filter>Mesh</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\TexDesc.h">
       <Filter>Tex Desc</Filter>
     </ClInclude>
@@ -136,16 +118,25 @@
     <ClInclude Include="..\..\xkill-source\xkill-utilities\EntityStorage.h">
       <Filter>[Work-In-Progress]</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshOrigins.h">
-      <Filter>Mesh</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\LightDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\MutatorSettings.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\WeaponStructs.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-utilities\Enums.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\Util.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-utilities\Converter.h">
-      <Filter>Conversions</Filter>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\XKILL_Enums.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\MaterialDesc.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshDesc.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\SubsetDesc.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\VertexDesc.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshVertices.h">
+      <Filter>Mesh</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -172,6 +163,9 @@
     </Filter>
     <Filter Include="Conversions">
       <UniqueIdentifier>{c970da88-710f-42c9-a28b-69038b33bbf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mesh">
+      <UniqueIdentifier>{596510c9-9d36-492d-bef5-7dd9cd2a40aa}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
