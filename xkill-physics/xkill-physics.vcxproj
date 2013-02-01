@@ -26,6 +26,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-physics\PickupablePhysicsObject.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-physics\PlayerPhysicsObject.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-physics\ProjectilePhysicsObject.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-physics\WorldPhysicsObject.cpp" />
     <ClCompile Include="..\xkill-dependencies\bullet\includes\Serialize\BulletFileLoader\bChunk.cpp" />
     <ClCompile Include="..\xkill-dependencies\bullet\includes\Serialize\BulletFileLoader\bDNA.cpp" />
     <ClCompile Include="..\xkill-dependencies\bullet\includes\Serialize\BulletFileLoader\bFile.cpp" />
@@ -46,6 +47,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-physics\PickupablePhysicsObject.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\PlayerPhysicsObject.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\ProjectilePhysicsObject.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-physics\WorldPhysicsObject.h" />
     <ClInclude Include="..\xkill-dependencies\bullet\includes\Serialize\BulletFileLoader\bChunk.h" />
     <ClInclude Include="..\xkill-dependencies\bullet\includes\Serialize\BulletFileLoader\bDNA.h" />
     <ClInclude Include="..\xkill-dependencies\bullet\includes\Serialize\BulletFileLoader\bFile.h" />
