@@ -55,6 +55,18 @@
     <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshVertices.cpp">
       <Filter>Mesh</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\AnimatedMesh.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\AnimationClip.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\BoneAnimation.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\SkinnedData.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\dllUtilities.h" />
@@ -138,6 +150,25 @@
     <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshVertices.h">
       <Filter>Mesh</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\Converter.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\AnimatedMesh.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\AnimationClip.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\BoneAnimation.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\Keyframe.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\M3DMeshData.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\SkinnedData.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Events">
@@ -166,6 +197,9 @@
     </Filter>
     <Filter Include="Mesh">
       <UniqueIdentifier>{596510c9-9d36-492d-bef5-7dd9cd2a40aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Animation">
+      <UniqueIdentifier>{2918383c-97ea-44bd-b6f9-c53d032c860d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

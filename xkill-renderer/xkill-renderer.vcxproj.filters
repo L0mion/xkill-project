@@ -32,27 +32,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\TexLoader.h">
       <Filter>ManagementTex</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\AnimationClip.h">
-      <Filter>m3dAnimation</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\BoneAnimation.h">
-      <Filter>m3dAnimation</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\Keyframe.h">
-      <Filter>m3dAnimation</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\SkinnedData.h">
-      <Filter>m3dAnimation</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\M3DLoader.h">
-      <Filter>m3dAnimation</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\M3DMeshData.h">
-      <Filter>m3dAnimation</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\AnimatedMesh.h">
-      <Filter>m3dAnimation</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\SubsetD3D.h">
       <Filter>ManagementModel\SubsetD3D</Filter>
     </ClInclude>
@@ -155,21 +134,6 @@
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\TexLoader.cpp">
       <Filter>ManagementTex</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\AnimationClip.cpp">
-      <Filter>m3dAnimation</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\BoneAnimation.cpp">
-      <Filter>m3dAnimation</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\SkinnedData.cpp">
-      <Filter>m3dAnimation</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\M3DLoader.cpp">
-      <Filter>m3dAnimation</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\AnimatedMesh.cpp">
-      <Filter>m3dAnimation</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\SubsetD3D.cpp">
       <Filter>ManagementModel\SubsetD3D</Filter>
@@ -285,9 +249,6 @@
     </Filter>
     <Filter Include="ManagementD3D">
       <UniqueIdentifier>{581dce99-1ae8-49eb-9fd2-26b50c127343}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="m3dAnimation">
-      <UniqueIdentifier>{7820ac0d-6cf8-4df2-ad17-59828e51f2f3}</UniqueIdentifier>
     </Filter>
     <Filter Include="ManagementModel\SubsetD3D">
       <UniqueIdentifier>{6de8c1ce-4672-488a-a8f1-e0519cf6f34a}</UniqueIdentifier>
