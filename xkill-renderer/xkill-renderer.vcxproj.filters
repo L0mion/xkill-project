@@ -89,7 +89,7 @@
       <Filter>ManagementCB</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementDebug.h">
-      <Filter>Utilities\D3DDebug</Filter>
+      <Filter>ManagementDebug</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementGBuffer.h">
       <Filter>ManagementGBuffer</Filter>
@@ -207,7 +207,7 @@
       <Filter>ManagementCB</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementDebug.cpp">
-      <Filter>Utilities\D3DDebug</Filter>
+      <Filter>ManagementDebug</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementGBuffer.cpp">
       <Filter>ManagementGBuffer</Filter>
@@ -295,9 +295,6 @@
     <Filter Include="ManagementLight">
       <UniqueIdentifier>{2530f1c8-5479-4018-9a93-f070b0300a33}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Utilities\D3DDebug">
-      <UniqueIdentifier>{f733682f-83f8-4695-ae2d-d81fdbb0e3ef}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ManagementGBuffer">
       <UniqueIdentifier>{0ceb31a1-bb2c-44fc-9c3d-3e309d653ef2}</UniqueIdentifier>
     </Filter>
@@ -339,6 +336,9 @@
     </Filter>
     <Filter Include="DataStream">
       <UniqueIdentifier>{4cea32a4-d2f4-4ef4-8397-b49066703ef4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ManagementDebug">
+      <UniqueIdentifier>{f733682f-83f8-4695-ae2d-d81fdbb0e3ef}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
