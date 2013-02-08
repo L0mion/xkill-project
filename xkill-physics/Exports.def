@@ -1,0 +1,5 @@
+LIBRARY xkillphysics
+EXPORTS
+	iinit @1
+	ionUpdate @2
+	ionEvent @3

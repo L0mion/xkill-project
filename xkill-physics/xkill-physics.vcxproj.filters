@@ -48,6 +48,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-physics\HoverPhysicsObject.cpp">
       <Filter>PhysicsObjects</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-physics\Interface.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\xkill-dependencies\bullet\includes\Serialize\BulletWorldImporter\btBulletWorldImporter.h">
@@ -98,6 +99,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-physics\HoverPhysicsObject.h">
       <Filter>PhysicsObjects</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-physics\Interface.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="BulletSerialize">
@@ -106,5 +108,8 @@
     <Filter Include="PhysicsObjects">
       <UniqueIdentifier>{3aab5264-080b-4da2-91e4-9424041eaddd}</UniqueIdentifier>
     </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Exports.def" />
   </ItemGroup>
 </Project>

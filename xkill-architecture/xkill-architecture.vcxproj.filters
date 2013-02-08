@@ -21,6 +21,9 @@
     <ClInclude Include="..\..\xkill-source\xkill-architecture\States.h">
       <Filter>States</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\Component.h">
+      <Filter>Components</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-architecture\CameraComponent.cpp">
@@ -41,6 +44,9 @@
       <Filter>States</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-architecture\ComponentManager.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-architecture\Component.cpp">
       <Filter>Components</Filter>
     </ClCompile>
   </ItemGroup>

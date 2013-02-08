@@ -20,6 +20,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-physics\ExplosionSpherePhysicsObject.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-physics\FrustumPhysicsObject.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-physics\HoverPhysicsObject.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-physics\Interface.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-physics\MotionState.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-physics\PhysicsComponent.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-physics\PhysicsObject.cpp" />
@@ -42,6 +43,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-physics\ExplosionSpherePhysicsObject.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\FrustumPhysicsObject.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\HoverPhysicsObject.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-physics\Interface.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\MotionState.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\PhysicsComponent.h" />
     <ClInclude Include="..\..\xkill-source\xkill-physics\PhysicsObject.h" />
@@ -56,6 +58,9 @@
     <ClInclude Include="..\xkill-dependencies\bullet\includes\Serialize\BulletFileLoader\btBulletFile.h" />
     <ClInclude Include="..\xkill-dependencies\bullet\includes\Serialize\BulletWorldImporter\btBulletWorldImporter.h" />
     <ClInclude Include="..\xkill-dependencies\bullet\includes\Serialize\BulletWorldImporter\btWorldImporter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Exports.def" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{64C38E56-52DE-4A78-B32E-C2FE02506CF5}</ProjectGuid>
@@ -98,7 +103,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>../../xkill-build/bin-$(Configuration)/</OutDir>
+    <OutDir>../../xkill-build/bin-$(Configuration)/dlls/</OutDir>
     <IncludePath>../xkill-dependencies/bullet/includes;../../xkill-source;$(IncludePath)</IncludePath>
     <LibraryPath>../xkill-dependencies/bullet/lib-$(Configuration);../xkill-dependencies/xkill/lib-$(Configuration);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
@@ -127,6 +132,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)/../../xkill-project/xkill-dependencies/xkill/lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
       <AdditionalDependencies>BulletDynamics_Debug.lib;BulletCollision_Debug.lib;LinearMath_Debug.lib;xkill-utilities.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>Exports.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -146,6 +152,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <ImportLibrary>$(OutDir)/../../xkill-project/xkill-dependencies/xkill/lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
       <AdditionalDependencies>xkill-utilities.lib;BulletDynamics.lib;BulletCollision.lib;LinearMath.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>Exports.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">
@@ -165,6 +172,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <ImportLibrary>$(OutDir)/../../xkill-project/xkill-dependencies/xkill/lib-$(Configuration)/$(TargetName).lib</ImportLibrary>
       <AdditionalDependencies>xkill-utilities.lib;BulletDynamics.lib;BulletCollision.lib;LinearMath.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>Exports.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
