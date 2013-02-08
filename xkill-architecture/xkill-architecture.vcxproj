@@ -22,6 +22,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-architecture\EntityManager.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\GameComponent.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\GameManager.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\HacksComponent.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\ScoreComponent.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\States.h" />
   </ItemGroup>
@@ -30,6 +31,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-architecture\ComponentManager.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-architecture\GameComponent.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-architecture\GameManager.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-architecture\HacksComponent.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-architecture\main.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-architecture\ScoreComponent.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-architecture\States.cpp" />

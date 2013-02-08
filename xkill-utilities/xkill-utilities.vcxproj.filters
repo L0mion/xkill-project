@@ -39,7 +39,6 @@
     <ClCompile Include="..\..\xkill-source\xkill-utilities\DataItem.h">
       <Filter>Attributes</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-utilities\MutatorSettings.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\MaterialDesc.cpp">
       <Filter>Mesh</Filter>
     </ClCompile>
@@ -54,6 +53,12 @@
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshVertices.cpp">
       <Filter>Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\MutatorSettings.cpp">
+      <Filter>Mutator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\Timer.cpp">
+      <Filter>Timer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -119,8 +124,6 @@
       <Filter>[Work-In-Progress]</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\LightDesc.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-utilities\MutatorSettings.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-utilities\WeaponStructs.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\Util.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\XKILL_Enums.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\MaterialDesc.h">
@@ -137,6 +140,16 @@
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshVertices.h">
       <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\Converter.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\MutatorSettings.h">
+      <Filter>Mutator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\WeaponStructs.h">
+      <Filter>Mutator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\Timer.h">
+      <Filter>Timer</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -166,6 +179,12 @@
     </Filter>
     <Filter Include="Mesh">
       <UniqueIdentifier>{596510c9-9d36-492d-bef5-7dd9cd2a40aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mutator">
+      <UniqueIdentifier>{37e8a1e8-9ad3-4033-96f0-3ee530de4320}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Timer">
+      <UniqueIdentifier>{b20397b5-8eb9-42b8-8395-b3ee36a34c0a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
