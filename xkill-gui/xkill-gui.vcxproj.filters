@@ -72,9 +72,6 @@
     <ClCompile Include="..\..\xkill-source\xkill-gui\ToggleHelper.cpp">
       <Filter>Files\Menus</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-gui\MainWindow.cpp">
-      <Filter>Files</Filter>
-    </ClCompile>
     <ClCompile Include="GeneratedFiles\qrc_xkill.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
@@ -137,6 +134,9 @@
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_Sound.cpp">
       <Filter>Files\Menus\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-gui\MainWindow.cpp">
+      <Filter>Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
