@@ -38,6 +38,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-utilities\StringConv.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\SubsetDesc.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\TexDesc.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\Timer.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\VertexDesc.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -81,6 +82,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-utilities\TexDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\TexDescHeader.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\TexDescTex.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\Timer.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\Util.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\VertexDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\WeaponStructs.h" />
