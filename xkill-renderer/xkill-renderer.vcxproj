@@ -15,9 +15,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\AnimatedMesh.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\AnimationClip.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\BoneAnimation.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CBDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\DataStreamBuffer.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\DataStreamSRV.h" />
@@ -38,13 +35,10 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\gBufferID.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementGBuffer.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementIED.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\Keyframe.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementLight.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementMath.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementModel.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ModelD3D.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\M3DLoader.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\M3DMeshData.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Renderer.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\RenderingComponent.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\RenderingUtilities.h" />
@@ -57,7 +51,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Tex.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\TexLoader.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementTex.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\SkinnedData.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\TypeFX.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementSS.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementViewport.h" />
@@ -65,9 +58,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Winfo.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\AnimatedMesh.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\AnimationClip.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\BoneAnimation.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\DDSTextureLoader.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\DebugShapeD3D.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\DebugShapes.cpp" />
@@ -85,7 +75,6 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementMath.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementModel.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ModelD3D.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\M3DLoader.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Renderer.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RenderingComponent.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementRS.cpp" />
@@ -97,7 +86,6 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Tex.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\TexLoader.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementTex.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\SkinnedData.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementSS.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementViewport.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Winfo.cpp" />

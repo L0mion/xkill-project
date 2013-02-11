@@ -15,6 +15,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\AnimatedMesh.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\AnimationClip.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\BoneAnimation.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\DataItem.h" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\AttributeManager.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\AttributePointer.cpp" />
@@ -31,6 +34,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshDesc.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshVertices.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\MutatorSettings.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-utilities\SkinnedData.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\StringConv.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\SubsetDesc.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\TexDesc.cpp" />
@@ -38,11 +42,14 @@
     <ClCompile Include="..\..\xkill-source\xkill-utilities\VertexDesc.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\AnimatedMesh.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\AnimationClip.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\AttributeController.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\AttributeManager.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\AttributePointer.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\AttributeStorage.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\AttributeType.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\BoneAnimation.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\Converter.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\DebugShape.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\dllUtilities.h" />
@@ -60,13 +67,16 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\Iterator.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\Keyframe.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\LeanWindows.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\LightDesc.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\M3DMeshData.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\MaterialDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\Math.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshVertices.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\MutatorSettings.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\SkinnedData.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\StringConv.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\SubsetDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\TexDesc.h" />
