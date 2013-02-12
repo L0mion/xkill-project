@@ -301,6 +301,9 @@
     <Filter Include="ManagementDebug">
       <UniqueIdentifier>{f733682f-83f8-4695-ae2d-d81fdbb0e3ef}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Shaders\Shader I/O">
+      <UniqueIdentifier>{d8619365-b905-4812-b98e-700b712f70f2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\structs.hlsl">
@@ -377,6 +380,12 @@
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\VS_Sprite.hlsl">
       <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\VSIn.hlsl">
+      <Filter>Shaders\Shader I/O</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\VSOut.hlsl">
+      <Filter>Shaders\Shader I/O</Filter>
     </FxCompile>
   </ItemGroup>
 </Project>
