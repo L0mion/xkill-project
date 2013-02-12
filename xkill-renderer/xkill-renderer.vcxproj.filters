@@ -301,6 +301,9 @@
     <Filter Include="ManagementDebug">
       <UniqueIdentifier>{f733682f-83f8-4695-ae2d-d81fdbb0e3ef}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ManagementAnimation">
+      <UniqueIdentifier>{411229ac-dd9e-4d2e-bb5f-0e073fcbbd9f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\defaultDeferredPS.hlsl">
