@@ -369,9 +369,6 @@
     <FxCompile Include="..\..\xkill-source\xkill-shaders\PS_Default.hlsl">
       <Filter>Shaders</Filter>
     </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\VS_Default.hlsl">
-      <Filter>Shaders</Filter>
-    </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\CS_Lighting.hlsl">
       <Filter>Shaders</Filter>
     </FxCompile>
@@ -386,6 +383,15 @@
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\VSOut.hlsl">
       <Filter>Shaders\Shader I/O</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\VS_PosNormTexInstanced.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\VS_PosNormTexTanInstanced.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\PS_NormalMap.hlsl">
+      <Filter>Shaders</Filter>
     </FxCompile>
   </ItemGroup>
 </Project>
