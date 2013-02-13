@@ -114,6 +114,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\DataStreamBuffer.h">
       <Filter>DataStream</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ShadingDesc.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RenderingComponent.cpp" />
@@ -203,6 +204,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshVerticesInstanced.cpp">
       <Filter>Mesh</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ShadingDesc.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Utilities">
