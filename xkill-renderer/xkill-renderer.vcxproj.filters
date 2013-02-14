@@ -70,14 +70,8 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementDebug.h">
       <Filter>ManagementDebug</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementGBuffer.h">
-      <Filter>ManagementGBuffer</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\gBuffer.h">
-      <Filter>ManagementGBuffer</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\gBufferID.h">
-      <Filter>ManagementGBuffer</Filter>
+      <Filter>ManagementBuffer</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ModelD3D.h">
       <Filter>ManagementModel\ModelD3D</Filter>
@@ -115,6 +109,15 @@
       <Filter>DataStream</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ShadingDesc.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementBuffer.h">
+      <Filter>ManagementBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\Buffer_SrvRtv.h">
+      <Filter>ManagementBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\Buffer_SrvRtvUav.h">
+      <Filter>ManagementBuffer</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RenderingComponent.cpp" />
@@ -174,12 +177,6 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementDebug.cpp">
       <Filter>ManagementDebug</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementGBuffer.cpp">
-      <Filter>ManagementGBuffer</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\GBuffer.cpp">
-      <Filter>ManagementGBuffer</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ModelD3D.cpp">
       <Filter>ManagementModel\ModelD3D</Filter>
     </ClCompile>
@@ -205,6 +202,15 @@
       <Filter>Mesh</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ShadingDesc.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementBuffer.cpp">
+      <Filter>ManagementBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\Buffer_SrvRtv.cpp">
+      <Filter>ManagementBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\Buffer_SrvRtvUav.cpp">
+      <Filter>ManagementBuffer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Utilities">
@@ -258,9 +264,6 @@
     <Filter Include="ManagementLight">
       <UniqueIdentifier>{2530f1c8-5479-4018-9a93-f070b0300a33}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ManagementGBuffer">
-      <UniqueIdentifier>{0ceb31a1-bb2c-44fc-9c3d-3e309d653ef2}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ManagementCB">
       <UniqueIdentifier>{2c84bf73-10e2-4e8f-92c7-623b95c48cbd}</UniqueIdentifier>
     </Filter>
@@ -305,6 +308,9 @@
     </Filter>
     <Filter Include="Shaders\Shader I/O">
       <UniqueIdentifier>{d8619365-b905-4812-b98e-700b712f70f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ManagementBuffer">
+      <UniqueIdentifier>{0ceb31a1-bb2c-44fc-9c3d-3e309d653ef2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -394,6 +400,9 @@
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\PS_NormalMap.hlsl">
       <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\UtilNormalMap.hlsl">
+      <Filter>Shaders\Util</Filter>
     </FxCompile>
   </ItemGroup>
 </Project>
