@@ -113,10 +113,10 @@
       <Filter>ManagementBuffer</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Buffer_SrvRtv.h">
-      <Filter>ManagementBuffer</Filter>
+      <Filter>ManagementBuffer\Buffer</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Buffer_SrvRtvUav.h">
-      <Filter>ManagementBuffer</Filter>
+      <Filter>ManagementBuffer\Buffer</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -206,10 +206,10 @@
       <Filter>ManagementBuffer</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Buffer_SrvRtv.cpp">
-      <Filter>ManagementBuffer</Filter>
+      <Filter>ManagementBuffer\Buffer</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Buffer_SrvRtvUav.cpp">
-      <Filter>ManagementBuffer</Filter>
+      <Filter>ManagementBuffer\Buffer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -312,6 +312,9 @@
     <Filter Include="ManagementBuffer">
       <UniqueIdentifier>{0ceb31a1-bb2c-44fc-9c3d-3e309d653ef2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ManagementBuffer\Buffer">
+      <UniqueIdentifier>{1d62cfdd-a6db-4345-a921-f0766301c092}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\structs.hlsl">
@@ -368,12 +371,6 @@
     <FxCompile Include="..\..\xkill-source\xkill-shaders\VS_Color.hlsl">
       <Filter>Shaders</Filter>
     </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\PS_DefaultDeferred.hlsl">
-      <Filter>Shaders</Filter>
-    </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\VS_DefaultDeferred.hlsl">
-      <Filter>Shaders</Filter>
-    </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\PS_Default.hlsl">
       <Filter>Shaders</Filter>
     </FxCompile>
@@ -403,6 +400,12 @@
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\UtilNormalMap.hlsl">
       <Filter>Shaders\Util</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\PS_DownSample.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\VS_ScreenQuad.hlsl">
+      <Filter>Shaders</Filter>
     </FxCompile>
   </ItemGroup>
 </Project>
