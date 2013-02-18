@@ -227,8 +227,5 @@
     <Filter Include=".fbx">
       <UniqueIdentifier>{064285af-4c79-42cd-bb2f-7b53f7a789f7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="FileParser">
-      <UniqueIdentifier>{830b103a-01e3-479c-a389-98ea0447e2ed}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
 </Project>
