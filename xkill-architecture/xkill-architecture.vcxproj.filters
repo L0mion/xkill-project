@@ -2,7 +2,6 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-architecture\dllArchitecture.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-architecture\GameManager.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\EntityManager.h">
       <Filter>Entities</Filter>
     </ClInclude>
@@ -24,6 +23,10 @@
     <ClInclude Include="..\..\xkill-source\xkill-architecture\HacksComponent.h">
       <Filter>Components\Implementations</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\GameManager.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\CollisionManager.h">
+      <Filter>CollisionManager</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-architecture\CameraComponent.cpp">
@@ -39,7 +42,6 @@
     <ClCompile Include="..\..\xkill-source\xkill-architecture\ScoreComponent.cpp">
       <Filter>Components\Implementations</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-architecture\GameManager.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-architecture\States.cpp">
       <Filter>States</Filter>
     </ClCompile>
@@ -48,6 +50,10 @@
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-architecture\HacksComponent.cpp">
       <Filter>Components\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-architecture\GameManager.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-architecture\CollisionManager.cpp">
+      <Filter>CollisionManager</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -68,6 +74,9 @@
     </Filter>
     <Filter Include="States">
       <UniqueIdentifier>{dfb33708-bdf6-4d9a-8e7c-f4fb6c69a639}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CollisionManager">
+      <UniqueIdentifier>{cdb767fe-fa84-48a0-8f0a-c9a21297d3b4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
