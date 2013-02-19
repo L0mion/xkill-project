@@ -404,13 +404,7 @@
     <FxCompile Include="..\..\xkill-source\xkill-shaders\VS_ScreenQuad.hlsl">
       <Filter>Shaders</Filter>
     </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\CS_Blur_Vert.hlsl">
-      <Filter>Shaders\Blur</Filter>
-    </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\CS_Blur_Horz.hlsl">
-      <Filter>Shaders\Blur</Filter>
-    </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\CS_Blur.hlsl">
       <Filter>Shaders\Blur</Filter>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\CS_Lighting.hlsl">
@@ -418,6 +412,12 @@
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\constantBuffers.hlsl">
       <Filter>Shaders\Shader I/O</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\CS_Blur_Vert.hlsl">
+      <Filter>Shaders\Blur</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\CS_Blur.hlsl">
+      <Filter>Shaders\Blur</Filter>
     </FxCompile>
   </ItemGroup>
 </Project>

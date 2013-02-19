@@ -98,16 +98,16 @@
     <FxCompile Include="..\..\xkill-source\xkill-shaders\CS_Blur.hlsl">
       <EntryPointName Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">
       </EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">Effect</ShaderType>
       <ShaderModel Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">5.0</ShaderModel>
       <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
       </EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Effect</ShaderType>
       <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
       <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
       </EntryPointName>
-      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
-      <ShaderType Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">Effect</ShaderType>
-      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Effect</ShaderType>
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Effect</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\CS_Blur_Horz.hlsl">
       <EntryPointName Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">CS_Blur_Horz</EntryPointName>
@@ -122,14 +122,14 @@
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\CS_Blur_Vert.hlsl">
       <EntryPointName Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">CS_Blur_Vert</EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">Compute</ShaderType>
       <ShaderModel Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">5.0</ShaderModel>
       <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CS_Blur_Vert</EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compute</ShaderType>
       <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
       <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CS_Blur_Vert</EntryPointName>
-      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
-      <ShaderType Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">Compute</ShaderType>
-      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compute</ShaderType>
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\PS_Animation.hlsl">
       <EntryPointName Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">PS_Animation</EntryPointName>
