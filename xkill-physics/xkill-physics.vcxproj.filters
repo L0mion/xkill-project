@@ -45,7 +45,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-physics\WorldPhysicsObject.cpp">
       <Filter>PhysicsObjects</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-physics\HoverPhysicsObject.cpp">
+    <ClCompile Include="..\..\xkill-source\xkill-physics\PropPhysicsObject.cpp">
       <Filter>PhysicsObjects</Filter>
     </ClCompile>
   </ItemGroup>
@@ -95,7 +95,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-physics\WorldPhysicsObject.h">
       <Filter>PhysicsObjects</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-physics\HoverPhysicsObject.h">
+    <ClInclude Include="..\..\xkill-source\xkill-physics\PropPhysicsObject.h">
       <Filter>PhysicsObjects</Filter>
     </ClInclude>
   </ItemGroup>

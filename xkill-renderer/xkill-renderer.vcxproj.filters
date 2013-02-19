@@ -114,6 +114,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\DataStreamBuffer.h">
       <Filter>DataStream</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ShadingDesc.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RenderingComponent.cpp" />
@@ -203,6 +204,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshVerticesInstanced.cpp">
       <Filter>Mesh</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ShadingDesc.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Utilities">
@@ -301,39 +303,15 @@
     <Filter Include="ManagementDebug">
       <UniqueIdentifier>{f733682f-83f8-4695-ae2d-d81fdbb0e3ef}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Shaders\Shader I/O">
+      <UniqueIdentifier>{d8619365-b905-4812-b98e-700b712f70f2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\defaultDeferredPS.hlsl">
-      <Filter>Shaders</Filter>
-    </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\defaultDeferredVS.hlsl">
-      <Filter>Shaders</Filter>
-    </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\defaultPS.hlsl">
-      <Filter>Shaders</Filter>
-    </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\defaultVS.hlsl">
-      <Filter>Shaders</Filter>
-    </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\structs.hlsl">
       <Filter>Shaders</Filter>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\constantBuffers.hlsl">
-      <Filter>Shaders</Filter>
-    </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\lightingCS.hlsl">
-      <Filter>Shaders</Filter>
-    </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\animationVS.hlsl">
-      <Filter>Shaders</Filter>
-    </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\animationPS.hlsl">
-      <Filter>Shaders</Filter>
-    </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\colorPS.hlsl">
-      <Filter>Shaders</Filter>
-    </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\colorVS.hlsl">
       <Filter>Shaders</Filter>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\LightDescDir.hlsl">
@@ -372,10 +350,49 @@
     <FxCompile Include="..\..\xkill-source\xkill-shaders\UtilDebug.hlsl">
       <Filter>Shaders\Util</Filter>
     </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\spritePS.hlsl">
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\PS_Animation.hlsl">
       <Filter>Shaders</Filter>
     </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\spriteVS.hlsl">
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\VS_Animation.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\PS_Color.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\VS_Color.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\PS_DefaultDeferred.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\VS_DefaultDeferred.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\PS_Default.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\CS_Lighting.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\PS_Sprite.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\VS_Sprite.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\VSIn.hlsl">
+      <Filter>Shaders\Shader I/O</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\VSOut.hlsl">
+      <Filter>Shaders\Shader I/O</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\VS_PosNormTexInstanced.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\VS_PosNormTexTanInstanced.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\PS_NormalMap.hlsl">
       <Filter>Shaders</Filter>
     </FxCompile>
   </ItemGroup>
