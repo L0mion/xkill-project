@@ -49,6 +49,9 @@
     <Filter Include="Files\Menus\Sound">
       <UniqueIdentifier>{e5519b95-60e9-4d46-8114-f272275c8f90}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Files\Menus\[Old]">
+      <UniqueIdentifier>{03a3c2f9-72f9-4cdd-95d6-f3187cee910a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-gui\main.cpp">
@@ -57,26 +60,8 @@
     <ClCompile Include="..\..\xkill-source\xkill-gui\GameTimer.cpp">
       <Filter>Files\Utilities</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_Editor.cpp">
-      <Filter>Files\Menus</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_InGame.cpp">
-      <Filter>Files\Menus</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_Main.cpp">
-      <Filter>Files\Menus</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-gui\MenuManager.cpp">
-      <Filter>Files\Menus</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-gui\ToggleHelper.cpp">
-      <Filter>Files\Menus</Filter>
-    </ClCompile>
     <ClCompile Include="GeneratedFiles\qrc_xkill.cpp">
       <Filter>Generated Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_ScoreBoard.cpp">
-      <Filter>Files\Menus</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_Ammo.cpp">
       <Filter>Files\Menus\Mutator</Filter>
@@ -147,7 +132,61 @@
     <ClCompile Include="GeneratedFiles\Release\moc_Menu_Main2.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
+    <ClCompile Include="GeneratedFiles\DebugRelease\moc_Menu_FiringMode.cpp">
+      <Filter>Generated Files\DebugRelease</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_Menu_FiringMode.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Menu_FiringMode.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\DebugRelease\moc_Menu_Input.cpp">
+      <Filter>Generated Files\DebugRelease</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_Menu_Input.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Menu_Input.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\DebugRelease\moc_Menu_Ammo.cpp">
+      <Filter>Generated Files\DebugRelease</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_Menu_Ammo.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Menu_Ammo.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\DebugRelease\moc_Menu_Sound.cpp">
+      <Filter>Generated Files\DebugRelease</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_Menu_Sound.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Menu_Sound.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_InGame.cpp">
+      <Filter>Files\Menus\[Old]</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_Main.cpp">
+      <Filter>Files\Menus\[Old]</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_ScoreBoard.cpp">
+      <Filter>Files\Menus\[Old]</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-gui\MenuManager.cpp">
+      <Filter>Files\Menus\[Old]</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-gui\ToggleHelper.cpp">
+      <Filter>Files\Menus\[Old]</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_Main2.cpp">
+      <Filter>Files\Menus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_Editor.cpp">
       <Filter>Files\Menus</Filter>
     </ClCompile>
   </ItemGroup>
@@ -163,15 +202,6 @@
     </CustomBuild>
     <CustomBuild Include="..\..\xkill-resources\xkill-gui\InGameMenu.ui">
       <Filter>Files\Form Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\..\xkill-source\xkill-gui\Menu_Main.h">
-      <Filter>Files\Menus</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\..\xkill-source\xkill-gui\Menu_Editor.h">
-      <Filter>Files\Menus</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\..\xkill-source\xkill-gui\Menu_InGame.h">
-      <Filter>Files\Menus</Filter>
     </CustomBuild>
     <CustomBuild Include="..\..\xkill-source\xkill-gui\GameWidget.h">
       <Filter>Files</Filter>
@@ -191,7 +221,25 @@
     <CustomBuild Include="..\..\xkill-resources\xkill-gui\MainMenu2.ui">
       <Filter>Files\Form Files</Filter>
     </CustomBuild>
+    <CustomBuild Include="..\..\xkill-source\xkill-gui\Menu_FiringMode.h">
+      <Filter>Files\Menus\Mutator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\xkill-source\xkill-gui\Menu_Ammo.h">
+      <Filter>Files\Menus\Mutator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\xkill-source\xkill-gui\Menu_Sound.h">
+      <Filter>Files\Menus\Sound</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\xkill-source\xkill-gui\Menu_InGame.h">
+      <Filter>Files\Menus\[Old]</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\xkill-source\xkill-gui\Menu_Main.h">
+      <Filter>Files\Menus\[Old]</Filter>
+    </CustomBuild>
     <CustomBuild Include="..\..\xkill-source\xkill-gui\Menu_Main2.h">
+      <Filter>Files\Menus</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\xkill-source\xkill-gui\Menu_Editor.h">
       <Filter>Files\Menus</Filter>
     </CustomBuild>
   </ItemGroup>
@@ -211,29 +259,20 @@
     <ClInclude Include="..\..\xkill-source\xkill-gui\GameTimer.h">
       <Filter>Files\Utilities</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-gui\Menu_ScoreBoard.h">
-      <Filter>Files\Menus</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-gui\MenuManager.h">
-      <Filter>Files\Menus</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-gui\ToggleHelper.h">
-      <Filter>Files\Menus</Filter>
-    </ClInclude>
     <ClInclude Include="GeneratedFiles\ui_HUD.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-gui\Menu_Ammo.h">
-      <Filter>Files\Menus\Mutator</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-gui\Menu_FiringMode.h">
-      <Filter>Files\Menus\Mutator</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-gui\Menu_Sound.h">
-      <Filter>Files\Menus\Sound</Filter>
-    </ClInclude>
     <ClInclude Include="GeneratedFiles\ui_MainMenu2.h">
       <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-gui\Menu_ScoreBoard.h">
+      <Filter>Files\Menus\[Old]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-gui\MenuManager.h">
+      <Filter>Files\Menus\[Old]</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-gui\ToggleHelper.h">
+      <Filter>Files\Menus\[Old]</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
