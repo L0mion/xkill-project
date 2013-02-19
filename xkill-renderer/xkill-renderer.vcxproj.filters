@@ -279,15 +279,6 @@
     <Filter Include="ManagementInstance">
       <UniqueIdentifier>{7c6e99c2-5f68-422f-a228-75a1a0c39da3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Shaders\Light">
-      <UniqueIdentifier>{6d7124e0-926a-40d5-b9f5-63ead03c3adc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Shaders\Light\Structs">
-      <UniqueIdentifier>{8be895ae-192b-421f-9532-ac55d0165d73}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Shaders\Light\Methods">
-      <UniqueIdentifier>{99d035f9-ce88-44bd-8da9-7d0e15bba69e}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Shaders\Util">
       <UniqueIdentifier>{1395f05a-6f6c-4fe6-8f27-1d19fcb60dcb}</UniqueIdentifier>
     </Filter>
@@ -315,34 +306,43 @@
     <Filter Include="ManagementBuffer\Buffer">
       <UniqueIdentifier>{1d62cfdd-a6db-4345-a921-f0766301c092}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Shaders\Blur">
+      <UniqueIdentifier>{0c64d0a8-f8fa-4cf8-b364-f9ae37750e95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Lighting">
+      <UniqueIdentifier>{6d7124e0-926a-40d5-b9f5-63ead03c3adc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Lighting\Structs">
+      <UniqueIdentifier>{8be895ae-192b-421f-9532-ac55d0165d73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Lighting\Methods">
+      <UniqueIdentifier>{99d035f9-ce88-44bd-8da9-7d0e15bba69e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\structs.hlsl">
       <Filter>Shaders</Filter>
     </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\constantBuffers.hlsl">
-      <Filter>Shaders</Filter>
-    </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\LightDescDir.hlsl">
-      <Filter>Shaders\Light\Structs</Filter>
+      <Filter>Shaders\Lighting\Structs</Filter>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\LightDescPoint.hlsl">
-      <Filter>Shaders\Light\Structs</Filter>
+      <Filter>Shaders\Lighting\Structs</Filter>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\LightDescSpot.hlsl">
-      <Filter>Shaders\Light\Structs</Filter>
+      <Filter>Shaders\Lighting\Structs</Filter>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\LightSurfaceMaterial.hlsl">
-      <Filter>Shaders\Light\Structs</Filter>
+      <Filter>Shaders\Lighting\Structs</Filter>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\LightDir.hlsl">
-      <Filter>Shaders\Light\Methods</Filter>
+      <Filter>Shaders\Lighting\Methods</Filter>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\LightSpot.hlsl">
-      <Filter>Shaders\Light\Methods</Filter>
+      <Filter>Shaders\Lighting\Methods</Filter>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\LightPoint.hlsl">
-      <Filter>Shaders\Light\Methods</Filter>
+      <Filter>Shaders\Lighting\Methods</Filter>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\UtilReconstructPosition.hlsl">
       <Filter>Shaders\Util</Filter>
@@ -354,7 +354,7 @@
       <Filter>Shaders\Tiling</Filter>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\LightPos.hlsl">
-      <Filter>Shaders\Light\Structs</Filter>
+      <Filter>Shaders\Lighting\Structs</Filter>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\UtilDebug.hlsl">
       <Filter>Shaders\Util</Filter>
@@ -372,9 +372,6 @@
       <Filter>Shaders</Filter>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\PS_Default.hlsl">
-      <Filter>Shaders</Filter>
-    </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\CS_Lighting.hlsl">
       <Filter>Shaders</Filter>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\PS_Sprite.hlsl">
@@ -406,6 +403,21 @@
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\VS_ScreenQuad.hlsl">
       <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\CS_Blur_Vert.hlsl">
+      <Filter>Shaders\Blur</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\CS_Blur_Horz.hlsl">
+      <Filter>Shaders\Blur</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\CS_Blur.hlsl">
+      <Filter>Shaders\Blur</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\CS_Lighting.hlsl">
+      <Filter>Shaders\Lighting</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\constantBuffers.hlsl">
+      <Filter>Shaders\Shader I/O</Filter>
     </FxCompile>
   </ItemGroup>
 </Project>
