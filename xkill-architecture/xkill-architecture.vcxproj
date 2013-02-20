@@ -16,6 +16,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-architecture\CameraComponent.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\CollisionManager.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\ComponentManager.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\dllArchitecture.h" />
     <ClInclude Include="..\..\xkill-source\xkill-architecture\EntityFactory.h" />
@@ -28,6 +29,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-architecture\CameraComponent.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-architecture\CollisionManager.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-architecture\ComponentManager.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-architecture\GameComponent.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-architecture\GameManager.cpp" />

@@ -70,14 +70,8 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementDebug.h">
       <Filter>ManagementDebug</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementGBuffer.h">
-      <Filter>ManagementGBuffer</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\gBuffer.h">
-      <Filter>ManagementGBuffer</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\gBufferID.h">
-      <Filter>ManagementGBuffer</Filter>
+      <Filter>ManagementBuffer</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ModelD3D.h">
       <Filter>ManagementModel\ModelD3D</Filter>
@@ -117,6 +111,15 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ShadingDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementAnimation.h">
       <Filter>ManagementAnimation</Filter>
+	</ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementBuffer.h">
+      <Filter>ManagementBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\Buffer_SrvRtv.h">
+      <Filter>ManagementBuffer\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\Buffer_SrvRtvUav.h">
+      <Filter>ManagementBuffer\Buffer</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\M3DLoader.h">
       <Filter>DebugAnimation</Filter>
@@ -183,12 +186,6 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementDebug.cpp">
       <Filter>ManagementDebug</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementGBuffer.cpp">
-      <Filter>ManagementGBuffer</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\GBuffer.cpp">
-      <Filter>ManagementGBuffer</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ModelD3D.cpp">
       <Filter>ManagementModel\ModelD3D</Filter>
     </ClCompile>
@@ -216,6 +213,15 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ShadingDesc.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementAnimation.cpp">
       <Filter>ManagementAnimation</Filter>
+	</ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementBuffer.cpp">
+      <Filter>ManagementBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\Buffer_SrvRtv.cpp">
+      <Filter>ManagementBuffer\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\Buffer_SrvRtvUav.cpp">
+      <Filter>ManagementBuffer\Buffer</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\M3DLoader.cpp">
       <Filter>DebugAnimation</Filter>
@@ -276,9 +282,6 @@
     <Filter Include="ManagementLight">
       <UniqueIdentifier>{2530f1c8-5479-4018-9a93-f070b0300a33}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ManagementGBuffer">
-      <UniqueIdentifier>{0ceb31a1-bb2c-44fc-9c3d-3e309d653ef2}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ManagementCB">
       <UniqueIdentifier>{2c84bf73-10e2-4e8f-92c7-623b95c48cbd}</UniqueIdentifier>
     </Filter>
@@ -293,15 +296,6 @@
     </Filter>
     <Filter Include="ManagementInstance">
       <UniqueIdentifier>{7c6e99c2-5f68-422f-a228-75a1a0c39da3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Shaders\Light">
-      <UniqueIdentifier>{6d7124e0-926a-40d5-b9f5-63ead03c3adc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Shaders\Light\Structs">
-      <UniqueIdentifier>{8be895ae-192b-421f-9532-ac55d0165d73}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Shaders\Light\Methods">
-      <UniqueIdentifier>{99d035f9-ce88-44bd-8da9-7d0e15bba69e}</UniqueIdentifier>
     </Filter>
     <Filter Include="Shaders\Util">
       <UniqueIdentifier>{1395f05a-6f6c-4fe6-8f27-1d19fcb60dcb}</UniqueIdentifier>
@@ -329,35 +323,50 @@
     </Filter>
     <Filter Include="DebugAnimation">
       <UniqueIdentifier>{f7e0553d-14f6-4226-9d54-6896f0d05116}</UniqueIdentifier>
+	</Filter>
+    <Filter Include="ManagementBuffer">
+      <UniqueIdentifier>{0ceb31a1-bb2c-44fc-9c3d-3e309d653ef2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ManagementBuffer\Buffer">
+      <UniqueIdentifier>{1d62cfdd-a6db-4345-a921-f0766301c092}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Blur">
+      <UniqueIdentifier>{0c64d0a8-f8fa-4cf8-b364-f9ae37750e95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Lighting">
+      <UniqueIdentifier>{6d7124e0-926a-40d5-b9f5-63ead03c3adc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Lighting\Structs">
+      <UniqueIdentifier>{8be895ae-192b-421f-9532-ac55d0165d73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Lighting\Methods">
+      <UniqueIdentifier>{99d035f9-ce88-44bd-8da9-7d0e15bba69e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\structs.hlsl">
       <Filter>Shaders</Filter>
     </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\constantBuffers.hlsl">
-      <Filter>Shaders</Filter>
-    </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\LightDescDir.hlsl">
-      <Filter>Shaders\Light\Structs</Filter>
+      <Filter>Shaders\Lighting\Structs</Filter>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\LightDescPoint.hlsl">
-      <Filter>Shaders\Light\Structs</Filter>
+      <Filter>Shaders\Lighting\Structs</Filter>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\LightDescSpot.hlsl">
-      <Filter>Shaders\Light\Structs</Filter>
+      <Filter>Shaders\Lighting\Structs</Filter>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\LightSurfaceMaterial.hlsl">
-      <Filter>Shaders\Light\Structs</Filter>
+      <Filter>Shaders\Lighting\Structs</Filter>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\LightDir.hlsl">
-      <Filter>Shaders\Light\Methods</Filter>
+      <Filter>Shaders\Lighting\Methods</Filter>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\LightSpot.hlsl">
-      <Filter>Shaders\Light\Methods</Filter>
+      <Filter>Shaders\Lighting\Methods</Filter>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\LightPoint.hlsl">
-      <Filter>Shaders\Light\Methods</Filter>
+      <Filter>Shaders\Lighting\Methods</Filter>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\UtilReconstructPosition.hlsl">
       <Filter>Shaders\Util</Filter>
@@ -369,7 +378,7 @@
       <Filter>Shaders\Tiling</Filter>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\LightPos.hlsl">
-      <Filter>Shaders\Light\Structs</Filter>
+      <Filter>Shaders\Lighting\Structs</Filter>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\UtilDebug.hlsl">
       <Filter>Shaders\Util</Filter>
@@ -386,16 +395,7 @@
     <FxCompile Include="..\..\xkill-source\xkill-shaders\VS_Color.hlsl">
       <Filter>Shaders</Filter>
     </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\PS_DefaultDeferred.hlsl">
-      <Filter>Shaders</Filter>
-    </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\VS_DefaultDeferred.hlsl">
-      <Filter>Shaders</Filter>
-    </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\PS_Default.hlsl">
-      <Filter>Shaders</Filter>
-    </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\CS_Lighting.hlsl">
       <Filter>Shaders</Filter>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\PS_Sprite.hlsl">
@@ -418,6 +418,30 @@
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\PS_NormalMap.hlsl">
       <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\UtilNormalMap.hlsl">
+      <Filter>Shaders\Util</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\PS_DownSample.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\VS_ScreenQuad.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\CS_Blur_Horz.hlsl">
+      <Filter>Shaders\Blur</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\CS_Lighting.hlsl">
+      <Filter>Shaders\Lighting</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\constantBuffers.hlsl">
+      <Filter>Shaders\Shader I/O</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\CS_Blur_Vert.hlsl">
+      <Filter>Shaders\Blur</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\CS_Blur.hlsl">
+      <Filter>Shaders\Blur</Filter>
     </FxCompile>
   </ItemGroup>
 </Project>
