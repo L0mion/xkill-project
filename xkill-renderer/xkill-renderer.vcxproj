@@ -15,6 +15,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\AnimatedMesh.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CBDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\DataStreamBuffer.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\DataStreamSRV.h" />
@@ -22,6 +23,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\DebugShapeD3D.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\DebugShapes.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\LightPos.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\M3DLoader.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementAnimation.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementInstance.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementSprites.h" />
@@ -60,9 +62,11 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Winfo.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\AnimatedMesh.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\DDSTextureLoader.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\DebugShapeD3D.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\DebugShapes.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\M3DLoader.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementAnimation.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementInstance.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementSprites.cpp" />

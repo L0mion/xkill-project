@@ -118,6 +118,12 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementAnimation.h">
       <Filter>ManagementAnimation</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\M3DLoader.h">
+      <Filter>DebugAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\AnimatedMesh.h">
+      <Filter>DebugAnimation</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RenderingComponent.cpp" />
@@ -210,6 +216,12 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ShadingDesc.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementAnimation.cpp">
       <Filter>ManagementAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\M3DLoader.cpp">
+      <Filter>DebugAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\AnimatedMesh.cpp">
+      <Filter>DebugAnimation</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -314,6 +326,9 @@
     </Filter>
     <Filter Include="Shaders\Shader I/O">
       <UniqueIdentifier>{d8619365-b905-4812-b98e-700b712f70f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DebugAnimation">
+      <UniqueIdentifier>{f7e0553d-14f6-4226-9d54-6896f0d05116}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
