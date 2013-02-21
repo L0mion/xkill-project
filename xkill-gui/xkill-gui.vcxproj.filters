@@ -192,6 +192,18 @@
     <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_Editor.cpp">
       <Filter>Files\Menus</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_HUD.cpp">
+      <Filter>Files\Menus\HUD</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\DebugRelease\moc_Menu_HUD.cpp">
+      <Filter>Generated Files\DebugRelease</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_Menu_HUD.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Menu_HUD.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\xkill-resources\xkill-gui\MainWindow.ui">
@@ -244,6 +256,9 @@
     </CustomBuild>
     <CustomBuild Include="..\..\xkill-source\xkill-gui\Menu_Editor.h">
       <Filter>Files\Menus</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\xkill-source\xkill-gui\Menu_HUD.h">
+      <Filter>Files\Menus\HUD</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
