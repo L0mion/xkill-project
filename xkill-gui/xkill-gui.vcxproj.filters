@@ -52,6 +52,9 @@
     <Filter Include="Files\Menus\[Old]">
       <UniqueIdentifier>{03a3c2f9-72f9-4cdd-95d6-f3187cee910a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Files\Menus\HUD">
+      <UniqueIdentifier>{52e83ba0-5a2c-4933-a024-877d90c2d801}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-gui\main.cpp">
