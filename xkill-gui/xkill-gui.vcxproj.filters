@@ -260,6 +260,9 @@
     <CustomBuild Include="..\..\xkill-source\xkill-gui\Menu_HUD.h">
       <Filter>Files\Menus\HUD</Filter>
     </CustomBuild>
+    <CustomBuild Include="..\..\xkill-resources\xkill-gui\Menu_HUD.ui">
+      <Filter>Files\Form Files</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui_MainWindow.h">
@@ -291,6 +294,9 @@
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-gui\ToggleHelper.h">
       <Filter>Files\Menus\[Old]</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_Menu_HUD.h">
+      <Filter>Generated Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
