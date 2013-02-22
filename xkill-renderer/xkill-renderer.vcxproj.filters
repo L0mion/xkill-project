@@ -36,7 +36,6 @@
       <Filter>ManagementModel\SubsetD3D</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Renderer.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\Winfo.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementViewport.h">
       <Filter>ManagementViewport</Filter>
     </ClInclude>
@@ -85,11 +84,9 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\DDSTextureLoader.h">
       <Filter>ManagementTex</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\TypeFX.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementMath.h">
       <Filter>ManagementMath</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\ViewportData.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementInstance.h">
       <Filter>ManagementInstance</Filter>
     </ClInclude>
@@ -108,7 +105,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\DataStreamBuffer.h">
       <Filter>DataStream</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\ShadingDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementBuffer.h">
       <Filter>ManagementBuffer</Filter>
     </ClInclude>
@@ -124,7 +120,21 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Buffer_SrvDsv.h">
       <Filter>ManagementBuffer\Buffer</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\ShadowMapping.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ShadingDesc.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ShadowMapping.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\TypeFX.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ViewportData.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\Winfo.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RenderingComponent.cpp" />
@@ -150,7 +160,6 @@
       <Filter>ManagementModel\SubsetD3D</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Renderer.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\Winfo.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementViewport.cpp">
       <Filter>ManagementViewport</Filter>
     </ClCompile>
@@ -208,7 +217,6 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshVerticesInstanced.cpp">
       <Filter>Mesh</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\ShadingDesc.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementBuffer.cpp">
       <Filter>ManagementBuffer</Filter>
     </ClCompile>
@@ -223,6 +231,12 @@
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Buffer_SrvDsv.cpp">
       <Filter>ManagementBuffer\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ShadingDesc.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\Winfo.cpp">
+      <Filter>Utilities</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
