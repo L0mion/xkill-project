@@ -124,6 +124,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Buffer_SrvDsv.h">
       <Filter>ManagementBuffer\Buffer</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ShadowMapping.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RenderingComponent.cpp" />
@@ -330,6 +331,9 @@
     <Filter Include="Shaders\Lighting\Methods">
       <UniqueIdentifier>{99d035f9-ce88-44bd-8da9-7d0e15bba69e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Shaders\Shadows">
+      <UniqueIdentifier>{89f4fcfa-e1a5-4e8a-ba3e-b128002aeec3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\structs.hlsl">
@@ -430,6 +434,12 @@
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\CS_Blur.hlsl">
       <Filter>Shaders\Blur</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\PS_BuildShadowMapPosNormTex.hlsl">
+      <Filter>Shaders\Shadows</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\LightShadow.hlsl">
+      <Filter>Shaders\Lighting\Methods</Filter>
     </FxCompile>
   </ItemGroup>
 </Project>
