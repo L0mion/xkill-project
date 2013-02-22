@@ -52,6 +52,9 @@
     <Filter Include="Files\Menus\[Old]">
       <UniqueIdentifier>{03a3c2f9-72f9-4cdd-95d6-f3187cee910a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Files\Menus\HUD">
+      <UniqueIdentifier>{52e83ba0-5a2c-4933-a024-877d90c2d801}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-gui\main.cpp">
@@ -189,6 +192,18 @@
     <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_Editor.cpp">
       <Filter>Files\Menus</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_HUD.cpp">
+      <Filter>Files\Menus\HUD</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\DebugRelease\moc_Menu_HUD.cpp">
+      <Filter>Generated Files\DebugRelease</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_Menu_HUD.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Menu_HUD.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\xkill-resources\xkill-gui\MainWindow.ui">
@@ -242,6 +257,12 @@
     <CustomBuild Include="..\..\xkill-source\xkill-gui\Menu_Editor.h">
       <Filter>Files\Menus</Filter>
     </CustomBuild>
+    <CustomBuild Include="..\..\xkill-source\xkill-gui\Menu_HUD.h">
+      <Filter>Files\Menus\HUD</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\xkill-resources\xkill-gui\Menu_HUD.ui">
+      <Filter>Files\Form Files</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui_MainWindow.h">
@@ -273,6 +294,9 @@
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-gui\ToggleHelper.h">
       <Filter>Files\Menus\[Old]</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_Menu_HUD.h">
+      <Filter>Generated Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
