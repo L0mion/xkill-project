@@ -76,6 +76,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\MeshVertices.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\MutatorSettings.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\SimpleQueue.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\SkinnedData.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\StringConv.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\SubsetDesc.h" />
