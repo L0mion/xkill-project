@@ -348,6 +348,9 @@
     <Filter Include="Shaders\Shadows">
       <UniqueIdentifier>{89f4fcfa-e1a5-4e8a-ba3e-b128002aeec3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Shaders\SSAO">
+      <UniqueIdentifier>{bef6f2a7-055c-40e1-a6cf-718867659014}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\structs.hlsl">
@@ -454,6 +457,9 @@
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\LightShadow.hlsl">
       <Filter>Shaders\Lighting\Methods</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\CS_SSAO.hlsl">
+      <Filter>Shaders\SSAO</Filter>
     </FxCompile>
   </ItemGroup>
 </Project>
