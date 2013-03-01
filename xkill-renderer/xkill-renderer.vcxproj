@@ -25,7 +25,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\DebugShapes.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Buffer_SrvRtvUav.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\LightPos.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementAnimation.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementInstance.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementSprites.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\MeshVerticesInstanced.h" />
@@ -69,7 +68,6 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\DDSTextureLoader.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\DebugShapeD3D.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\DebugShapes.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementAnimation.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Buffer_SrvRtvUav.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementInstance.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementSprites.cpp" />

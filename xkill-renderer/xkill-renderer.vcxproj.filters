@@ -106,9 +106,6 @@
       <Filter>DataStream</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ShadingDesc.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementAnimation.h">
-      <Filter>ManagementAnimation</Filter>
-	</ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementBuffer.h">
       <Filter>ManagementBuffer</Filter>
     </ClInclude>
@@ -222,9 +219,6 @@
       <Filter>Mesh</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ShadingDesc.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementAnimation.cpp">
-      <Filter>ManagementAnimation</Filter>
-	</ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementBuffer.cpp">
       <Filter>ManagementBuffer</Filter>
     </ClCompile>
