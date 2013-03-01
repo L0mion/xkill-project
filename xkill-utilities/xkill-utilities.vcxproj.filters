@@ -175,6 +175,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-utilities\Timer.h">
       <Filter>Timer</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-utilities\SimpleQueue.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Events">

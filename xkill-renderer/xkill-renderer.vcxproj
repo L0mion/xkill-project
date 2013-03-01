@@ -15,6 +15,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\Buffer_Srv.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\Buffer_SrvDsv.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CBDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\DataStreamBuffer.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\DataStreamSRV.h" />
@@ -50,6 +52,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ShaderPS.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ShaderVS.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ShadingDesc.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ShadowMapping.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\SubsetD3D.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Tex.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\TexLoader.h" />
@@ -61,6 +64,8 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Winfo.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\Buffer_Srv.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\Buffer_SrvDsv.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\DDSTextureLoader.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\DebugShapeD3D.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\DebugShapes.cpp" />
@@ -133,6 +138,20 @@
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compute</ShaderType>
       <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
     </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\LightShadow.hlsl">
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">
+      </EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">Effect</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">5.0</ShaderModel>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Effect</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Effect</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+    </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\PS_Animation.hlsl">
       <EntryPointName Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">PS_Animation</EntryPointName>
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">Pixel</ShaderType>
@@ -141,6 +160,17 @@
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
       <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
       <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">PS_Animation</EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\PS_BuildShadowMapPosNormTex.hlsl">
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">PS_BuildShadowMapPosNormTex</EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='DebugRelease|Win32'">5.0</ShaderModel>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">PS_BuildShadowMapPosNormTex</EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">PS_BuildShadowMapPosNormTex</EntryPointName>
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
       <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
     </FxCompile>
@@ -576,7 +606,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>D3D_PROFILE;XKILL_DEBUG;XKILL_DEBUG;DLL_RENDERER;WIN32;_DEBUG;_WINDOWS;_USRDLL;;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>XKILL_DEBUG;XKILL_DEBUG;DLL_RENDERER;WIN32;_DEBUG;_WINDOWS;_USRDLL;;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -593,7 +623,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>D3D_PROFILE;DLL_RENDERER;WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DLL_RENDERER;WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

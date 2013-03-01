@@ -36,7 +36,6 @@
       <Filter>ManagementModel\SubsetD3D</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Renderer.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\Winfo.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementViewport.h">
       <Filter>ManagementViewport</Filter>
     </ClInclude>
@@ -85,11 +84,9 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\DDSTextureLoader.h">
       <Filter>ManagementTex</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\TypeFX.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementMath.h">
       <Filter>ManagementMath</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\ViewportData.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementInstance.h">
       <Filter>ManagementInstance</Filter>
     </ClInclude>
@@ -121,6 +118,27 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Buffer_SrvRtvUav.h">
       <Filter>ManagementBuffer\Buffer</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\Buffer_Srv.h">
+      <Filter>ManagementBuffer\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\Buffer_SrvDsv.h">
+      <Filter>ManagementBuffer\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ShadingDesc.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ShadowMapping.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\TypeFX.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ViewportData.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\Winfo.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RenderingComponent.cpp" />
@@ -146,7 +164,6 @@
       <Filter>ManagementModel\SubsetD3D</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Renderer.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\Winfo.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementViewport.cpp">
       <Filter>ManagementViewport</Filter>
     </ClCompile>
@@ -216,6 +233,18 @@
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Buffer_SrvRtvUav.cpp">
       <Filter>ManagementBuffer\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\Buffer_Srv.cpp">
+      <Filter>ManagementBuffer\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\Buffer_SrvDsv.cpp">
+      <Filter>ManagementBuffer\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ShadingDesc.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\Winfo.cpp">
+      <Filter>Utilities</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -327,6 +356,9 @@
     <Filter Include="Shaders\Lighting\Methods">
       <UniqueIdentifier>{99d035f9-ce88-44bd-8da9-7d0e15bba69e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Shaders\Shadows">
+      <UniqueIdentifier>{89f4fcfa-e1a5-4e8a-ba3e-b128002aeec3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\structs.hlsl">
@@ -427,6 +459,12 @@
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\CS_Blur.hlsl">
       <Filter>Shaders\Blur</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\PS_BuildShadowMapPosNormTex.hlsl">
+      <Filter>Shaders\Shadows</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\LightShadow.hlsl">
+      <Filter>Shaders\Lighting\Methods</Filter>
     </FxCompile>
   </ItemGroup>
 </Project>
