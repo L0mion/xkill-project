@@ -136,6 +136,9 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Winfo.h">
       <Filter>Utilities</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementAnimation.h">
+      <Filter>ManagementAnimation</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RenderingComponent.cpp" />
@@ -239,6 +242,9 @@
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Winfo.cpp">
       <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementAnimation.cpp">
+      <Filter>ManagementAnimation</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
