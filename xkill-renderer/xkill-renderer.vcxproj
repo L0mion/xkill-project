@@ -56,6 +56,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Tex.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\TexLoader.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementTex.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\TimerDX.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\TypeFX.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementSS.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementViewport.h" />
@@ -97,6 +98,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementTex.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementSS.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementViewport.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\TimerDX.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Winfo.cpp" />
   </ItemGroup>
   <ItemGroup>
