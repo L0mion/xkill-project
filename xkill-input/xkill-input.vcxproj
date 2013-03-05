@@ -16,8 +16,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-input\DirectInputDevice.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-input\DirectInputKeyboard.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-input\DirectInputMouse.h" />
     <ClInclude Include="..\..\xkill-source\xkill-input\dllInput.h" />
     <ClInclude Include="..\..\xkill-source\xkill-input\FileParser.h" />
     <ClInclude Include="..\..\xkill-source\xkill-input\InputActions.h" />
@@ -35,8 +33,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-input\DirectInputDevice.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-input\DirectInputKeyboard.cpp" />
-    <ClCompile Include="..\..\xkill-source\xkill-input\DirectInputMouse.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-input\FileParser.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-input\InputAxisObject.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-input\InputButtonObject.cpp" />
