@@ -135,6 +135,9 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Winfo.h">
       <Filter>Utilities</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\CameraInstances.h">
+      <Filter>ManagementInstance</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RenderingComponent.cpp" />
@@ -237,6 +240,9 @@
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Winfo.cpp">
       <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\CameraInstances.cpp">
+      <Filter>ManagementInstance</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
