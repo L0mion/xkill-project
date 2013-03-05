@@ -27,6 +27,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-architecture\CollisionManager.h">
       <Filter>CollisionManager</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\NameGenerator.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-architecture\CameraComponent.cpp">
@@ -55,6 +56,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-architecture\CollisionManager.cpp">
       <Filter>CollisionManager</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-architecture\NameGenerator.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-architecture\main.cpp" />
