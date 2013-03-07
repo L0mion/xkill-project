@@ -91,6 +91,18 @@
     <ClCompile Include="..\..\xkill-source\xkill-io\MeshMakerObj.cpp">
       <Filter>.obj</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-io\LoaderMD5.cpp">
+      <Filter>.md5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-io\LoaderMD5Animation.cpp">
+      <Filter>.md5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-io\LoaderMD5Helper.cpp">
+      <Filter>.md5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-io\LoaderMD5Model.cpp">
+      <Filter>.md5</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xkill-source\xkill-io\Loader.h" />
@@ -201,6 +213,57 @@
     <ClInclude Include="..\..\xkill-source\xkill-io\MeshMakerObj.h">
       <Filter>.obj</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderMD5.h">
+      <Filter>.md5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderMD5JointDesc.h">
+      <Filter>.md5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderMD5MeshDesc.h">
+      <Filter>.md5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderMD5VertexDesc.h">
+      <Filter>.md5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderMD5TriangleDesc.h">
+      <Filter>.md5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderMD5WeightDesc.h">
+      <Filter>.md5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderMD5ModelDesc.h">
+      <Filter>.md5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderMD5Animation.h">
+      <Filter>.md5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderMD5JointInfo.h">
+      <Filter>.md5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderMD5BaseFrameDesc.h">
+      <Filter>.md5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderMD5FrameDataDesc.h">
+      <Filter>.md5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderMD5SkeletonJointDesc.h">
+      <Filter>.md5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderMD5FrameSkeletonDesc.h">
+      <Filter>.md5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderMD5BoundsDesc.h">
+      <Filter>.md5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderMD5Helper.h">
+      <Filter>.md5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderMD5Model.h">
+      <Filter>.md5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-io\LoaderMD5AnimationDesc.h">
+      <Filter>.md5</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include=".mtl">
@@ -226,6 +289,9 @@
     </Filter>
     <Filter Include=".fbx">
       <UniqueIdentifier>{064285af-4c79-42cd-bb2f-7b53f7a789f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include=".md5">
+      <UniqueIdentifier>{64bb31c1-da87-469d-a61a-cb03366dec27}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
