@@ -27,6 +27,9 @@
     <ClInclude Include="..\..\xkill-source\xkill-architecture\CollisionManager.h">
       <Filter>CollisionManager</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-architecture\CullingComponent.h">
+      <Filter>Components\Implementations</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-architecture\CameraComponent.cpp">
@@ -54,6 +57,9 @@
     <ClCompile Include="..\..\xkill-source\xkill-architecture\GameManager.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-architecture\CollisionManager.cpp">
       <Filter>CollisionManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-architecture\CullingComponent.cpp">
+      <Filter>Components\Implementations</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
