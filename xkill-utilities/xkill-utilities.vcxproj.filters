@@ -24,16 +24,16 @@
       <Filter>State Machine</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-utilities\AttributeManager.cpp">
-      <Filter>[Work-In-Progress]</Filter>
+      <Filter>Core</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-utilities\Entity.cpp">
-      <Filter>[Work-In-Progress]</Filter>
+      <Filter>Core</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-utilities\StringConv.cpp">
       <Filter>Conversions</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-utilities\EntityStorage.cpp">
-      <Filter>[Work-In-Progress]</Filter>
+      <Filter>Core</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-utilities\LightDesc.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\DataItem.h">
@@ -112,28 +112,28 @@
     <ClInclude Include="..\..\xkill-source\xkill-utilities\LeanWindows.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\DebugShape.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\Iterator.h">
-      <Filter>[Work-In-Progress]</Filter>
+      <Filter>Core</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\Entity.h">
-      <Filter>[Work-In-Progress]</Filter>
+      <Filter>Core</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\AttributeStorage.h">
-      <Filter>[Work-In-Progress]</Filter>
+      <Filter>Core</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\AttributeController.h">
-      <Filter>[Work-In-Progress]</Filter>
+      <Filter>Core</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\AttributeManager.h">
-      <Filter>[Work-In-Progress]</Filter>
+      <Filter>Core</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\IAttributeStorage.h">
-      <Filter>[Work-In-Progress]</Filter>
+      <Filter>Core</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\StringConv.h">
       <Filter>Conversions</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\EntityStorage.h">
-      <Filter>[Work-In-Progress]</Filter>
+      <Filter>Core</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\LightDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\Util.h" />
@@ -183,7 +183,7 @@
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\SimpleQueue.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\SceneGraph.h">
-      <Filter>[Work-In-Progress]</Filter>
+      <Filter>Core</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -205,9 +205,6 @@
     <Filter Include="State Machine">
       <UniqueIdentifier>{2c31e36b-e6b4-45b2-af74-78e3b620c796}</UniqueIdentifier>
     </Filter>
-    <Filter Include="[Work-In-Progress]">
-      <UniqueIdentifier>{808f7273-26e7-47ab-a457-bfbe5a613003}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Conversions">
       <UniqueIdentifier>{c970da88-710f-42c9-a28b-69038b33bbf9}</UniqueIdentifier>
     </Filter>
@@ -222,6 +219,9 @@
     </Filter>
     <Filter Include="Timer">
       <UniqueIdentifier>{b20397b5-8eb9-42b8-8395-b3ee36a34c0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{808f7273-26e7-47ab-a457-bfbe5a613003}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
