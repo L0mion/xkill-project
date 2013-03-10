@@ -210,6 +210,7 @@
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-gui\GameTimer.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-gui\HudMessage.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-gui\HudPowerupDispayer.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-gui\main.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-gui\MainWindow.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-gui\Menu_Ammo.cpp" />
@@ -751,6 +752,7 @@
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
       </Command>
     </CustomBuild>
+    <ClInclude Include="..\..\xkill-source\xkill-gui\HudPowerupDispayer.h" />
     <ClInclude Include="GeneratedFiles\ui_MainMenu.h" />
     <ClInclude Include="GeneratedFiles\ui_MainWindow.h" />
     <ClInclude Include="GeneratedFiles\ui_Menu_HUD.h" />

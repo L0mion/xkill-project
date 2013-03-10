@@ -177,6 +177,9 @@
     <ClCompile Include="GeneratedFiles\Release\moc_Menu_Main.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-gui\HudPowerupDispayer.cpp">
+      <Filter>Files\Menus\HUD</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\xkill-resources\xkill-gui\MainWindow.ui">
@@ -240,6 +243,9 @@
     </ClInclude>
     <ClInclude Include="GeneratedFiles\ui_Menu_HUD.h">
       <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-gui\HudPowerupDispayer.h">
+      <Filter>Files\Menus\HUD</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
