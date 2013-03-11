@@ -138,6 +138,9 @@
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementAnimation.h">
       <Filter>ManagementAnimation</Filter>
+	</ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\CameraInstances.h">
+      <Filter>ManagementInstance</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -245,6 +248,9 @@
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementAnimation.cpp">
       <Filter>ManagementAnimation</Filter>
+	</ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\CameraInstances.cpp">
+      <Filter>ManagementInstance</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -359,6 +365,9 @@
     <Filter Include="Shaders\Shadows">
       <UniqueIdentifier>{89f4fcfa-e1a5-4e8a-ba3e-b128002aeec3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Shaders\SSAO">
+      <UniqueIdentifier>{bef6f2a7-055c-40e1-a6cf-718867659014}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\structs.hlsl">
@@ -465,6 +474,18 @@
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\LightShadow.hlsl">
       <Filter>Shaders\Lighting\Methods</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\CS_SSAO.hlsl">
+      <Filter>Shaders\SSAO</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\CS_Blur_Bilateral_Horz.hlsl">
+      <Filter>Shaders\Blur</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\CS_Blur_Bilateral_Vert.hlsl">
+      <Filter>Shaders\Blur</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\CS_Blur_Bilateral.hlsl">
+      <Filter>Shaders\Blur</Filter>
     </FxCompile>
   </ItemGroup>
 </Project>
