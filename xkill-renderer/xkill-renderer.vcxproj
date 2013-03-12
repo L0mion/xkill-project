@@ -18,6 +18,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Buffer_Srv.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Buffer_SrvDsv.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CameraInstances.h" />
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\CameraLights.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CBDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\DataStreamBuffer.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\DataStreamSRV.h" />
@@ -69,6 +70,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Buffer_Srv.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Buffer_SrvDsv.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\CameraInstances.cpp" />
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\CameraLights.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\DDSTextureLoader.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\DebugShapeD3D.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\DebugShapes.cpp" />
