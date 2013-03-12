@@ -138,6 +138,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CameraInstances.h">
       <Filter>ManagementInstance</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\TimerDX.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\RenderingComponent.cpp" />
@@ -244,6 +245,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\CameraInstances.cpp">
       <Filter>ManagementInstance</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\TimerDX.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Utilities">
@@ -368,16 +370,7 @@
     <FxCompile Include="..\..\xkill-source\xkill-shaders\LightDescPoint.hlsl">
       <Filter>Shaders\Lighting\Structs</Filter>
     </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\LightDescSpot.hlsl">
-      <Filter>Shaders\Lighting\Structs</Filter>
-    </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\LightSurfaceMaterial.hlsl">
-      <Filter>Shaders\Lighting\Structs</Filter>
-    </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\LightDir.hlsl">
-      <Filter>Shaders\Lighting\Methods</Filter>
-    </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\LightSpot.hlsl">
       <Filter>Shaders\Lighting\Methods</Filter>
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\LightPoint.hlsl">
