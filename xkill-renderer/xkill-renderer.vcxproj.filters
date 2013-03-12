@@ -105,6 +105,7 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\DataStreamBuffer.h">
       <Filter>DataStream</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ShadingDesc.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementBuffer.h">
       <Filter>ManagementBuffer</Filter>
     </ClInclude>
@@ -135,6 +136,9 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\Winfo.h">
       <Filter>Utilities</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementAnimation.h">
+      <Filter>ManagementAnimation</Filter>
+	</ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CameraInstances.h">
       <Filter>ManagementInstance</Filter>
     </ClInclude>
@@ -221,6 +225,7 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\MeshVerticesInstanced.cpp">
       <Filter>Mesh</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ShadingDesc.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementBuffer.cpp">
       <Filter>ManagementBuffer</Filter>
     </ClCompile>
@@ -242,6 +247,9 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\Winfo.cpp">
       <Filter>Utilities</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementAnimation.cpp">
+      <Filter>ManagementAnimation</Filter>
+	</ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\CameraInstances.cpp">
       <Filter>ManagementInstance</Filter>
     </ClCompile>
@@ -331,6 +339,9 @@
     </Filter>
     <Filter Include="ManagementDebug">
       <UniqueIdentifier>{f733682f-83f8-4695-ae2d-d81fdbb0e3ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ManagementAnimation">
+      <UniqueIdentifier>{411229ac-dd9e-4d2e-bb5f-0e073fcbbd9f}</UniqueIdentifier>
     </Filter>
     <Filter Include="Shaders\Shader I/O">
       <UniqueIdentifier>{d8619365-b905-4812-b98e-700b712f70f2}</UniqueIdentifier>

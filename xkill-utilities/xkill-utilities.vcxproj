@@ -15,7 +15,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\xkill-source\xkill-utilities\AnimatedMesh.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\AnimationClip.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\BoneAnimation.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-utilities\DataItem.h" />
@@ -42,7 +41,6 @@
     <ClCompile Include="..\..\xkill-source\xkill-utilities\VertexDesc.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\xkill-source\xkill-utilities\AnimatedMesh.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\AnimationClip.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\AttributeController.h" />
     <ClInclude Include="..\..\xkill-source\xkill-utilities\AttributeManager.h" />

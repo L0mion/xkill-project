@@ -54,9 +54,6 @@
     <ClCompile Include="..\..\xkill-source\xkill-utilities\MeshVertices.cpp">
       <Filter>Mesh</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-utilities\AnimatedMesh.cpp">
-      <Filter>Animation</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-utilities\AnimationClip.cpp">
       <Filter>Animation</Filter>
     </ClCompile>
@@ -154,9 +151,6 @@
       <Filter>Mesh</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\Converter.h" />
-    <ClInclude Include="..\..\xkill-source\xkill-utilities\AnimatedMesh.h">
-      <Filter>Animation</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-utilities\AnimationClip.h">
       <Filter>Animation</Filter>
     </ClInclude>
