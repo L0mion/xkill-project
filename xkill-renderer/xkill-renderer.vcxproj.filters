@@ -370,9 +370,6 @@
     <FxCompile Include="..\..\xkill-source\xkill-shaders\LightDescPoint.hlsl">
       <Filter>Shaders\Lighting\Structs</Filter>
     </FxCompile>
-    <FxCompile Include="..\..\xkill-source\xkill-shaders\LightSurfaceMaterial.hlsl">
-      <Filter>Shaders\Lighting\Structs</Filter>
-    </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\LightDir.hlsl">
       <Filter>Shaders\Lighting\Methods</Filter>
     </FxCompile>
