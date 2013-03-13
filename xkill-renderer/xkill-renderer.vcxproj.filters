@@ -139,12 +139,12 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementAnimation.h">
       <Filter>ManagementAnimation</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\CameraInstances.h">
-      <Filter>ManagementInstance</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\TimerDX.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CameraLights.h">
       <Filter>ManagementLight</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-renderer\ShaderGS.h">
+      <Filter>ManagementFX\Shader\ShaderGS</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -253,12 +253,12 @@
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementAnimation.cpp">
       <Filter>ManagementAnimation</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\CameraInstances.cpp">
-      <Filter>ManagementInstance</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\TimerDX.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\CameraLights.cpp">
       <Filter>ManagementLight</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-renderer\ShaderGS.cpp">
+      <Filter>ManagementFX\Shader\ShaderGS</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -376,6 +376,9 @@
     <Filter Include="Shaders\SSAO">
       <UniqueIdentifier>{bef6f2a7-055c-40e1-a6cf-718867659014}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ManagementFX\Shader\ShaderGS">
+      <UniqueIdentifier>{c2a69c63-0174-4253-8e1f-c974b1e34e73}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\structs.hlsl">
@@ -485,6 +488,12 @@
     </FxCompile>
     <FxCompile Include="..\..\xkill-source\xkill-shaders\CS_Blur_Bilateral.hlsl">
       <Filter>Shaders\Blur</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\UtilBit.hlsl">
+      <Filter>Shaders\Util</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\GS_Cull.hlsl">
+      <Filter>Shaders</Filter>
     </FxCompile>
   </ItemGroup>
 </Project>
