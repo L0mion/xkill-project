@@ -139,9 +139,6 @@
     <ClInclude Include="..\..\xkill-source\xkill-renderer\ManagementAnimation.h">
       <Filter>ManagementAnimation</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\xkill-source\xkill-renderer\CameraInstances.h">
-      <Filter>ManagementInstance</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-renderer\TimerDX.h" />
     <ClInclude Include="..\..\xkill-source\xkill-renderer\CameraLights.h">
       <Filter>ManagementLight</Filter>
@@ -252,9 +249,6 @@
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\ManagementAnimation.cpp">
       <Filter>ManagementAnimation</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\xkill-source\xkill-renderer\CameraInstances.cpp">
-      <Filter>ManagementInstance</Filter>
     </ClCompile>
     <ClCompile Include="..\..\xkill-source\xkill-renderer\TimerDX.cpp" />
     <ClCompile Include="..\..\xkill-source\xkill-renderer\CameraLights.cpp">
