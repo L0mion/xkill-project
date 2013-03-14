@@ -180,6 +180,9 @@
     <ClCompile Include="..\..\xkill-source\xkill-gui\HudPowerupDispayer.cpp">
       <Filter>Files\Menus\HUD</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xkill-source\xkill-gui\HudScheduling.cpp">
+      <Filter>Files\Menus\HUD</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\xkill-resources\xkill-gui\MainWindow.ui">
@@ -245,6 +248,9 @@
       <Filter>Generated Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\xkill-source\xkill-gui\HudPowerupDispayer.h">
+      <Filter>Files\Menus\HUD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\xkill-source\xkill-gui\HudScheduling.h">
       <Filter>Files\Menus\HUD</Filter>
     </ClInclude>
   </ItemGroup>
