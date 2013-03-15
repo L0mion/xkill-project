@@ -486,5 +486,8 @@
     <FxCompile Include="..\..\xkill-source\xkill-shaders\CS_Blur_Bilateral.hlsl">
       <Filter>Shaders\Blur</Filter>
     </FxCompile>
+    <FxCompile Include="..\..\xkill-source\xkill-shaders\PS_Char.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
   </ItemGroup>
 </Project>
